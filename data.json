@@ -642,6 +642,26 @@
   "from": "2026-08-01",
   "to": "2026-08-18"
  },
+ "aceites_period": {
+  "from": "2026-08-01",
+  "to": "2026-08-18"
+ },
+ "aceites": [
+  {
+   "name": "Edileuza Lima Nascimento",
+   "date": "2026-08-16",
+   "campaign": "always_on",
+   "etapa": "Aceite",
+   "value": 128
+  },
+  {
+   "name": "Ednir Novais dos Santos",
+   "date": "2026-08-10",
+   "campaign": "rmkt",
+   "etapa": "Aceite",
+   "value": 69
+  }
+ ],
  "creatives": [
   {
    "ad_name": "[Vídeo] Pedrinho Cartão",

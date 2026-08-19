@@ -124,6 +124,7 @@
   table.data-table td.num { font-variant-numeric: tabular-nums; }
   table.data-table td.creative-name { display: flex; align-items: center; gap: 10px; text-align: left; }
   table.data-table .creative-thumb { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; background: var(--gridline); flex: none; }
+  .empty-note { font-size: 13px; color: var(--text-secondary); padding: 10px 0; }
   table.data-table .creative-title { display: flex; flex-direction: column; gap: 2px; }
   table.data-table .creative-title .ad-name { color: var(--text-primary); font-weight: 500; }
   table.data-table .creative-title .ad-campaign { color: var(--text-muted); font-size: 11.5px; }
@@ -223,6 +224,12 @@
     <h2>Funil por campanha — período selecionado</h2>
     <div class="card-sub">Leads, MQL, Aceite e Vendido cruzados com o Kommo; CPL e Custo/MQL calculados sobre o gasto do Meta</div>
     <div id="campaign-table"></div>
+  </div>
+
+  <div class="card">
+    <h2>Aceites — detalhamento</h2>
+    <div class="card-sub" id="aceites-sub">Leads que chegaram a Aceite (ou etapa mais avançada) no Kommo — nome, data e valor, para conferência</div>
+    <div id="aceites-table"></div>
   </div>
 
   <div class="card">
@@ -704,6 +711,52 @@
     el.innerHTML = ""; el.appendChild(table);
   }
 
+  function renderAceitesTable(data) {
+    var subEl = document.getElementById("aceites-sub");
+    if (subEl && data.aceites_period) {
+      subEl.textContent = "Leads que chegaram a Aceite (ou etapa mais avançada) no Kommo de " + fmtDateLabel(data.aceites_period.from) + " a " + fmtDateLabel(data.aceites_period.to) + " — nome, data e valor, para conferência";
+    }
+    var el = document.getElementById("aceites-table");
+    if (!el) return;
+    var aceites = data.aceites || [];
+    if (!aceites.length) { el.innerHTML = "<div class='empty-note'>Nenhum Aceite no período selecionado.</div>"; return; }
+
+    var rows = aceites.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; });
+
+    var table = document.createElement("table");
+    table.className = "data-table";
+    var thead = document.createElement("thead");
+    var trh = document.createElement("tr");
+    ["Nome", "Data", "Campanha", "Etapa", "Valor"].forEach(function (h) {
+      var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
+    });
+    thead.appendChild(trh); table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    var total = 0;
+    rows.forEach(function (a) {
+      var tr = document.createElement("tr");
+      var tdName = document.createElement("td"); tdName.textContent = a.name || "—"; tr.appendChild(tdName);
+      var tdDate = document.createElement("td"); tdDate.textContent = fmtDateLabel(a.date); tr.appendChild(tdDate);
+      var tdCamp = document.createElement("td");
+      tdCamp.textContent = (data.campaigns[a.campaign] && data.campaigns[a.campaign].short) || a.campaign || "—";
+      tr.appendChild(tdCamp);
+      var tdEtapa = document.createElement("td"); tdEtapa.textContent = a.etapa || "—"; tr.appendChild(tdEtapa);
+      var tdValue = document.createElement("td"); tdValue.className = "num"; tdValue.textContent = fmtBRL(a.value || 0); tr.appendChild(tdValue);
+      tbody.appendChild(tr);
+      total += a.value || 0;
+    });
+    table.appendChild(tbody);
+
+    var tfoot = document.createElement("tfoot");
+    var trf = document.createElement("tr");
+    trf.innerHTML = "<td>Total</td><td></td><td></td><td class='num'>" + fmtInt(rows.length) + " leads</td><td class='num'>" + fmtBRL(total) + "</td>";
+    tfoot.appendChild(trf);
+    table.appendChild(tfoot);
+
+    el.innerHTML = ""; el.appendChild(table);
+  }
+
   function renderStatusBadges(data) {
     var updated = document.getElementById("updated-label");
     var dt = new Date(data.updated_at);
@@ -750,6 +803,7 @@
     renderTable("mql-table", mqlSeries.dates, mqlSeries.series, data, fmtInt);
 
     renderCampaignTable(rows, data);
+    renderAceitesTable(data);
     renderCreativesTable(data);
 
     document.querySelectorAll(".preset").forEach(function (btn) {
