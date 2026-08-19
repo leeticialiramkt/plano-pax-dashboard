@@ -1,0 +1,641 @@
+{
+ "updated_at": "2026-08-19T09:00:00-03:00",
+ "meta_status": "ok",
+ "kommo_status": "ok",
+ "kommo_stale_since": null,
+ "budget_month": {
+  "month": "2026-08",
+  "verba": 9000,
+  "label": "Agosto/2026"
+ },
+ "campaigns": {
+  "always_on": {
+   "label": "[LL][SITE] Always on",
+   "short": "Always on"
+  },
+  "forms": {
+   "label": "[LL][FORMS DO META][LEADS]",
+   "short": "Forms"
+  },
+  "rmkt": {
+   "label": "[RMKT] Remarketing Geral Direto",
+   "short": "Remarketing"
+  }
+ },
+ "daily": [
+  {
+   "date": "2026-08-01",
+   "campaign": "always_on",
+   "spend": 51.19,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-01",
+   "campaign": "forms",
+   "spend": 0,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-01",
+   "campaign": "rmkt",
+   "spend": 3.71,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-02",
+   "campaign": "always_on",
+   "spend": 45.68,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-02",
+   "campaign": "forms",
+   "spend": 0,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-02",
+   "campaign": "rmkt",
+   "spend": 20.19,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-03",
+   "campaign": "always_on",
+   "spend": 36.1,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-03",
+   "campaign": "forms",
+   "spend": 0,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-03",
+   "campaign": "rmkt",
+   "spend": 16.63,
+   "leads": 3,
+   "mql": 3,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 3
+  },
+  {
+   "date": "2026-08-04",
+   "campaign": "always_on",
+   "spend": 40.75,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-04",
+   "campaign": "forms",
+   "spend": 0,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-04",
+   "campaign": "rmkt",
+   "spend": 18.73,
+   "leads": 5,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 3
+  },
+  {
+   "date": "2026-08-05",
+   "campaign": "always_on",
+   "spend": 35.05,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-05",
+   "campaign": "forms",
+   "spend": 0,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-05",
+   "campaign": "rmkt",
+   "spend": 19.2,
+   "leads": 1,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-06",
+   "campaign": "always_on",
+   "spend": 40.65,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-06",
+   "campaign": "forms",
+   "spend": 11.19,
+   "leads": 1,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-06",
+   "campaign": "rmkt",
+   "spend": 14.53,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-07",
+   "campaign": "always_on",
+   "spend": 33.23,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-07",
+   "campaign": "forms",
+   "spend": 8.78,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-07",
+   "campaign": "rmkt",
+   "spend": 10.57,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-08",
+   "campaign": "always_on",
+   "spend": 40.12,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-08",
+   "campaign": "forms",
+   "spend": 5.53,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-08",
+   "campaign": "rmkt",
+   "spend": 4.95,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-09",
+   "campaign": "always_on",
+   "spend": 47.09,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-09",
+   "campaign": "forms",
+   "spend": 12.95,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-09",
+   "campaign": "rmkt",
+   "spend": 12.76,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-10",
+   "campaign": "always_on",
+   "spend": 52.79,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-10",
+   "campaign": "forms",
+   "spend": 16.1,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-10",
+   "campaign": "rmkt",
+   "spend": 20.48,
+   "leads": 6,
+   "mql": 2,
+   "aceite": 1,
+   "vendido": 0,
+   "perdido": 3
+  },
+  {
+   "date": "2026-08-11",
+   "campaign": "always_on",
+   "spend": 52.97,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-11",
+   "campaign": "forms",
+   "spend": 38.11,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-11",
+   "campaign": "rmkt",
+   "spend": 20.58,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-12",
+   "campaign": "always_on",
+   "spend": 75.44,
+   "leads": 5,
+   "mql": 5,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-12",
+   "campaign": "forms",
+   "spend": 49.9,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-12",
+   "campaign": "rmkt",
+   "spend": 17.63,
+   "leads": 3,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-13",
+   "campaign": "always_on",
+   "spend": 94.56,
+   "leads": 9,
+   "mql": 4,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 3
+  },
+  {
+   "date": "2026-08-13",
+   "campaign": "forms",
+   "spend": 56.85,
+   "leads": 5,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-13",
+   "campaign": "rmkt",
+   "spend": 24.86,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-14",
+   "campaign": "always_on",
+   "spend": 80.45,
+   "leads": 6,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-14",
+   "campaign": "forms",
+   "spend": 70.14,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-14",
+   "campaign": "rmkt",
+   "spend": 33.61,
+   "leads": 4,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-15",
+   "campaign": "always_on",
+   "spend": 70.37,
+   "leads": 13,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 6
+  },
+  {
+   "date": "2026-08-15",
+   "campaign": "forms",
+   "spend": 46.56,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-15",
+   "campaign": "rmkt",
+   "spend": 24.76,
+   "leads": 4,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-16",
+   "campaign": "always_on",
+   "spend": 136.71,
+   "leads": 16,
+   "mql": 2,
+   "aceite": 1,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-16",
+   "campaign": "forms",
+   "spend": 80.1,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-16",
+   "campaign": "rmkt",
+   "spend": 26.97,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-17",
+   "campaign": "always_on",
+   "spend": 119.66,
+   "leads": 10,
+   "mql": 4,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-17",
+   "campaign": "forms",
+   "spend": 49.52,
+   "leads": 1,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-17",
+   "campaign": "rmkt",
+   "spend": 27.17,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-18",
+   "campaign": "always_on",
+   "spend": 88.89,
+   "leads": 14,
+   "mql": 6,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 2
+  },
+  {
+   "date": "2026-08-18",
+   "campaign": "forms",
+   "spend": 57.4,
+   "leads": 3,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-18",
+   "campaign": "rmkt",
+   "spend": 50.39,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  }
+ ],
+ "account_daily_total": [
+  {
+   "date": "2026-08-01",
+   "spend": 297.07
+  },
+  {
+   "date": "2026-08-02",
+   "spend": 297.5
+  },
+  {
+   "date": "2026-08-03",
+   "spend": 195.67
+  },
+  {
+   "date": "2026-08-04",
+   "spend": 169.12
+  },
+  {
+   "date": "2026-08-05",
+   "spend": 187.87
+  },
+  {
+   "date": "2026-08-06",
+   "spend": 98.7
+  },
+  {
+   "date": "2026-08-07",
+   "spend": 52.58
+  },
+  {
+   "date": "2026-08-08",
+   "spend": 50.6
+  },
+  {
+   "date": "2026-08-09",
+   "spend": 72.8
+  },
+  {
+   "date": "2026-08-10",
+   "spend": 89.37
+  },
+  {
+   "date": "2026-08-11",
+   "spend": 111.66
+  },
+  {
+   "date": "2026-08-12",
+   "spend": 142.97
+  },
+  {
+   "date": "2026-08-13",
+   "spend": 176.27
+  },
+  {
+   "date": "2026-08-14",
+   "spend": 184.2
+  },
+  {
+   "date": "2026-08-15",
+   "spend": 141.69
+  },
+  {
+   "date": "2026-08-16",
+   "spend": 243.78
+  },
+  {
+   "date": "2026-08-17",
+   "spend": 196.35
+  },
+  {
+   "date": "2026-08-18",
+   "spend": 196.68
+  }
+ ]
+}
