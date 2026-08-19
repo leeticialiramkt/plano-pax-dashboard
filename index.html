@@ -122,6 +122,11 @@
   table.data-table .camp-dot { width: 9px; height: 9px; border-radius: 999px; flex: none; }
   table.data-table tfoot td { font-weight: 700; border-bottom: none; border-top: 1px solid var(--baseline); }
   table.data-table td.num { font-variant-numeric: tabular-nums; }
+  table.data-table td.creative-name { display: flex; align-items: center; gap: 10px; text-align: left; }
+  table.data-table .creative-thumb { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; background: var(--gridline); flex: none; }
+  table.data-table .creative-title { display: flex; flex-direction: column; gap: 2px; }
+  table.data-table .creative-title .ad-name { color: var(--text-primary); font-weight: 500; }
+  table.data-table .creative-title .ad-campaign { color: var(--text-muted); font-size: 11.5px; }
 
   .meter-wrap { display: flex; gap: 24px; flex-wrap: wrap; align-items: center; }
   .meter-track { flex: 1 1 320px; min-width: 260px; }
@@ -191,6 +196,19 @@
   <div class="card">
     <div class="card-head">
       <div>
+        <h2>Leads diário por campanha</h2>
+        <div class="card-sub">Leads recebidos no Kommo, por dia</div>
+      </div>
+      <button class="table-toggle" data-target="leads-table">Ver como tabela</button>
+    </div>
+    <div class="legend" id="leads-legend"></div>
+    <div id="leads-chart-wrap" style="position:relative;"></div>
+    <div id="leads-table" class="visually-hidden" style="display:none; margin-top:10px;"></div>
+  </div>
+
+  <div class="card">
+    <div class="card-head">
+      <div>
         <h2>MQL diário por campanha</h2>
         <div class="card-sub">Leads que chegaram a Orçamento (ou etapa mais avançada) no Kommo, por dia</div>
       </div>
@@ -205,6 +223,12 @@
     <h2>Funil por campanha — período selecionado</h2>
     <div class="card-sub">Leads, MQL, Aceite e Vendido cruzados com o Kommo; CPL e Custo/MQL calculados sobre o gasto do Meta</div>
     <div id="campaign-table"></div>
+  </div>
+
+  <div class="card">
+    <h2>Criativos</h2>
+    <div class="card-sub" id="creatives-sub">Performance por anúncio (Meta Ads) — leads são os reportados pelo próprio Meta, podem diferir do Kommo</div>
+    <div id="creatives-table"></div>
   </div>
 
   <footer class="foot">Dashboard gerado automaticamente a partir de Meta Ads (Windsor) + Kommo CRM. Atualiza todo dia.</footer>
@@ -312,14 +336,17 @@
     var cplPrev = prev.leads ? prev.spend / prev.leads : null;
     var cpmql = curr.mql ? curr.spend / curr.mql : null;
     var cpmqlPrev = prev.mql ? prev.spend / prev.mql : null;
+    var cac = curr.vendido ? curr.spend / curr.vendido : null;
+    var cacPrev = prev.vendido ? prev.spend / prev.vendido : null;
 
     var tiles = [
       { label: "Investido", value: fmtBRLCompact(curr.spend), delta: deltaTile(curr.spend, prev.spend, false) },
-      { label: "Leads (Kommo)", value: fmtInt(curr.leads), delta: deltaTile(curr.leads, prev.leads, true) },
-      { label: "MQL", value: fmtInt(curr.mql), delta: deltaTile(curr.mql, prev.mql, true) },
+      { label: "Leads", value: fmtInt(curr.leads), delta: deltaTile(curr.leads, prev.leads, true) },
       { label: "Custo por lead", value: cpl != null ? fmtBRL(cpl) : "—", delta: (cpl != null && cplPrev != null) ? deltaTile(cpl, cplPrev, false) : { text: "—", cls: "flat" } },
+      { label: "MQL", value: fmtInt(curr.mql), delta: deltaTile(curr.mql, prev.mql, true) },
       { label: "Custo por MQL", value: cpmql != null ? fmtBRL(cpmql) : "—", delta: (cpmql != null && cpmqlPrev != null) ? deltaTile(cpmql, cpmqlPrev, false) : { text: "—", cls: "flat" } },
-      { label: "Aceite + Vendido", value: fmtInt(curr.aceite), delta: deltaTile(curr.aceite, prev.aceite, true) },
+      { label: "Fechamentos", value: fmtInt(curr.vendido), delta: deltaTile(curr.vendido, prev.vendido, true) },
+      { label: "CAC", value: cac != null ? fmtBRL(cac) : "—", delta: (cac != null && cacPrev != null) ? deltaTile(cac, cacPrev, false) : { text: "—", cls: "flat" } },
     ];
 
     var el = document.getElementById("stat-grid");
@@ -563,8 +590,8 @@
       var i = Math.round(((relX - padL) / plotW) * (dates.length - 1));
       i = Math.max(0, Math.min(dates.length - 1, i));
       showAt(i);
-      tooltip.style.left = (evt.clientX + 14) + "px";
-      tooltip.style.top = (evt.clientY + 14) + "px";
+      tooltip.style.left = (evt.pageX + 14) + "px";
+      tooltip.style.top = (evt.pageY + 14) + "px";
     });
     hitRect.addEventListener("pointerleave", hideAll);
 
@@ -630,6 +657,53 @@
     el.innerHTML = ""; el.appendChild(table);
   }
 
+  function renderCreativesTable(data) {
+    var subEl = document.getElementById("creatives-sub");
+    if (subEl && data.creatives_period) {
+      subEl.textContent = "Performance por anúncio (Meta Ads) de " + fmtDateLabel(data.creatives_period.from) + " a " + fmtDateLabel(data.creatives_period.to) + " — leads são os reportados pelo próprio Meta, podem diferir do Kommo";
+    }
+    var el = document.getElementById("creatives-table");
+    if (!el) return;
+    var creatives = data.creatives || [];
+    if (!creatives.length) { el.innerHTML = ""; return; }
+
+    var table = document.createElement("table");
+    table.className = "data-table";
+    var thead = document.createElement("thead");
+    var trh = document.createElement("tr");
+    ["Criativo", "Investido", "Cliques", "Leads (Meta)", "CPL"].forEach(function (h) {
+      var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
+    });
+    thead.appendChild(trh); table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    creatives.forEach(function (c) {
+      var tr = document.createElement("tr");
+
+      var tdName = document.createElement("td"); tdName.className = "creative-name";
+      var img = document.createElement("img"); img.className = "creative-thumb";
+      img.src = c.thumbnail_url || "";
+      img.alt = "";
+      img.loading = "lazy";
+      img.onerror = function () { this.style.visibility = "hidden"; };
+      var titleWrap = document.createElement("div"); titleWrap.className = "creative-title";
+      var nameEl = document.createElement("span"); nameEl.className = "ad-name"; nameEl.textContent = c.ad_name || "—";
+      var campEl = document.createElement("span"); campEl.className = "ad-campaign";
+      campEl.textContent = (data.campaigns[c.campaign] && data.campaigns[c.campaign].short) || c.campaign || "";
+      titleWrap.appendChild(nameEl); titleWrap.appendChild(campEl);
+      tdName.appendChild(img); tdName.appendChild(titleWrap);
+      tr.appendChild(tdName);
+
+      var cpl = c.leads ? c.spend / c.leads : null;
+      [fmtBRL(c.spend), fmtInt(c.clicks), fmtInt(c.leads), cpl != null ? fmtBRL(cpl) : "—"].forEach(function (val) {
+        var td = document.createElement("td"); td.className = "num"; td.textContent = val; tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    el.innerHTML = ""; el.appendChild(table);
+  }
+
   function renderStatusBadges(data) {
     var updated = document.getElementById("updated-label");
     var dt = new Date(data.updated_at);
@@ -665,12 +739,18 @@
     drawLineChart("spend-chart-wrap", spendSeries.dates, spendSeries.series, data, fmtBRLCompact);
     renderTable("spend-table", spendSeries.dates, spendSeries.series, data, fmtBRL);
 
+    var leadsSeries = buildSeries(rows, rangeDates.from, rangeDates.to, "leads");
+    renderLegend("leads-legend", data);
+    drawLineChart("leads-chart-wrap", leadsSeries.dates, leadsSeries.series, data, fmtInt);
+    renderTable("leads-table", leadsSeries.dates, leadsSeries.series, data, fmtInt);
+
     var mqlSeries = buildSeries(rows, rangeDates.from, rangeDates.to, "mql");
     renderLegend("mql-legend", data);
     drawLineChart("mql-chart-wrap", mqlSeries.dates, mqlSeries.series, data, fmtInt);
     renderTable("mql-table", mqlSeries.dates, mqlSeries.series, data, fmtInt);
 
     renderCampaignTable(rows, data);
+    renderCreativesTable(data);
 
     document.querySelectorAll(".preset").forEach(function (btn) {
       btn.classList.toggle("active", btn.dataset.range === state.range);

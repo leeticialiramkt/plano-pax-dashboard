@@ -637,5 +637,176 @@
    "date": "2026-08-18",
    "spend": 196.68
   }
+ ],
+ "creatives_period": {
+  "from": "2026-08-01",
+  "to": "2026-08-18"
+ },
+ "creatives": [
+  {
+   "ad_name": "[Vídeo] Pedrinho Cartão",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.13418-10/497077504_1403533257207855_4389234088794354711_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeFUcaYtKL7nyDQmbcbod5X66m8rTgaY7h7qbytOBpjuHv_Mv4Um72Nl_VRM_fuHODzaknRTiYgeABxc6kdyctf4&_nc_ohc=OM6X-rf6UusQ7kNvwG0sKt6&_nc_oc=AdpUhHPeBRh3cb6EQiYTMk6rBh7_ZKx1Zz443UbdAfmTUrLIk6MvWb8VB7fibyEAYB0&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIm06ZAaj8z-NXI5sZOErDrcgK3X9JimxWM5BXiRS67cJXsQcwkcaQh1i4oTLFr_UXZyPuwZGwg4w&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AQFZpwGJhzsbCPM6T5W_UCEXqZUROuZqyJoM3soXhksPlA&oe=6A8C026D",
+   "title": "Cobertura completa para sua família",
+   "spend": 693.81,
+   "leads": 0,
+   "clicks": 632,
+   "link_clicks": 487,
+   "impressions": 12916
+  },
+  {
+   "ad_name": "#AD003",
+   "campaign": "forms",
+   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/774726801_904194516099187_794310932089276217_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFHs4bhAdcG1ok17BXTXH1-ywU_XXH6e1PLBT9dcfp7UzyDwYniM4s3ARgojJcR8_gi8xmn1VEbUWejkR5pMT6c&_nc_ohc=yQ7c0Qcxf-UQ7kNvwHdFwRM&_nc_oc=Ado4oT1W6kjl7wDZyPLN07UciYylIJqQFQ0I8d1eVZXiuy8_viE1lj7V1uyFrPQVygY&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQItGPM5PuxL8d2bHiKScLJrl1BDZpUDM7AOWoAFngvhBq1V-JEXHzvD2VXJ2S6XjGCI-GiflreedQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQE_jzjaiVKhbk152y2GOBlBW5rGRbuoXQhmy4S1_4qhGQ&oe=6A8C05DD",
+   "title": null,
+   "spend": 356.52,
+   "leads": 38,
+   "clicks": 174,
+   "link_clicks": 97,
+   "impressions": 8424
+  },
+  {
+   "ad_name": "[IMG]Plano Funerário com Cremação Adicional",
+   "campaign": "always_on",
+   "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=BW_rDAL_ji6iV8kfD6zkPg&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAT_gsbDO2zGcL-CZ9YBhzA6_jHQWVKCokElWbPoCSS6G&oe=6A87FBCF",
+   "title": "Cobertura completa para sua família",
+   "spend": 349.38,
+   "leads": 0,
+   "clicks": 474,
+   "link_clicks": 319,
+   "impressions": 24600
+  },
+  {
+   "ad_name": "#AD002",
+   "campaign": "rmkt",
+   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/768969573_1692593631856773_4399918635522746460_n.jpg?_nc_cat=100&ccb=1-7&_nc_eui2=AeHHT__bu_kwRT7aa4kSQd_MAsjDueRpqekCyMO55Gmp6U4qaDTisMFwbcPW2nAienzUaEYkNSo2R33fV-uYWn78&_nc_ohc=1D7oNnipPpUQ7kNvwEM7LJJ&_nc_oc=Ado4QVSjG2z-8C0_usmVh19TRNMlCKb3P9h5eJmImM3_NAc5SfevPyuQElfQRlM_Za0&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AEuWsiQEAAAA&_nc_gid=cxRJp6GTRsr3WNwhGJi0Bg&_nc_tpa=Q5bMBQJnIijjoiNxrqEpPhirW9UqMWgLjxgnKQjBjjrDM3_tFILnOqA7wmzkxnmdj1q1r6mfMbl7tM0Alg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQEWdxyeWOAaxuxUluqanVaZ6NFo2oElmb01lE_FLyerIw&oe=6A8BFCDE",
+   "title": null,
+   "spend": 283.12,
+   "leads": 12,
+   "clicks": 191,
+   "link_clicks": 98,
+   "impressions": 5300
+  },
+  {
+   "ad_name": "[IMG]Plano Funerário com Cremação Adicional — Cópia",
+   "campaign": "forms",
+   "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=_Nl7649xhHUwWTF6Ywid2w&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAS-KR8TinQkeE9lQq1xTuzYQTUBXg7JXhuFCcTJNHG4i&oe=6A87FBCF",
+   "title": "Cobertura completa para sua família",
+   "spend": 92.1,
+   "leads": 2,
+   "clicks": 36,
+   "link_clicks": 24,
+   "impressions": 2250
+  },
+  {
+   "ad_name": "[Vídeo] Entrevista IA",
+   "campaign": "rmkt",
+   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t51.75761-10/504214096_18099024889564327_4260654872891887900_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeHvZcoai8w8NDsDYPBi5rLAII6CvBU7rGMgjoK8FTusY8VB-jGS6tGBeBSCQSjTSdTlF9SHrFE8VniDgG-P385P&_nc_ohc=Gl_ULXPVwd0Q7kNvwHDVCMS&_nc_oc=AdqxhCiTcIUvy-KGg31cdDttskzytDxhCLWD2eYPqTXFxTb30NEPbcmHc7XNAoUB3AQ&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=cxRJp6GTRsr3WNwhGJi0Bg&_nc_tpa=Q5bMBQKuJ9R-wzOQ1MVWzojvs1ddc5VN4Hymma2zP_Ua_TQoIqIJjriIplZOJB1QhYRoIr5Kz9jRNb_ONg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=33e7a6&_nc_sid=58080a&oh=00_AQHpp-PphapP-kH36dCvTS_5i3ALpEewwiOKw3n5UDhOZg&oe=6A8BEFAA",
+   "title": "Faça uma cotação agora",
+   "spend": 84.64,
+   "leads": 6,
+   "clicks": 44,
+   "link_clicks": 27,
+   "impressions": 1016
+  },
+  {
+   "ad_name": "[Video] Reajuste Ari",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/682054726_1487446006355803_8431535182658244711_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEtTQ81tTwpjmC64bIPJ78HUATba3uLtHpQBNtre4u0epc7lWptpV73thczZcAxULJMAUn0CxELi3Z2FUgKRyIP&_nc_ohc=RCRYARTVoo8Q7kNvwFNeRdV&_nc_oc=AdoNz_36yo1AcUPh3BvaIooCAlgGkjtu-E7K0hghqEsq1X9W4FrHudCJTtCkmd-IWDk&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIcU1Xunxr2gjESMhyg6qnhyT3H8rRCeTKb_d0MgkORFrSl9A3VawBrygMSMLSTIBY7Q1nizPXazg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEHcRdh3PDYZCyAyGMRyx7W3d5a4hNk-8AwpH6LebCoaw&oe=6A8BE8EC",
+   "title": "Cobertura completa para sua família",
+   "spend": 76.14,
+   "leads": 0,
+   "clicks": 102,
+   "link_clicks": 61,
+   "impressions": 1541
+  },
+  {
+   "ad_name": "#AD002",
+   "campaign": "forms",
+   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/766861569_1399965578717109_654488035804056456_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeEATX-hdNpDuqc-rZUTZMds4VZN2LQ4PVbhVk3YtDg9VkczNR275jwM9hny8WtgFo5cTU1TtiKBI3Ph8xqnKHqq&_nc_ohc=vXw4S9FS3fcQ7kNvwEv84zA&_nc_oc=Adqb5J05MTSBgbUpNTWwz_cMzfD2d6HcYGPd4RYZQbsjeYGHENnonKN87Uvb-naFB8U&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=auupQ5FdwCdEdswZvGymmA&_nc_tpa=Q5bMBQITHBjpDSfqfEvAAYhg-_mQ9JkK76e3WLwmTdM5d5BFm4Z-LAM7hG6ZfWTUvXDWOBCRjHKcUmICFw&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFr1Qw9nt1ZoftIjniZtkExviY996I9-m_JJZ1G_D3zaA&oe=6A8C16C0",
+   "title": "Cobertura funeral a partir de R$2,30 por dia",
+   "spend": 38.04,
+   "leads": 0,
+   "clicks": 7,
+   "link_clicks": 3,
+   "impressions": 660
+  },
+  {
+   "ad_name": "[Vídeo] Influencer",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/601235763_1598557714608383_1447372548858428740_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeFqDrw0BQqcL3bS6OY74a9Mm4bxMlGPbR6bhvEyUY9tHiAbBgn3OQ2PlpRBDVSP2sF7SLsA03mZSzYcOY8KThIb&_nc_ohc=Eyl1KqsNJQ8Q7kNvwHsgF_T&_nc_oc=AdpEd0c2YOCkTO0J0CUM_ATiXTfWsiEDPspG1hTvYKUb3UdNOxDUYtJ6nYc2aQAFXT4&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=K2F3QbJ61xfAZ1cJOirr6w&_nc_tpa=Q5bMBQLNBaiGSQoX--0QGLz0s3LJAxN3iJOusVqmok1zSOwaJzZYG8zRCXgJFLZ7Ni8AObsoq4HcNtd0SQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEpBncW6BOdLhpn15H56gA9V2iJIYJbBxyXYjHLISw6Yw&oe=6A8C186E",
+   "title": "Cobertura completa para sua família",
+   "spend": 13.42,
+   "leads": 0,
+   "clicks": 7,
+   "link_clicks": 2,
+   "impressions": 159
+  },
+  {
+   "ad_name": "#AD004",
+   "campaign": "forms",
+   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/774726776_27522262860807197_7798554737771560803_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGfi1dNPi1EvlcvjVWiDQ5AnYco5Z13sVadhyjlnXexVqzbmPRnu9B8YbHHh01_aYPQramLaQJVv_-JNMEFUw-E&_nc_ohc=TZOciVxbzK8Q7kNvwHgsidR&_nc_oc=AdrqURg2grG6BmqlfmBXlddOmqzhIOvyjnKe7wDoHIeakmMw7rfVPtxiDh0FUFGaKek&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQJmibj4oHuWAQB0WgwMkR9H9CSyPmlve-eCSWsndOKTeYsvecIeCkdfB5qtGwdm2Os22zaiRJbdTQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQH7JPktE_Ckdmpp7H2pK_QiF6pCUHkLRdJPcf91louDyw&oe=6A8BF7C8",
+   "title": null,
+   "spend": 11.2,
+   "leads": 0,
+   "clicks": 6,
+   "link_clicks": 4,
+   "impressions": 139
+  },
+  {
+   "ad_name": "[Video] Ju Roberts 2",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/609327143_33034806762831259_4125087381725158398_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEUSh65eR82qtilG4-YIc5Vy_ioEIToSRrL-KgQhOhJGnDuBH3gSA3erIb1P-REaqVFFHcfh-Wrbat_72ylWSz_&_nc_ohc=ICxJLQx07t0Q7kNvwEwDOEV&_nc_oc=Adrn2GSfZHYG_aNvfTCEGfynwSW1rqOcFvDi1tIWNTbLLVVTfwcAthEhcczz18-T7Y0&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=YniD3nkOYp8HentI0fKg1w&_nc_tpa=Q5bMBQJz3QKYkXK4Fh4-cPt_wMwD1bXBkVzwEfEzulJxbPNgOHDNJT9EOqwuE4FnE3fIsKB6r9NL8ATQSQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG9UJhU1P4ptakOKWi02-nQhdMgF2hwa7RqzcwXK7jGIQ&oe=6A8C14A4",
+   "title": "Proteja quem você ama sem comprometer o orçamento da sua família.",
+   "spend": 5.8,
+   "leads": 0,
+   "clicks": 1,
+   "link_clicks": 1,
+   "impressions": 82
+  },
+  {
+   "ad_name": "#AD001",
+   "campaign": "forms",
+   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/767272648_37691441290470809_5169410418737106690_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFOVln5pU_fnvrDhnMlqWrKZbGfrn0pueBlsZ-ufSm54GnQvgpPQcA6nxQZJEm__ODi-xAX1B4XJR7bv_JYHMVo&_nc_ohc=mH7-qQtTMwIQ7kNvwHnQFyN&_nc_oc=AdqACaUz1KeZLNL9ur7PSJr5Dilt9OtJ6l6NCdVfhhQbfEO3EJ-lnSlMXNMXaruoNDc&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=_-YU7zUVenEg5g1O4FIlgQ&_nc_tpa=Q5bMBQIthoKQVrtnqCEkAP_LgtWCoerAW3yi-t0UGxMYs7uCr1vtZv38OP165lshg_lzfugk8ISXhEbLAw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQH5JPS4dkHVidh4TWVSu8cHmZjTRrGkx6Hoi24PKakyyw&oe=6A8BF4A7",
+   "title": "Cobertura funeral a partir de R$2,30 por dia",
+   "spend": 5.5,
+   "leads": 1,
+   "clicks": 2,
+   "link_clicks": 1,
+   "impressions": 88
+  },
+  {
+   "ad_name": "[Video] Ju Roberts 2 — Cópia",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/609327143_33034806762831259_4125087381725158398_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEUSh65eR82qtilG4-YIc5Vy_ioEIToSRrL-KgQhOhJGnDuBH3gSA3erIb1P-REaqVFFHcfh-Wrbat_72ylWSz_&_nc_ohc=ICxJLQx07t0Q7kNvwEwDOEV&_nc_oc=Adrn2GSfZHYG_aNvfTCEGfynwSW1rqOcFvDi1tIWNTbLLVVTfwcAthEhcczz18-T7Y0&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQKY7tvPWw_tj1mo9i8WRtuiOFVCIsHRH0LUhr75DkgSwINI_sk7MAl1Iz0bPIQEPpKi6Wr3nhGwGQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQGQniYNeb1nLYulEHl6SrfNWNdrGfLMQbraiZIf6r-2tA&oe=6A8C14A4",
+   "title": "Proteja quem você ama sem comprometer o orçamento da sua família.",
+   "spend": 2.61,
+   "leads": 0,
+   "clicks": 9,
+   "link_clicks": 6,
+   "impressions": 86
+  },
+  {
+   "ad_name": "[IMG]  Criativo 003",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/740012437_1538392124679556_5556100224040349667_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeE1VzPY6xBRPyQMZFlMjvS4hzeVst9siaKHN5Wy32yJoqLaE8X-fLltpu1Dnw_tgC7_Qh5u5cW62SwnmYyJDuV6&_nc_ohc=NabiUhjqM7cQ7kNvwGTnxc2&_nc_oc=AdpH4Kf1SXN1fg84zf7ApjEXnt8Y5e2szqLa3gUcgFq9Tw689sGKLp2RNr-vLu8lRjY&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=sDsduh3nC2rKkUyGsfGU2Q&_nc_tpa=Q5bMBQIBSt7zuRJEVYt77w1DtxOm6fJyG9rcxlA9_DKo9iB189zdlV1wr2s-6QphafmYH1FgSS9JaRRCAQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFkLRYGbjRbjmkqGGHUr-HnsY5AKG-xi3gTM8MJNA_D9g&oe=6A8BF403",
+   "title": "Cobertura completa para sua família",
+   "spend": 0.37,
+   "leads": 0,
+   "clicks": 0,
+   "link_clicks": 0,
+   "impressions": 14
+  },
+  {
+   "ad_name": "[IMG] Criativo 002",
+   "campaign": "always_on",
+   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/742770774_1538391578012944_3489714126689365106_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeE4O2WhaQfnORaDX2-FYJs-0CTie5zOyfHQJOJ7nM7J8VOvmxDdJ74IDS8S10zG117WWnKKdCbOnRjQLe29wwxp&_nc_ohc=5-cp2m7jlRQQ7kNvwFNGzFD&_nc_oc=AdoH5fwVij8soheYzX3d2eA3xDMbU4yao8PqYJnQnbshHfTZHd5pI1oL8zc8KwcmfJA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g5K4zykAw_UBsRG_PZ5M-w&_nc_tpa=Q5bMBQJHH2MoNmAfZ2pmcRaNZ4H12BnbndBPX1l9WmD7NlvUbGgYUp47RFzdVJvcuJ8M8MsURFwlTqFLBA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFx8h3gJDHHSm10x2xbtQX-Tou8-Y_BXAW6P1OkUhC0Bw&oe=6A8BFCF3",
+   "title": "Cobertura completa para sua família",
+   "spend": 0.36,
+   "leads": 0,
+   "clicks": 0,
+   "link_clicks": 0,
+   "impressions": 18
+  }
  ]
 }
