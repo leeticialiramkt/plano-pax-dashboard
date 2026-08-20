@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-20T10:30:00-03:00",
+ "updated_at": "2026-08-20T10:17:00-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -652,35 +652,45 @@
    "date": "2026-08-16",
    "campaign": "always_on",
    "etapa": "Aceite",
-   "value": 128
+   "value": 128,
+   "created_date": "2026-08-16",
+   "payment_date": "2026-08-26"
   },
   {
    "name": "Ednir Novais dos Santos",
    "date": "2026-08-10",
    "campaign": "rmkt",
    "etapa": "Aceite",
-   "value": 69
+   "value": 69,
+   "created_date": "2026-08-10",
+   "payment_date": "2026-08-15"
   },
   {
    "name": "Kleber Charles Ferreira de Souza",
    "date": "2026-08-05",
    "campaign": "always_on",
    "etapa": "Vendido",
-   "value": 75
+   "value": 75,
+   "created_date": "2026-07-09",
+   "payment_date": "2026-08-05"
   },
   {
    "name": "Lilian Pereira Santana",
    "date": "2026-08-12",
    "campaign": "rmkt",
    "etapa": "Vendido",
-   "value": 69
+   "value": 69,
+   "created_date": "2026-05-16",
+   "payment_date": "2026-08-12"
   },
   {
    "name": "Dione Cavalcanti Silveira",
    "date": "2026-08-17",
    "campaign": "always_on",
    "etapa": "Vendido",
-   "value": 97
+   "value": 97,
+   "created_date": "2026-06-19",
+   "payment_date": "2026-08-17"
   }
  ],
  "creatives": [
