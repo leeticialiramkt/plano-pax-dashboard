@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-19T09:00:00-03:00",
+ "updated_at": "2026-08-20T10:30:00-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -150,7 +150,7 @@
    "leads": 0,
    "mql": 0,
    "aceite": 0,
-   "vendido": 0,
+   "vendido": 1,
    "perdido": 0
   },
   {
@@ -380,7 +380,7 @@
    "leads": 3,
    "mql": 1,
    "aceite": 0,
-   "vendido": 0,
+   "vendido": 1,
    "perdido": 1
   },
   {
@@ -510,7 +510,7 @@
    "leads": 10,
    "mql": 4,
    "aceite": 0,
-   "vendido": 0,
+   "vendido": 1,
    "perdido": 1
   },
   {
@@ -660,6 +660,27 @@
    "campaign": "rmkt",
    "etapa": "Aceite",
    "value": 69
+  },
+  {
+   "name": "Kleber Charles Ferreira de Souza",
+   "date": "2026-08-05",
+   "campaign": "always_on",
+   "etapa": "Vendido",
+   "value": 75
+  },
+  {
+   "name": "Lilian Pereira Santana",
+   "date": "2026-08-12",
+   "campaign": "rmkt",
+   "etapa": "Vendido",
+   "value": 69
+  },
+  {
+   "name": "Dione Cavalcanti Silveira",
+   "date": "2026-08-17",
+   "campaign": "always_on",
+   "etapa": "Vendido",
+   "value": 97
   }
  ],
  "creatives": [
