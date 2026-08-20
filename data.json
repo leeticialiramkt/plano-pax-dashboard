@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-20T10:17:00-03:00",
+ "updated_at": "2026-08-20T10:45:00-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -562,6 +562,66 @@
    "aceite": 0,
    "vendido": 0,
    "perdido": 0
+  },
+  {
+   "date": "2026-08-19",
+   "campaign": "always_on",
+   "spend": 146.76,
+   "leads": 11,
+   "mql": 2,
+   "aceite": 1,
+   "vendido": 0,
+   "perdido": 1
+  },
+  {
+   "date": "2026-08-19",
+   "campaign": "forms",
+   "spend": 99.09,
+   "leads": 5,
+   "mql": 3,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-19",
+   "campaign": "rmkt",
+   "spend": 46.17,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign": "always_on",
+   "spend": 75.31,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign": "forms",
+   "spend": 24.73,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
+  },
+  {
+   "date": "2026-08-20",
+   "campaign": "rmkt",
+   "spend": 17.55,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "vendido": 0,
+   "perdido": 0
   }
  ],
  "account_daily_total": [
@@ -636,6 +696,14 @@
   {
    "date": "2026-08-18",
    "spend": 196.68
+  },
+  {
+   "date": "2026-08-19",
+   "spend": 292.02
+  },
+  {
+   "date": "2026-08-20",
+   "spend": 117.59
   }
  ],
  "creatives_period": {
@@ -644,7 +712,7 @@
  },
  "aceites_period": {
   "from": "2026-08-01",
-  "to": "2026-08-18"
+  "to": "2026-08-20"
  },
  "aceites": [
   {
@@ -691,6 +759,15 @@
    "value": 97,
    "created_date": "2026-06-19",
    "payment_date": "2026-08-17"
+  },
+  {
+   "name": "Sérgio Oliveira da Silva",
+   "date": "2026-08-19",
+   "campaign": "always_on",
+   "etapa": "Aceite",
+   "value": 69,
+   "created_date": "2026-08-19",
+   "payment_date": "2026-08-20"
   }
  ],
  "creatives": [
