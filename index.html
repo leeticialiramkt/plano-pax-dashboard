@@ -54,7 +54,7 @@
   header.top h1 { font-size: 22px; margin: 0 0 4px; }
   header.top .sub { color: var(--text-secondary); font-size: 13px; }
   .status-row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; font-size: 12.5px; color: var(--text-secondary); }
-  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-1); }
+  .badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface-1); white-space: nowrap; }
   .badge .dot { width: 7px; height: 7px; border-radius: 999px; }
   .badge.ok .dot { background: var(--status-good); }
   .badge.stale .dot { background: var(--status-warning); }
@@ -714,7 +714,7 @@
   function renderAceitesTable(data) {
     var subEl = document.getElementById("aceites-sub");
     if (subEl && data.aceites_period) {
-      subEl.textContent = "Leads que chegaram a Aceite (ou etapa mais avançada) no Kommo de " + fmtDateLabel(data.aceites_period.from) + " a " + fmtDateLabel(data.aceites_period.to) + " — nome, data de criação, data de pagamento e valor, para conferência";
+      subEl.textContent = "Leads com Data de entrada no RD entre " + fmtDateLabel(data.aceites_period.from) + " e " + fmtDateLabel(data.aceites_period.to) + " — nome, data de criação (entrada no RD), data/status de pagamento e valor, para conferência";
     }
     var el = document.getElementById("aceites-table");
     if (!el) return;
@@ -727,7 +727,7 @@
     table.className = "data-table";
     var thead = document.createElement("thead");
     var trh = document.createElement("tr");
-    ["Nome", "Data de criação", "Data de pagamento", "Campanha", "Etapa", "Valor"].forEach(function (h) {
+    ["Nome", "Data de criação", "Data de pagamento", "Status pagamento", "Campanha", "Etapa", "Valor"].forEach(function (h) {
       var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
     });
     thead.appendChild(trh); table.appendChild(thead);
@@ -739,6 +739,10 @@
       var tdName = document.createElement("td"); tdName.textContent = a.name || "—"; tr.appendChild(tdName);
       var tdCreated = document.createElement("td"); tdCreated.textContent = a.created_date ? fmtDateLabel(a.created_date) : "—"; tr.appendChild(tdCreated);
       var tdPaid = document.createElement("td"); tdPaid.textContent = a.payment_date ? fmtDateLabel(a.payment_date) : "—"; tr.appendChild(tdPaid);
+      var tdStatus = document.createElement("td");
+      var statusClass = a.payment_status === "pago" ? "ok" : (a.payment_status === "atrasado" ? "err" : "stale");
+      tdStatus.innerHTML = "<span class='badge " + statusClass + "'><span class='dot'></span>" + (a.payment_status_label || "—") + "</span>";
+      tr.appendChild(tdStatus);
       var tdCamp = document.createElement("td");
       tdCamp.textContent = (data.campaigns[a.campaign] && data.campaigns[a.campaign].short) || a.campaign || "—";
       tr.appendChild(tdCamp);
@@ -751,7 +755,7 @@
 
     var tfoot = document.createElement("tfoot");
     var trf = document.createElement("tr");
-    trf.innerHTML = "<td>Total</td><td></td><td></td><td></td><td class='num'>" + fmtInt(rows.length) + " leads</td><td class='num'>" + fmtBRL(total) + "</td>";
+    trf.innerHTML = "<td>Total</td><td></td><td></td><td></td><td></td><td class='num'>" + fmtInt(rows.length) + " leads</td><td class='num'>" + fmtBRL(total) + "</td>";
     tfoot.appendChild(trf);
     table.appendChild(tfoot);
 

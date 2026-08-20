@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-20T10:45:00-03:00",
+ "updated_at": "2026-08-20T11:25:00-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -150,7 +150,7 @@
    "leads": 0,
    "mql": 0,
    "aceite": 0,
-   "vendido": 1,
+   "vendido": 0,
    "perdido": 0
   },
   {
@@ -380,7 +380,7 @@
    "leads": 3,
    "mql": 1,
    "aceite": 0,
-   "vendido": 1,
+   "vendido": 0,
    "perdido": 1
   },
   {
@@ -410,7 +410,7 @@
    "leads": 2,
    "mql": 1,
    "aceite": 0,
-   "vendido": 0,
+   "vendido": 1,
    "perdido": 0
   },
   {
@@ -510,7 +510,7 @@
    "leads": 10,
    "mql": 4,
    "aceite": 0,
-   "vendido": 1,
+   "vendido": 0,
    "perdido": 1
   },
   {
@@ -722,7 +722,9 @@
    "etapa": "Aceite",
    "value": 128,
    "created_date": "2026-08-16",
-   "payment_date": "2026-08-26"
+   "payment_date": "2026-08-27",
+   "payment_status": "aguardando",
+   "payment_status_label": "Aguardando (previsão 27/08)"
   },
   {
    "name": "Ednir Novais dos Santos",
@@ -731,34 +733,20 @@
    "etapa": "Aceite",
    "value": 69,
    "created_date": "2026-08-10",
-   "payment_date": "2026-08-15"
-  },
-  {
-   "name": "Kleber Charles Ferreira de Souza",
-   "date": "2026-08-05",
-   "campaign": "always_on",
-   "etapa": "Vendido",
-   "value": 75,
-   "created_date": "2026-07-09",
-   "payment_date": "2026-08-05"
+   "payment_date": "2026-08-15",
+   "payment_status": "atrasado",
+   "payment_status_label": "Atrasado (previsto p/ 15/08)"
   },
   {
    "name": "Lilian Pereira Santana",
-   "date": "2026-08-12",
+   "date": "2026-08-13",
    "campaign": "rmkt",
    "etapa": "Vendido",
    "value": 69,
-   "created_date": "2026-05-16",
-   "payment_date": "2026-08-12"
-  },
-  {
-   "name": "Dione Cavalcanti Silveira",
-   "date": "2026-08-17",
-   "campaign": "always_on",
-   "etapa": "Vendido",
-   "value": 97,
-   "created_date": "2026-06-19",
-   "payment_date": "2026-08-17"
+   "created_date": "2026-08-11",
+   "payment_date": "2026-08-13",
+   "payment_status": "pago",
+   "payment_status_label": "Pago em 13/08"
   },
   {
    "name": "Sérgio Oliveira da Silva",
@@ -767,7 +755,9 @@
    "etapa": "Aceite",
    "value": 69,
    "created_date": "2026-08-19",
-   "payment_date": "2026-08-20"
+   "payment_date": "2026-09-07",
+   "payment_status": "aguardando",
+   "payment_status_label": "Aguardando (previsão 07/09)"
   }
  ],
  "creatives": [
