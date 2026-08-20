@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-20T16:19:00-03:00",
+ "updated_at": "2026-08-20T16:29:00-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -597,8 +597,8 @@
    "date": "2026-08-20",
    "campaign": "always_on",
    "spend": 75.31,
-   "leads": 2,
-   "mql": 1,
+   "leads": 3,
+   "mql": 2,
    "aceite": 0,
    "vendido": 0,
    "perdido": 0
@@ -617,11 +617,11 @@
    "date": "2026-08-20",
    "campaign": "rmkt",
    "spend": 17.55,
-   "leads": 2,
+   "leads": 3,
    "mql": 0,
    "aceite": 0,
    "vendido": 0,
-   "perdido": 0
+   "perdido": 1
   }
  ],
  "account_daily_total": [
