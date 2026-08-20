@@ -343,6 +343,8 @@
     var cplPrev = prev.leads ? prev.spend / prev.leads : null;
     var cpmql = curr.mql ? curr.spend / curr.mql : null;
     var cpmqlPrev = prev.mql ? prev.spend / prev.mql : null;
+    var cpac = curr.aceite ? curr.spend / curr.aceite : null;
+    var cpacPrev = prev.aceite ? prev.spend / prev.aceite : null;
     var cac = curr.vendido ? curr.spend / curr.vendido : null;
     var cacPrev = prev.vendido ? prev.spend / prev.vendido : null;
 
@@ -352,6 +354,8 @@
       { label: "Custo por lead", value: cpl != null ? fmtBRL(cpl) : "—", delta: (cpl != null && cplPrev != null) ? deltaTile(cpl, cplPrev, false) : { text: "—", cls: "flat" } },
       { label: "MQL", value: fmtInt(curr.mql), delta: deltaTile(curr.mql, prev.mql, true) },
       { label: "Custo por MQL", value: cpmql != null ? fmtBRL(cpmql) : "—", delta: (cpmql != null && cpmqlPrev != null) ? deltaTile(cpmql, cpmqlPrev, false) : { text: "—", cls: "flat" } },
+      { label: "Aceites", value: fmtInt(curr.aceite), delta: deltaTile(curr.aceite, prev.aceite, true) },
+      { label: "Custo por Aceite", value: cpac != null ? fmtBRL(cpac) : "—", delta: (cpac != null && cpacPrev != null) ? deltaTile(cpac, cpacPrev, false) : { text: "—", cls: "flat" } },
       { label: "Fechamentos", value: fmtInt(curr.vendido), delta: deltaTile(curr.vendido, prev.vendido, true) },
       { label: "CAC", value: cac != null ? fmtBRL(cac) : "—", delta: (cac != null && cacPrev != null) ? deltaTile(cac, cacPrev, false) : { text: "—", cls: "flat" } },
     ];
