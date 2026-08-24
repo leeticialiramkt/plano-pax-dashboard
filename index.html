@@ -59,6 +59,7 @@
   .badge.ok .dot { background: var(--status-good); }
   .badge.stale .dot { background: var(--status-warning); }
   .badge.err .dot { background: var(--status-critical); }
+  .badge.partial .dot { background: var(--status-warning); }
 
   .filters { display: flex; gap: 8px; align-items: center; margin: 18px 0 22px; flex-wrap: wrap; }
   .filters .presets { display: flex; gap: 6px; border: 1px solid var(--border); border-radius: 10px; padding: 3px; background: var(--surface-1); }
@@ -156,6 +157,7 @@
       <span id="updated-label"></span>
       <span class="badge" id="meta-badge"><span class="dot"></span>Meta Ads</span>
       <span class="badge" id="kommo-badge"><span class="dot"></span>Kommo</span>
+      <span class="badge partial" id="partial-badge" style="display:none"><span class="dot"></span></span>
     </div>
   </header>
 
@@ -176,6 +178,7 @@
   </div>
 
   <div class="stat-grid" id="stat-grid"></div>
+  <div id="partial-range-note" class="card-sub" style="display:none;margin:-14px 0 18px;"></div>
 
   <div class="card">
     <div class="meter-wrap" id="budget-meter"></div>
@@ -410,7 +413,8 @@
     var l2 = document.createElement("span"); l2.textContent = fmtBRLCompact(verba);
     labels.appendChild(l1); labels.appendChild(l2);
     var note = document.createElement("div"); note.className = "meter-note";
-    note.textContent = "Linha cinza = ritmo ideal pro dia " + diaAtual + "/" + diasNoMes + ". Projeção de fechamento no ritmo atual: " + fmtBRLCompact(projecao) + " (" + projecaoPct.toFixed(0) + "% da verba).";
+    note.textContent = "Linha cinza = ritmo ideal pro dia " + diaAtual + "/" + diasNoMes + ". Projeção de fechamento no ritmo atual: " + fmtBRLCompact(projecao) + " (" + projecaoPct.toFixed(0) + "% da verba)." +
+      (lastDate === data.partial_date ? " Inclui o gasto de hoje até agora (parcial)." : "");
     trackWrap.appendChild(h); trackWrap.appendChild(sub); trackWrap.appendChild(bg); trackWrap.appendChild(labels); trackWrap.appendChild(note);
 
     var stats = document.createElement("div");
@@ -524,6 +528,7 @@
     });
 
     // lines
+    var partialIdx = data.partial_date ? dates.indexOf(data.partial_date) : -1;
     CAMP_ORDER.forEach(function (c) {
       if (state.hidden[c]) return;
       var pts = series[c].map(function (v, i) { return x(i) + "," + y(v); }).join(" ");
@@ -535,7 +540,44 @@
       poly.setAttribute("stroke-linejoin", "round");
       poly.setAttribute("stroke-linecap", "round");
       svg.appendChild(poly);
+
+      // redraw the segment leading into the partial (in-progress) day as dashed,
+      // and mark that last point as hollow, so it doesn't read as a finished day
+      if (partialIdx > 0 && partialIdx === dates.length - 1) {
+        var segLine = document.createElementNS(svgNS, "line");
+        segLine.setAttribute("x1", x(partialIdx - 1)); segLine.setAttribute("y1", y(series[c][partialIdx - 1]));
+        segLine.setAttribute("x2", x(partialIdx)); segLine.setAttribute("y2", y(series[c][partialIdx]));
+        segLine.setAttribute("stroke", CAMP_COLOR[c]);
+        segLine.setAttribute("stroke-width", "2");
+        segLine.setAttribute("stroke-dasharray", "4 3");
+        svg.appendChild(segLine);
+
+        var lastDot = document.createElementNS(svgNS, "circle");
+        lastDot.setAttribute("cx", x(partialIdx)); lastDot.setAttribute("cy", y(series[c][partialIdx]));
+        lastDot.setAttribute("r", "4");
+        lastDot.setAttribute("fill", "var(--surface-1)");
+        lastDot.setAttribute("stroke", CAMP_COLOR[c]);
+        lastDot.setAttribute("stroke-width", "2");
+        svg.appendChild(lastDot);
+      }
     });
+    if (partialIdx >= 0) {
+      var guideX = x(partialIdx);
+      var guide = document.createElementNS(svgNS, "line");
+      guide.setAttribute("x1", guideX); guide.setAttribute("x2", guideX);
+      guide.setAttribute("y1", padT); guide.setAttribute("y2", padT + plotH);
+      guide.setAttribute("stroke", "var(--text-secondary)");
+      guide.setAttribute("stroke-width", "1");
+      guide.setAttribute("stroke-dasharray", "2 3");
+      guide.setAttribute("opacity", "0.6");
+      svg.appendChild(guide);
+      var guideLabel = document.createElementNS(svgNS, "text");
+      guideLabel.setAttribute("x", guideX); guideLabel.setAttribute("y", padT - 2);
+      guideLabel.setAttribute("text-anchor", partialIdx === dates.length - 1 ? "end" : "middle");
+      guideLabel.setAttribute("class", "axis-label");
+      guideLabel.textContent = "parcial";
+      svg.appendChild(guideLabel);
+    }
 
     // crosshair + hover dots
     var crosshair = document.createElementNS(svgNS, "line");
@@ -621,7 +663,7 @@
     var tbody = document.createElement("tbody");
     dates.forEach(function (d, i) {
       var tr = document.createElement("tr");
-      var td0 = document.createElement("td"); td0.textContent = d; tr.appendChild(td0);
+      var td0 = document.createElement("td"); td0.textContent = d + (state.data.partial_date === d ? " (parcial)" : ""); tr.appendChild(td0);
       CAMP_ORDER.forEach(function (c) {
         var td = document.createElement("td"); td.className = "num"; td.textContent = valueFmt(series[c][i]);
         tr.appendChild(td);
@@ -784,6 +826,16 @@
       kommoBadge.innerHTML = "<span class='dot'></span>";
       kommoBadge.appendChild(extra);
     }
+
+    var partialBadge = document.getElementById("partial-badge");
+    if (data.partial_date) {
+      var pdt = new Date(data.updated_at);
+      partialBadge.style.display = "inline-flex";
+      partialBadge.innerHTML = "<span class='dot'></span>Hoje (" + fmtDateLabel(data.partial_date) + ") é parcial — dados até " +
+        pdt.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" });
+    } else {
+      partialBadge.style.display = "none";
+    }
   }
 
   function render() {
@@ -795,6 +847,14 @@
 
     renderStatTiles(rows, prevRows);
     renderBudgetMeter(data, rows);
+
+    var partialNote = document.getElementById("partial-range-note");
+    if (data.partial_date && data.partial_date >= rangeDates.from && data.partial_date <= rangeDates.to) {
+      partialNote.style.display = "block";
+      partialNote.textContent = "O período selecionado inclui hoje (" + fmtDateLabel(data.partial_date) + "), que ainda é um dia parcial — os totais e as variações vs. período anterior tendem a subir um pouco até o fim do dia.";
+    } else {
+      partialNote.style.display = "none";
+    }
 
     var spendSeries = buildSeries(rows, rangeDates.from, rangeDates.to, "spend");
     renderLegend("spend-legend", data);

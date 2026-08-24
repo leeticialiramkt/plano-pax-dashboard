@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T08:52:00-03:00",
+  "updated_at": "2026-08-24T09:08:11-03:00",
   "meta_status": "ok",
   "kommo_status": "ok",
   "kommo_stale_since": null,
@@ -712,6 +712,36 @@
       "aceite": 0,
       "vendido": 0,
       "perdido": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "spend": 51.03,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "forms",
+      "spend": 18.19,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "rmkt",
+      "spend": 5.28,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
     }
   ],
   "account_daily_total": [
@@ -806,6 +836,10 @@
     {
       "date": "2026-08-23",
       "spend": 306.74
+    },
+    {
+      "date": "2026-08-24",
+      "spend": 74.5
     }
   ],
   "creatives_period": {
@@ -1039,5 +1073,6 @@
       "link_clicks": 0,
       "impressions": 18
     }
-  ]
+  ],
+  "partial_date": "2026-08-24"
 }
