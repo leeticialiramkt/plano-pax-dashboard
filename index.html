@@ -121,6 +121,9 @@
   table.data-table th { color: var(--text-secondary); font-weight: 500; font-size: 12px; }
   table.data-table td.camp-name { display: flex; align-items: center; gap: 7px; }
   table.data-table .camp-dot { width: 9px; height: 9px; border-radius: 999px; flex: none; }
+  table.data-table tr.adset-row td { color: var(--text-secondary); font-size: 12.5px; }
+  table.data-table tr.adset-row td.camp-name { padding-left: 26px; }
+  table.data-table .adset-name::before { content: "↳ "; color: var(--text-muted); }
   table.data-table tfoot td { font-weight: 700; border-bottom: none; border-top: 1px solid var(--baseline); }
   table.data-table td.num { font-variant-numeric: tabular-nums; }
   table.data-table td.creative-name { display: flex; align-items: center; gap: 10px; text-align: left; }
@@ -225,8 +228,14 @@
 
   <div class="card">
     <h2>Funil por campanha — período selecionado</h2>
-    <div class="card-sub">Leads, MQL, Aceite e Vendido cruzados com o Kommo; CPL e Custo/MQL calculados sobre o gasto do Meta</div>
+    <div class="card-sub">Leads, MQL, Aceite, Aguardando pagamento e Vendido cruzados com o Kommo. Always on e Forms abrem em conjuntos (linhas indentadas) para validação — o funil por conjunto só existe a partir de 21/08/2026 (Kommo não tabulava por conjunto antes disso); o gasto por conjunto cobre o mês inteiro. Forms tem apenas o gasto dividido por conjunto — os dois conjuntos usam a mesma tabulação no Kommo, então leads/MQL/Aceite não são separáveis.</div>
     <div id="campaign-table"></div>
+  </div>
+
+  <div class="card">
+    <h2>Custos por campanha — período selecionado</h2>
+    <div class="card-sub">CPL, Custo/MQL, Custo/Aceite e CAC, mesma estrutura de campanha/conjunto da tabela de funil (CAC só é calculado por campanha, já que Vendido não é rastreado por conjunto)</div>
+    <div id="cost-table"></div>
   </div>
 
   <div class="card">
@@ -237,7 +246,7 @@
 
   <div class="card">
     <h2>Criativos</h2>
-    <div class="card-sub" id="creatives-sub">Performance por anúncio (Meta Ads) — leads são os reportados pelo próprio Meta, podem diferir do Kommo</div>
+    <div class="card-sub" id="creatives-sub">Performance por anúncio (Meta Ads) — leads somam formulário enviado + conversa iniciada + conversão de site reportados pelo Meta, podem diferir do Kommo</div>
     <div id="creatives-table"></div>
   </div>
 
@@ -339,7 +348,15 @@
     return { text: sign + pct.toFixed(0) + "% vs. período anterior", cls: good ? "up" : (pct === 0 ? "flat" : "down") };
   }
 
-  function renderStatTiles(rows, prevRows) {
+  function countAguardando(data, from, to) {
+    var list = (data.aceites || []).filter(function (a) {
+      var d = a.created_date || a.date;
+      return d >= from && d <= to && (a.payment_status === "aguardando" || a.payment_status === "atrasado");
+    });
+    return list.length;
+  }
+
+  function renderStatTiles(rows, prevRows, data, rangeDates, prevRangeDates) {
     var curr = aggregate(rows);
     var prev = aggregate(prevRows);
     var cpl = curr.leads ? curr.spend / curr.leads : null;
@@ -350,6 +367,8 @@
     var cpacPrev = prev.aceite ? prev.spend / prev.aceite : null;
     var cac = curr.vendido ? curr.spend / curr.vendido : null;
     var cacPrev = prev.vendido ? prev.spend / prev.vendido : null;
+    var aguardando = countAguardando(data, rangeDates.from, rangeDates.to);
+    var aguardandoPrev = countAguardando(data, prevRangeDates.from, prevRangeDates.to);
 
     var tiles = [
       { label: "Investido", value: fmtBRLCompact(curr.spend), delta: deltaTile(curr.spend, prev.spend, false) },
@@ -359,6 +378,7 @@
       { label: "Custo por MQL", value: cpmql != null ? fmtBRL(cpmql) : "—", delta: (cpmql != null && cpmqlPrev != null) ? deltaTile(cpmql, cpmqlPrev, false) : { text: "—", cls: "flat" } },
       { label: "Aceites", value: fmtInt(curr.aceite), delta: deltaTile(curr.aceite, prev.aceite, true) },
       { label: "Custo por Aceite", value: cpac != null ? fmtBRL(cpac) : "—", delta: (cpac != null && cpacPrev != null) ? deltaTile(cpac, cpacPrev, false) : { text: "—", cls: "flat" } },
+      { label: "Aguardando pagamento", value: fmtInt(aguardando), delta: deltaTile(aguardando, aguardandoPrev, false) },
       { label: "Fechamentos", value: fmtInt(curr.vendido), delta: deltaTile(curr.vendido, prev.vendido, true) },
       { label: "CAC", value: cac != null ? fmtBRL(cac) : "—", delta: (cac != null && cacPrev != null) ? deltaTile(cac, cacPrev, false) : { text: "—", cls: "flat" } },
     ];
@@ -674,27 +694,75 @@
     el.innerHTML = ""; el.appendChild(table);
   }
 
-  function renderCampaignTable(rows, data) {
+  var ADSET_OF_CAMPAIGN = {
+    always_on: ["FB07-lpmodelo01", "FB08-lpmodelo01", "FBSP-lpmodelo01", "RJ-novo", "pre0608"],
+    forms: ["forms_mg_manual", "forms_adv_mgrj"]
+  };
+
+  function aggregateAdsets(data, from, to) {
+    var out = {};
+    (data.daily_by_adset || []).forEach(function (r) {
+      if (r.date < from || r.date > to) return;
+      if (!out[r.adset]) out[r.adset] = { spend: 0, leads: 0, mql: 0, aceite: 0, perdido: 0, hasFunnel: false };
+      var a = out[r.adset];
+      a.spend += r.spend || 0;
+      if (r.leads != null) { a.hasFunnel = true; a.leads += r.leads; a.mql += r.mql; a.aceite += r.aceite; a.perdido += r.perdido; }
+    });
+    return out;
+  }
+
+  function buildCampaignRowModel(rows, data, from, to) {
     var agg = aggregateByCampaign(rows);
+    var adsetAgg = aggregateAdsets(data, from, to);
+    var aguardandoByCamp = {};
+    CAMP_ORDER.forEach(function (c) { aguardandoByCamp[c] = 0; });
+    (data.aceites || []).forEach(function (a) {
+      var d = a.created_date || a.date;
+      if (d < from || d > to) return;
+      if ((a.payment_status === "aguardando" || a.payment_status === "atrasado") && aguardandoByCamp[a.campaign] != null) {
+        aguardandoByCamp[a.campaign]++;
+      }
+    });
+    var model = [];
+    CAMP_ORDER.forEach(function (c) {
+      var a = agg[c];
+      model.push({ type: "campaign", key: c, label: data.campaigns[c].label, color: CAMP_COLOR[c],
+        spend: a.spend, leads: a.leads, mql: a.mql, aceite: a.aceite, vendido: a.vendido, aguardando: aguardandoByCamp[c] });
+      (ADSET_OF_CAMPAIGN[c] || []).forEach(function (adsetKey) {
+        var aa = adsetAgg[adsetKey];
+        if (!aa || (aa.spend === 0 && !aa.hasFunnel)) return;
+        model.push({ type: "adset", key: adsetKey, label: (data.adset_labels && data.adset_labels[adsetKey]) || adsetKey, parent: c,
+          spend: aa.spend, leads: aa.hasFunnel ? aa.leads : null, mql: aa.hasFunnel ? aa.mql : null, aceite: aa.hasFunnel ? aa.aceite : null,
+          vendido: null, aguardando: null });
+      });
+    });
+    return model;
+  }
+
+  function renderFunnelTable(rows, data, from, to) {
+    var model = buildCampaignRowModel(rows, data, from, to);
     var el = document.getElementById("campaign-table");
     var table = document.createElement("table");
     table.className = "data-table";
     var thead = document.createElement("thead");
-    thead.innerHTML = "<tr><th>Campanha</th><th>Investido</th><th>Leads</th><th>MQL</th><th>Aceite</th><th>Vendido</th><th>CPL</th><th>Custo/MQL</th></tr>";
+    thead.innerHTML = "<tr><th>Campanha / Conjunto</th><th>Investido</th><th>Leads</th><th>MQL</th><th>Aceite</th><th>Aguardando pagamento</th><th>Vendido</th></tr>";
     table.appendChild(thead);
     var tbody = document.createElement("tbody");
-    var totals = { spend: 0, leads: 0, mql: 0, aceite: 0, vendido: 0 };
-    CAMP_ORDER.forEach(function (c) {
-      var a = agg[c];
-      totals.spend += a.spend; totals.leads += a.leads; totals.mql += a.mql; totals.aceite += a.aceite; totals.vendido += a.vendido;
+    var totals = { spend: 0, leads: 0, mql: 0, aceite: 0, vendido: 0, aguardando: 0 };
+    model.forEach(function (r) {
       var tr = document.createElement("tr");
+      if (r.type === "adset") tr.className = "adset-row";
       var tdName = document.createElement("td"); tdName.className = "camp-name";
-      var dot = document.createElement("span"); dot.className = "camp-dot"; dot.style.background = CAMP_COLOR[c];
-      var nameText = document.createElement("span"); nameText.textContent = data.campaigns[c].label;
-      tdName.appendChild(dot); tdName.appendChild(nameText);
+      if (r.type === "campaign") {
+        var dot = document.createElement("span"); dot.className = "camp-dot"; dot.style.background = r.color;
+        tdName.appendChild(dot);
+        totals.spend += r.spend; totals.leads += r.leads; totals.mql += r.mql; totals.aceite += r.aceite; totals.vendido += r.vendido; totals.aguardando += r.aguardando;
+      }
+      var nameText = document.createElement("span"); nameText.textContent = r.label; if (r.type === "adset") nameText.className = "adset-name";
+      tdName.appendChild(nameText);
       tr.appendChild(tdName);
-      [fmtBRL(a.spend), fmtInt(a.leads), fmtInt(a.mql), fmtInt(a.aceite), fmtInt(a.vendido),
-       a.leads ? fmtBRL(a.spend / a.leads) : "—", a.mql ? fmtBRL(a.spend / a.mql) : "—"
+      [fmtBRL(r.spend), r.leads != null ? fmtInt(r.leads) : "—", r.mql != null ? fmtInt(r.mql) : "—",
+       r.aceite != null ? fmtInt(r.aceite) : "—", r.aguardando != null ? fmtInt(r.aguardando) : "—", r.vendido != null ? fmtInt(r.vendido) : "—"
       ].forEach(function (val) { var td = document.createElement("td"); td.className = "num"; td.textContent = val; tr.appendChild(td); });
       tbody.appendChild(tr);
     });
@@ -702,9 +770,52 @@
     var tfoot = document.createElement("tfoot");
     var trf = document.createElement("tr");
     trf.innerHTML = "<td>Total</td><td class='num'>" + fmtBRL(totals.spend) + "</td><td class='num'>" + fmtInt(totals.leads) +
-      "</td><td class='num'>" + fmtInt(totals.mql) + "</td><td class='num'>" + fmtInt(totals.aceite) + "</td><td class='num'>" + fmtInt(totals.vendido) +
-      "</td><td class='num'>" + (totals.leads ? fmtBRL(totals.spend / totals.leads) : "—") +
-      "</td><td class='num'>" + (totals.mql ? fmtBRL(totals.spend / totals.mql) : "—") + "</td>";
+      "</td><td class='num'>" + fmtInt(totals.mql) + "</td><td class='num'>" + fmtInt(totals.aceite) +
+      "</td><td class='num'>" + fmtInt(totals.aguardando) + "</td><td class='num'>" + fmtInt(totals.vendido) + "</td>";
+    tfoot.appendChild(trf);
+    table.appendChild(tfoot);
+    el.innerHTML = ""; el.appendChild(table);
+  }
+
+  function renderCostTable(rows, data, from, to) {
+    var model = buildCampaignRowModel(rows, data, from, to);
+    var el = document.getElementById("cost-table");
+    if (!el) return;
+    var table = document.createElement("table");
+    table.className = "data-table";
+    var thead = document.createElement("thead");
+    thead.innerHTML = "<tr><th>Campanha / Conjunto</th><th>CPL</th><th>Custo/MQL</th><th>Custo/Aceite</th><th>CAC</th></tr>";
+    table.appendChild(thead);
+    var tbody = document.createElement("tbody");
+    var totals = { spend: 0, leads: 0, mql: 0, aceite: 0, vendido: 0 };
+    model.forEach(function (r) {
+      var tr = document.createElement("tr");
+      if (r.type === "adset") tr.className = "adset-row";
+      var tdName = document.createElement("td"); tdName.className = "camp-name";
+      if (r.type === "campaign") {
+        var dot = document.createElement("span"); dot.className = "camp-dot"; dot.style.background = r.color;
+        tdName.appendChild(dot);
+        totals.spend += r.spend; totals.leads += r.leads; totals.mql += r.mql; totals.aceite += r.aceite; totals.vendido += r.vendido;
+      }
+      var nameText = document.createElement("span"); nameText.textContent = r.label; if (r.type === "adset") nameText.className = "adset-name";
+      tdName.appendChild(nameText);
+      tr.appendChild(tdName);
+      var cpl = r.leads ? r.spend / r.leads : null;
+      var cpmql = r.mql ? r.spend / r.mql : null;
+      var cpac = r.aceite ? r.spend / r.aceite : null;
+      var cac = (r.vendido != null && r.vendido) ? r.spend / r.vendido : null;
+      [cpl != null ? fmtBRL(cpl) : "—", cpmql != null ? fmtBRL(cpmql) : "—", cpac != null ? fmtBRL(cpac) : "—",
+       r.type === "campaign" ? (cac != null ? fmtBRL(cac) : "—") : "—"
+      ].forEach(function (val) { var td = document.createElement("td"); td.className = "num"; td.textContent = val; tr.appendChild(td); });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+    var tfoot = document.createElement("tfoot");
+    var trf = document.createElement("tr");
+    trf.innerHTML = "<td>Total</td><td class='num'>" + (totals.leads ? fmtBRL(totals.spend / totals.leads) : "—") +
+      "</td><td class='num'>" + (totals.mql ? fmtBRL(totals.spend / totals.mql) : "—") +
+      "</td><td class='num'>" + (totals.aceite ? fmtBRL(totals.spend / totals.aceite) : "—") +
+      "</td><td class='num'>" + (totals.vendido ? fmtBRL(totals.spend / totals.vendido) : "—") + "</td>";
     tfoot.appendChild(trf);
     table.appendChild(tfoot);
     el.innerHTML = ""; el.appendChild(table);
@@ -713,7 +824,7 @@
   function renderCreativesTable(data) {
     var subEl = document.getElementById("creatives-sub");
     if (subEl && data.creatives_period) {
-      subEl.textContent = "Performance por anúncio (Meta Ads) de " + fmtDateLabel(data.creatives_period.from) + " a " + fmtDateLabel(data.creatives_period.to) + " — leads são os reportados pelo próprio Meta, podem diferir do Kommo";
+      subEl.textContent = "Performance por anúncio (Meta Ads) de " + fmtDateLabel(data.creatives_period.from) + " a " + fmtDateLabel(data.creatives_period.to) + " — leads somam formulário enviado + conversa iniciada + conversão de site reportados pelo Meta, podem diferir do Kommo";
     }
     var el = document.getElementById("creatives-table");
     if (!el) return;
@@ -757,14 +868,17 @@
     el.innerHTML = ""; el.appendChild(table);
   }
 
-  function renderAceitesTable(data) {
+  function renderAceitesTable(data, from, to) {
     var subEl = document.getElementById("aceites-sub");
-    if (subEl && data.aceites_period) {
-      subEl.textContent = "Leads com Data de entrada no RD entre " + fmtDateLabel(data.aceites_period.from) + " e " + fmtDateLabel(data.aceites_period.to) + " — nome, data de criação (entrada no RD), data/status de pagamento e valor, para conferência";
+    if (subEl) {
+      subEl.textContent = "Leads com Data de entrada no RD entre " + fmtDateLabel(from) + " e " + fmtDateLabel(to) + " (período selecionado acima) — nome, data de criação (entrada no RD), data/status de pagamento e valor, para conferência";
     }
     var el = document.getElementById("aceites-table");
     if (!el) return;
-    var aceites = data.aceites || [];
+    var aceites = (data.aceites || []).filter(function (a) {
+      var d = a.created_date || a.date;
+      return d >= from && d <= to;
+    });
     if (!aceites.length) { el.innerHTML = "<div class='empty-note'>Nenhum Aceite no período selecionado.</div>"; return; }
 
     var rows = aceites.slice().sort(function (a, b) { return a.date < b.date ? 1 : -1; });
@@ -845,7 +959,7 @@
     var prevRange = prevPeriod(rangeDates.from, rangeDates.to);
     var prevRows = filterRows(data, prevRange.from, prevRange.to);
 
-    renderStatTiles(rows, prevRows);
+    renderStatTiles(rows, prevRows, data, rangeDates, prevRange);
     renderBudgetMeter(data, rows);
 
     var partialNote = document.getElementById("partial-range-note");
@@ -871,8 +985,9 @@
     drawLineChart("mql-chart-wrap", mqlSeries.dates, mqlSeries.series, data, fmtInt);
     renderTable("mql-table", mqlSeries.dates, mqlSeries.series, data, fmtInt);
 
-    renderCampaignTable(rows, data);
-    renderAceitesTable(data);
+    renderFunnelTable(rows, data, rangeDates.from, rangeDates.to);
+    renderCostTable(rows, data, rangeDates.from, rangeDates.to);
+    renderAceitesTable(data, rangeDates.from, rangeDates.to);
     renderCreativesTable(data);
 
     document.querySelectorAll(".preset").forEach(function (btn) {
