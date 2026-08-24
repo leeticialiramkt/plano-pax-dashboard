@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-24T08:37:30-03:00",
+  "updated_at": "2026-08-24T08:52:00-03:00",
   "meta_status": "ok",
   "kommo_status": "ok",
   "kommo_stale_since": null,
@@ -536,7 +536,7 @@
     {
       "date": "2026-08-18",
       "campaign": "always_on",
-      "spend": 88.89,
+      "spend": 89.08,
       "leads": 14,
       "mql": 6,
       "aceite": 0,
@@ -546,7 +546,7 @@
     {
       "date": "2026-08-18",
       "campaign": "forms",
-      "spend": 57.4,
+      "spend": 57.65,
       "leads": 3,
       "mql": 1,
       "aceite": 0,
@@ -556,7 +556,7 @@
     {
       "date": "2026-08-18",
       "campaign": "rmkt",
-      "spend": 50.39,
+      "spend": 50.43,
       "leads": 4,
       "mql": 2,
       "aceite": 0,
@@ -566,7 +566,7 @@
     {
       "date": "2026-08-19",
       "campaign": "always_on",
-      "spend": 146.76,
+      "spend": 147.26,
       "leads": 11,
       "mql": 2,
       "aceite": 1,
@@ -576,7 +576,7 @@
     {
       "date": "2026-08-19",
       "campaign": "forms",
-      "spend": 99.09,
+      "spend": 99.19,
       "leads": 5,
       "mql": 3,
       "aceite": 0,
@@ -596,7 +596,7 @@
     {
       "date": "2026-08-20",
       "campaign": "always_on",
-      "spend": 75.31,
+      "spend": 94.1,
       "leads": 3,
       "mql": 2,
       "aceite": 0,
@@ -606,7 +606,7 @@
     {
       "date": "2026-08-20",
       "campaign": "forms",
-      "spend": 24.73,
+      "spend": 60.19,
       "leads": 0,
       "mql": 0,
       "aceite": 0,
@@ -616,7 +616,7 @@
     {
       "date": "2026-08-20",
       "campaign": "rmkt",
-      "spend": 17.55,
+      "spend": 34.11,
       "leads": 3,
       "mql": 0,
       "aceite": 0,
@@ -785,15 +785,15 @@
     },
     {
       "date": "2026-08-18",
-      "spend": 196.68
+      "spend": 197.16
     },
     {
       "date": "2026-08-19",
-      "spend": 292.02
+      "spend": 292.62
     },
     {
       "date": "2026-08-20",
-      "spend": 117.59
+      "spend": 188.4
     },
     {
       "date": "2026-08-21",
