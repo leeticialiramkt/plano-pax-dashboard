@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-08-25T18:19:58-03:00",
+ "updated_at": "2026-08-26T09:02:09-03:00",
  "meta_status": "ok",
  "kommo_status": "ok",
  "kommo_stale_since": null,
@@ -942,18 +942,6 @@
    "payment_status": "pago",
    "payment_status_label": "Pago em 21/08",
    "adset": "FB07-lpmodelo01"
-  },
-  {
-   "name": "Marcelo Da Silveira",
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "etapa": "Aceite",
-   "value": 69,
-   "created_date": "2026-08-25",
-   "payment_date": "2026-09-01",
-   "payment_status": "aguardando",
-   "payment_status_label": "Aguardando (previsão 01/09)"
   }
  ],
  "creatives": [
