@@ -1073,7 +1073,7 @@
   },
   {
    "campaign": "always_on",
-   "ad_name": "[IMG]  Criativo 003",
+   "ad_name": "[IMG] Criativo 003",
    "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/740012437_1538392124679556_5556100224040349667_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeE1VzPY6xBRPyQMZFlMjvS4hzeVst9siaKHN5Wy32yJoqLaE8X-fLltpu1Dnw_tgC7_Qh5u5cW62SwnmYyJDuV6&_nc_ohc=NabiUhjqM7cQ7kNvwGTnxc2&_nc_oc=AdpH4Kf1SXN1fg84zf7ApjEXnt8Y5e2szqLa3gUcgFq9Tw689sGKLp2RNr-vLu8lRjY&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=sDsduh3nC2rKkUyGsfGU2Q&_nc_tpa=Q5bMBQIBSt7zuRJEVYt77w1DtxOm6fJyG9rcxlA9_DKo9iB189zdlV1wr2s-6QphafmYH1FgSS9JaRRCAQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFkLRYGbjRbjmkqGGHUr-HnsY5AKG-xi3gTM8MJNA_D9g&oe=6A8BF403",
    "title": "Cobertura completa para sua família",
    "spend": 0.37,
@@ -1236,7 +1236,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-02",
@@ -1246,7 +1247,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-03",
@@ -1256,7 +1258,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-04",
@@ -1266,7 +1269,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-05",
@@ -1276,7 +1280,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-06",
@@ -1286,7 +1291,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-06",
@@ -1296,7 +1302,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-06",
@@ -1306,7 +1313,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-06",
@@ -1316,7 +1324,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-07",
@@ -1326,7 +1335,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-07",
@@ -1336,7 +1346,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-07",
@@ -1346,7 +1357,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-08",
@@ -1356,7 +1368,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-08",
@@ -1366,7 +1379,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-08",
@@ -1376,7 +1390,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-09",
@@ -1386,7 +1401,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-09",
@@ -1396,7 +1412,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-09",
@@ -1406,7 +1423,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-10",
@@ -1416,7 +1434,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-10",
@@ -1426,7 +1445,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-10",
@@ -1436,7 +1456,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-11",
@@ -1446,7 +1467,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-11",
@@ -1456,7 +1478,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-11",
@@ -1466,7 +1489,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-11",
@@ -1476,7 +1500,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-12",
@@ -1486,7 +1511,8 @@
    "leads": 3,
    "mql": 3,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-12",
@@ -1496,7 +1522,8 @@
    "leads": 2,
    "mql": 2,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-12",
@@ -1506,7 +1533,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-12",
@@ -1516,7 +1544,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-13",
@@ -1526,7 +1555,8 @@
    "leads": 1,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-13",
@@ -1536,7 +1566,8 @@
    "leads": 8,
    "mql": 4,
    "aceite": 0,
-   "perdido": 3
+   "perdido": 3,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-13",
@@ -1546,7 +1577,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 9
   },
   {
    "date": "2026-08-13",
@@ -1556,7 +1588,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-14",
@@ -1566,7 +1599,8 @@
    "leads": 2,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-14",
@@ -1576,7 +1610,8 @@
    "leads": 4,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-14",
@@ -1586,7 +1621,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-14",
@@ -1596,7 +1632,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-15",
@@ -1606,7 +1643,8 @@
    "leads": 3,
    "mql": 0,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-15",
@@ -1616,7 +1654,8 @@
    "leads": 10,
    "mql": 2,
    "aceite": 0,
-   "perdido": 5
+   "perdido": 5,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-15",
@@ -1626,7 +1665,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-15",
@@ -1636,7 +1676,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-16",
@@ -1646,7 +1687,8 @@
    "leads": 8,
    "mql": 1,
    "aceite": 1,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-16",
@@ -1656,7 +1698,8 @@
    "leads": 8,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-16",
@@ -1666,7 +1709,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 7
   },
   {
    "date": "2026-08-16",
@@ -1676,7 +1720,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-17",
@@ -1686,7 +1731,8 @@
    "leads": 6,
    "mql": 2,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-17",
@@ -1696,7 +1742,8 @@
    "leads": 4,
    "mql": 2,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-17",
@@ -1706,7 +1753,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-17",
@@ -1716,7 +1764,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-18",
@@ -1726,7 +1775,8 @@
    "leads": 8,
    "mql": 3,
    "aceite": 0,
-   "perdido": 2
+   "perdido": 2,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-18",
@@ -1736,7 +1786,8 @@
    "leads": 6,
    "mql": 4,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-18",
@@ -1746,7 +1797,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 5
   },
   {
    "date": "2026-08-18",
@@ -1756,7 +1808,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-19",
@@ -1766,7 +1819,8 @@
    "leads": 7,
    "mql": 2,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-19",
@@ -1776,7 +1830,8 @@
    "leads": 4,
    "mql": 1,
    "aceite": 1,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-19",
@@ -1786,7 +1841,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-19",
@@ -1796,7 +1852,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-20",
@@ -1806,7 +1863,8 @@
    "leads": 2,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-20",
@@ -1816,7 +1874,8 @@
    "leads": 1,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-20",
@@ -1826,7 +1885,8 @@
    "leads": 1,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-20",
@@ -1836,7 +1896,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-20",
@@ -1846,7 +1907,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-21",
@@ -1856,7 +1918,8 @@
    "leads": 6,
    "mql": 1,
    "aceite": 0,
-   "perdido": 2
+   "perdido": 2,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-21",
@@ -1866,7 +1929,8 @@
    "leads": 2,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-21",
@@ -1876,7 +1940,8 @@
    "leads": 2,
    "mql": 1,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-21",
@@ -1886,7 +1951,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-21",
@@ -1896,7 +1962,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-22",
@@ -1906,7 +1973,8 @@
    "leads": 3,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-22",
@@ -1916,7 +1984,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-22",
@@ -1926,7 +1995,8 @@
    "leads": 1,
    "mql": 0,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-22",
@@ -1936,7 +2006,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-22",
@@ -1946,7 +2017,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-23",
@@ -1956,7 +2028,8 @@
    "leads": 2,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-23",
@@ -1966,7 +2039,8 @@
    "leads": 2,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-23",
@@ -1976,7 +2050,8 @@
    "leads": 5,
    "mql": 2,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-23",
@@ -1986,7 +2061,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-23",
@@ -1996,7 +2072,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-24",
@@ -2006,7 +2083,8 @@
    "leads": 0,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-24",
@@ -2016,7 +2094,8 @@
    "leads": 2,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-24",
@@ -2026,7 +2105,8 @@
    "leads": 3,
    "mql": 3,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-24",
@@ -2036,7 +2116,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-24",
@@ -2046,7 +2127,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-24",
@@ -2056,7 +2138,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 8
   },
   {
    "date": "2026-08-25",
@@ -2066,7 +2149,8 @@
    "leads": 0,
    "mql": 0,
    "aceite": 0,
-   "perdido": 0
+   "perdido": 0,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-25",
@@ -2076,7 +2160,8 @@
    "leads": 3,
    "mql": 1,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-25",
@@ -2086,7 +2171,8 @@
    "leads": 4,
    "mql": 2,
    "aceite": 0,
-   "perdido": 1
+   "perdido": 1,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-25",
@@ -2096,7 +2182,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-25",
@@ -2106,7 +2193,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-25",
@@ -2116,7 +2204,8 @@
    "leads": null,
    "mql": null,
    "aceite": null,
-   "perdido": null
+   "perdido": null,
+   "meta_conversions": 2
   }
  ],
  "adset_labels": {
@@ -2128,5 +2217,5 @@
   "forms_mg_manual": "Público manual - Minas Gerais",
   "forms_adv_mgrj": "Advantage+ - Minas Gerais e RJ"
  },
- "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponível via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso não havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulação genérica 'Facebook Lead Ad' no Kommo, não é possível separar o funil). Rmkt tem um único conjunto, sem necessidade de split."
+ "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponível via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso não havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulação genérica 'Facebook Lead Ad' no Kommo, não é possível separar o funil). Rmkt tem um único conjunto, sem necessidade de split. Conversões (Meta) por conjunto (campo meta_conversions) cobrem o mês inteiro (01/08-25/08), pois vêm direto do Meta Ads (não dependem da tabulação do Kommo) — soma de actions_lead + conversa iniciada (Messenger/IG) + conversão de pixel de site, por (data, conjunto)."
 }
