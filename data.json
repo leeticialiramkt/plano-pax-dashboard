@@ -1,2497 +1,2619 @@
 {
- "updated_at": "2026-08-26T09:02:09-03:00",
- "meta_status": "ok",
- "kommo_status": "ok",
- "kommo_stale_since": null,
- "budget_month": {
-  "month": "2026-08",
-  "verba": 9000,
-  "label": "Agosto/2026"
- },
- "campaigns": {
-  "always_on": {
-   "label": "[LL][SITE] Always on",
-   "short": "Always on"
-  },
-  "forms": {
-   "label": "[LL][FORMS DO META][LEADS]",
-   "short": "Forms"
-  },
-  "rmkt": {
-   "label": "[RMKT] Remarketing Geral Direto",
-   "short": "Remarketing"
-  }
- },
- "daily": [
-  {
-   "date": "2026-08-01",
-   "campaign": "always_on",
-   "spend": 51.19,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-01",
-   "campaign": "forms",
-   "spend": 0,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-01",
-   "campaign": "rmkt",
-   "spend": 3.71,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-02",
-   "campaign": "always_on",
-   "spend": 45.68,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-02",
-   "campaign": "forms",
-   "spend": 0,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-02",
-   "campaign": "rmkt",
-   "spend": 20.19,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-03",
-   "campaign": "always_on",
-   "spend": 36.1,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-03",
-   "campaign": "forms",
-   "spend": 0,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-03",
-   "campaign": "rmkt",
-   "spend": 16.63,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 3
-  },
-  {
-   "date": "2026-08-04",
-   "campaign": "always_on",
-   "spend": 40.75,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-04",
-   "campaign": "forms",
-   "spend": 0,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-04",
-   "campaign": "rmkt",
-   "spend": 18.73,
-   "leads": 5,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 3
-  },
-  {
-   "date": "2026-08-05",
-   "campaign": "always_on",
-   "spend": 35.05,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-05",
-   "campaign": "forms",
-   "spend": 0,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-05",
-   "campaign": "rmkt",
-   "spend": 19.2,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "always_on",
-   "spend": 40.65,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "forms",
-   "spend": 11.19,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "rmkt",
-   "spend": 14.53,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "always_on",
-   "spend": 33.23,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "forms",
-   "spend": 8.78,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "rmkt",
-   "spend": 10.57,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "always_on",
-   "spend": 40.12,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "forms",
-   "spend": 5.53,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "rmkt",
-   "spend": 4.95,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "always_on",
-   "spend": 47.09,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "forms",
-   "spend": 12.95,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "rmkt",
-   "spend": 12.76,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "always_on",
-   "spend": 52.79,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "forms",
-   "spend": 16.1,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "rmkt",
-   "spend": 20.48,
-   "leads": 6,
-   "mql": 2,
-   "aceite": 1,
-   "vendido": 0,
-   "perdido": 3
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "always_on",
-   "spend": 52.97,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "forms",
-   "spend": 38.11,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "rmkt",
-   "spend": 20.58,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "always_on",
-   "spend": 75.44,
-   "leads": 5,
-   "mql": 5,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "forms",
-   "spend": 49.9,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "rmkt",
-   "spend": 17.63,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "always_on",
-   "spend": 94.56,
-   "leads": 9,
-   "mql": 4,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 3
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "forms",
-   "spend": 56.85,
-   "leads": 5,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "rmkt",
-   "spend": 24.86,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 1,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "always_on",
-   "spend": 80.45,
-   "leads": 6,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "forms",
-   "spend": 70.14,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "rmkt",
-   "spend": 33.61,
-   "leads": 4,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "always_on",
-   "spend": 70.37,
-   "leads": 13,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 6
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "forms",
-   "spend": 46.56,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "rmkt",
-   "spend": 24.76,
-   "leads": 4,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "always_on",
-   "spend": 136.71,
-   "leads": 16,
-   "mql": 2,
-   "aceite": 1,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "forms",
-   "spend": 80.1,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "rmkt",
-   "spend": 26.97,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "always_on",
-   "spend": 119.66,
-   "leads": 10,
-   "mql": 4,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "forms",
-   "spend": 49.52,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "rmkt",
-   "spend": 27.17,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "always_on",
-   "spend": 89.08,
-   "leads": 14,
-   "mql": 7,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "forms",
-   "spend": 57.65,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "rmkt",
-   "spend": 50.43,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "always_on",
-   "spend": 147.26,
-   "leads": 11,
-   "mql": 3,
-   "aceite": 1,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "forms",
-   "spend": 99.19,
-   "leads": 5,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "rmkt",
-   "spend": 46.17,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "always_on",
-   "spend": 94.1,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "forms",
-   "spend": 60.19,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "rmkt",
-   "spend": 34.11,
-   "leads": 6,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "always_on",
-   "spend": 153.7,
-   "leads": 10,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 1,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "forms",
-   "spend": 81.96,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "rmkt",
-   "spend": 21.51,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "always_on",
-   "spend": 84.6,
-   "leads": 4,
-   "mql": 0,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "forms",
-   "spend": 59.72,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "rmkt",
-   "spend": 19.78,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "always_on",
-   "spend": 188.21,
-   "leads": 9,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "forms",
-   "spend": 90.17,
-   "leads": 2,
-   "mql": 2,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "rmkt",
-   "spend": 29.2,
-   "leads": 5,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "always_on",
-   "spend": 187.02,
-   "leads": 5,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "forms",
-   "spend": 69.71,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "rmkt",
-   "spend": 41.91,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "spend": 197.8,
-   "leads": 7,
-   "mql": 3,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 2
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "forms",
-   "spend": 44.59,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 0
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "rmkt",
-   "spend": 33.32,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "vendido": 0,
-   "perdido": 1
-  }
- ],
- "account_daily_total": [
-  {
-   "date": "2026-08-01",
-   "spend": 297.07
-  },
-  {
-   "date": "2026-08-02",
-   "spend": 297.5
-  },
-  {
-   "date": "2026-08-03",
-   "spend": 195.67
-  },
-  {
-   "date": "2026-08-04",
-   "spend": 169.12
-  },
-  {
-   "date": "2026-08-05",
-   "spend": 187.87
-  },
-  {
-   "date": "2026-08-06",
-   "spend": 98.7
-  },
-  {
-   "date": "2026-08-07",
-   "spend": 52.58
-  },
-  {
-   "date": "2026-08-08",
-   "spend": 50.6
-  },
-  {
-   "date": "2026-08-09",
-   "spend": 72.8
-  },
-  {
-   "date": "2026-08-10",
-   "spend": 89.37
-  },
-  {
-   "date": "2026-08-11",
-   "spend": 111.66
-  },
-  {
-   "date": "2026-08-12",
-   "spend": 142.97
-  },
-  {
-   "date": "2026-08-13",
-   "spend": 176.27
-  },
-  {
-   "date": "2026-08-14",
-   "spend": 184.2
-  },
-  {
-   "date": "2026-08-15",
-   "spend": 141.69
-  },
-  {
-   "date": "2026-08-16",
-   "spend": 243.78
-  },
-  {
-   "date": "2026-08-17",
-   "spend": 196.35
-  },
-  {
-   "date": "2026-08-18",
-   "spend": 197.16
-  },
-  {
-   "date": "2026-08-19",
-   "spend": 292.62
-  },
-  {
-   "date": "2026-08-20",
-   "spend": 188.4
-  },
-  {
-   "date": "2026-08-21",
-   "spend": 257.17
-  },
-  {
-   "date": "2026-08-22",
-   "spend": 164.1
-  },
-  {
-   "date": "2026-08-23",
-   "spend": 307.58
-  },
-  {
-   "date": "2026-08-24",
-   "spend": 298.64
-  },
-  {
-   "date": "2026-08-25",
-   "spend": 275.71
-  }
- ],
- "creatives_period": {
-  "from": "2026-08-01",
-  "to": "2026-08-25"
- },
- "aceites_period": {
-  "from": "2026-08-01",
-  "to": "2026-08-24"
- },
- "aceites": [
-  {
-   "name": "Edileuza Lima Nascimento",
-   "date": "2026-08-16",
-   "campaign": "always_on",
-   "etapa": "Aceite",
-   "value": 128,
-   "created_date": "2026-08-16",
-   "payment_date": "2026-08-27",
-   "payment_status": "aguardando",
-   "payment_status_label": "Aguardando (previsão 27/08)",
-   "adset": "FB07-lpmodelo01"
-  },
-  {
-   "name": "Ednir Novais dos Santos",
-   "date": "2026-08-10",
-   "campaign": "rmkt",
-   "etapa": "Aceite",
-   "value": 69,
-   "created_date": "2026-08-10",
-   "payment_date": "2026-08-15",
-   "payment_status": "atrasado",
-   "payment_status_label": "Atrasado (previsto p/ 15/08)"
-  },
-  {
-   "name": "Lilian Pereira Santana",
-   "date": "2026-08-13",
-   "campaign": "rmkt",
-   "etapa": "Vendido",
-   "value": 69,
-   "created_date": "2026-08-11",
-   "payment_date": "2026-08-13",
-   "payment_status": "pago",
-   "payment_status_label": "Pago em 13/08"
-  },
-  {
-   "name": "Sérgio Oliveira da Silva",
-   "date": "2026-08-19",
-   "campaign": "always_on",
-   "etapa": "Aceite",
-   "value": 69,
-   "created_date": "2026-08-19",
-   "payment_date": "2026-09-07",
-   "payment_status": "aguardando",
-   "payment_status_label": "Aguardando (previsão 07/09)",
-   "adset": "FB08-lpmodelo01"
-  },
-  {
-   "name": "Maria das Graças Ricoy Marques",
-   "date": "2026-08-21",
-   "campaign": "always_on",
-   "etapa": "Vendido",
-   "value": 100,
-   "created_date": "2026-08-18",
-   "payment_date": "2026-08-21",
-   "payment_status": "pago",
-   "payment_status_label": "Pago em 21/08",
-   "adset": "FB07-lpmodelo01"
-  }
- ],
- "creatives": [
-  {
-   "campaign": "always_on",
-   "ad_name": "[Vídeo] Pedrinho Cartão",
-   "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.13418-10/497077504_1403533257207855_4389234088794354711_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeFUcaYtKL7nyDQmbcbod5X66m8rTgaY7h7qbytOBpjuHv_Mv4Um72Nl_VRM_fuHODzaknRTiYgeABxc6kdyctf4&_nc_ohc=OM6X-rf6UusQ7kNvwG0sKt6&_nc_oc=AdpUhHPeBRh3cb6EQiYTMk6rBh7_ZKx1Zz443UbdAfmTUrLIk6MvWb8VB7fibyEAYB0&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIm06ZAaj8z-NXI5sZOErDrcgK3X9JimxWM5BXiRS67cJXsQcwkcaQh1i4oTLFr_UXZyPuwZGwg4w&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AQFZpwGJhzsbCPM6T5W_UCEXqZUROuZqyJoM3soXhksPlA&oe=6A8C026D",
-   "title": "Cobertura completa para sua família",
-   "spend": 1004.88,
-   "clicks": 940,
-   "link_clicks": 690,
-   "impressions": 18777,
-   "leads": 1,
-   "leads_forms": 0,
-   "conversas_iniciadas": 1,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "#AD004 - 3 pessoas de até 74 anos",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/776351622_38020920877522847_4868856503812904709_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeGXQfskoddCMlV2sJ4q_ks6dRBYUd53wP51EFhR3nfA_kxoTdYaYzRCXbUK0QxwKWQN6-ocpxtIQKITx9ELgerM&_nc_ohc=f5vJxLzujrIQ7kNvwE9bO0T&_nc_oc=AdpPMXQXz4X_mXfz1RxjSpukxnMWI83REIwxaUIjsDZfHiDWK_y-EUDM3gwA_veoHwo&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=tTGHP1y4LB1g81dtxYSnyQ&_nc_tpa=Q5bMBQIWuO0LYAlZZ1wHui9BqV1qkobrLGxu6zPkPfVqFTPaHXV4sM2nDBli6-04QHi298dWtJ1dz4f2xQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQGNUMY1g3EhO-oBFN-C1PdFpYBWAIpGbOAlEcFjn1MB_g&oe=6A91FDE3",
-   "title": "Cobertura completa para sua família a partir de R$69/mês.",
-   "spend": 644.97,
-   "clicks": 1207,
-   "link_clicks": 965,
-   "impressions": 34316,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[IMG]Plano Funerário com Cremação Adicional",
-   "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=BW_rDAL_ji6iV8kfD6zkPg&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAT_gsbDO2zGcL-CZ9YBhzA6_jHQWVKCokElWbPoCSS6G&oe=6A87FBCF",
-   "title": "Cobertura completa para sua família",
-   "spend": 372.8,
-   "clicks": 517,
-   "link_clicks": 354,
-   "impressions": 25720,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[Video] Reajuste Ari",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/682054726_1487446006355803_8431535182658244711_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEtTQ81tTwpjmC64bIPJ78HUATba3uLtHpQBNtre4u0epc7lWptpV73thczZcAxULJMAUn0CxELi3Z2FUgKRyIP&_nc_ohc=RCRYARTVoo8Q7kNvwFNeRdV&_nc_oc=AdoNz_36yo1AcUPh3BvaIooCAlgGkjtu-E7K0hghqEsq1X9W4FrHudCJTtCkmd-IWDk&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIcU1Xunxr2gjESMhyg6qnhyT3H8rRCeTKb_d0MgkORFrSl9A3VawBrygMSMLSTIBY7Q1nizPXazg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEHcRdh3PDYZCyAyGMRyx7W3d5a4hNk-8AwpH6LebCoaw&oe=6A8BE8EC",
-   "title": "Cobertura completa para sua família",
-   "spend": 76.14,
-   "clicks": 102,
-   "link_clicks": 61,
-   "impressions": 1541,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[Vídeo] Influencer",
-   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/601235763_1598557714608383_1447372548858428740_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeFqDrw0BQqcL3bS6OY74a9Mm4bxMlGPbR6bhvEyUY9tHiAbBgn3OQ2PlpRBDVSP2sF7SLsA03mZSzYcOY8KThIb&_nc_ohc=Eyl1KqsNJQ8Q7kNvwHsgF_T&_nc_oc=AdpEd0c2YOCkTO0J0CUM_ATiXTfWsiEDPspG1hTvYKUb3UdNOxDUYtJ6nYc2aQAFXT4&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=K2F3QbJ61xfAZ1cJOirr6w&_nc_tpa=Q5bMBQLNBaiGSQoX--0QGLz0s3LJAxN3iJOusVqmok1zSOwaJzZYG8zRCXgJFLZ7Ni8AObsoq4HcNtd0SQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEpBncW6BOdLhpn15H56gA9V2iJIYJbBxyXYjHLISw6Yw&oe=6A8C186E",
-   "title": "Cobertura completa para sua família",
-   "spend": 55.43,
-   "clicks": 144,
-   "link_clicks": 131,
-   "impressions": 1759,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[Video] Ju Roberts 2",
-   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/609327143_33034806762831259_4125087381725158398_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEUSh65eR82qtilG4-YIc5Vy_ioEIToSRrL-KgQhOhJGnDuBH3gSA3erIb1P-REaqVFFHcfh-Wrbat_72ylWSz_&_nc_ohc=ICxJLQx07t0Q7kNvwEwDOEV&_nc_oc=Adrn2GSfZHYG_aNvfTCEGfynwSW1rqOcFvDi1tIWNTbLLVVTfwcAthEhcczz18-T7Y0&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=YniD3nkOYp8HentI0fKg1w&_nc_tpa=Q5bMBQJz3QKYkXK4Fh4-cPt_wMwD1bXBkVzwEfEzulJxbPNgOHDNJT9EOqwuE4FnE3fIsKB6r9NL8ATQSQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG9UJhU1P4ptakOKWi02-nQhdMgF2hwa7RqzcwXK7jGIQ&oe=6A8C14A4",
-   "title": "Proteja quem você ama sem comprometer o orçamento da sua família.",
-   "spend": 15.74,
-   "clicks": 27,
-   "link_clicks": 22,
-   "impressions": 360,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "#AD003 - Inverno",
-   "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782209564_38020784220869846_2471792532887706358_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeHK16W8niHtNudSHaqhp3XTUKY_NlorNVRQpj82Wis1VIGduAwWiTLXjwhHs4PnOcd-53f5eMAmPb0CZE3_5Ivb&_nc_ohc=-85o_RVq7SEQ7kNvwGDCeuo&_nc_oc=AdoQ4sc3W_c5wBKQLXUVIRbtVJ6BBvpBFzrEY0mAvjRnVDPdvWavieGrkZ2e61UJrac&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=qdRfY3Fi_BIQev_xcZywTg&_nc_tpa=Q5bMBQKJpTBfqjLdVwjgw-uB54BkB9Z3OqYZwKM7IQ2MFkvmnuMSuEtYgkEsA5x8WOiMzkrQIxXesONeuA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQEONaFNLSZ8SLwxT_wvApWiBfU3VdjhIpX5YIKEFuIWUQ&oe=6A921B89",
-   "title": "Cobertura completa para sua família",
-   "spend": 14.74,
-   "clicks": 16,
-   "link_clicks": 13,
-   "impressions": 300,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "#AD001 - Custo médio de funeral",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775727786_38020784250869843_1068736244639323214_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeFsRkWKIhiGq6okVAGdhiG4QK3I9L-OrPdArcj0v46s91JQwJq72YtyzRnJTHUaYqvdyAhiVH4PVIsI2GCMPwGf&_nc_ohc=75LJ5m8kpVgQ7kNvwFNTqjK&_nc_oc=AdrLjpiRGHArYe12rgxWgrqoRfShMVcz0T-cH-3hfv194SSLho1JfAlGgWn1iztw7aA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=hr1tapTaCxXn2vO8ETM-Ug&_nc_tpa=Q5bMBQJBcTyElZn_CdS3V0NIk-e6X82rRp9kE9RHueE4zfLPsfH7o-IZXiTu7YsqYl7pix1rx4OkV-g8-g&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFMbnmzCJtIpvLCrvrXa4ZHb7QPkVtnDbmfG0CSbGt2Vg&oe=6A920E37",
-   "title": "Cobertura completa para sua família",
-   "spend": 6.88,
-   "clicks": 37,
-   "link_clicks": 26,
-   "impressions": 734,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "#AD002 - Família",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775245377_38020784977536437_1997679721071890054_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFvk8WZM-EZtktk755-ZdijhhZ3PqEhUR2GFnc-oSFRHRPVCWV_M3vKQydIynYS_GM1DijLb5vI-5p-lZwNYyQT&_nc_ohc=xaU4YfnUlsYQ7kNvwG2v39v&_nc_oc=Adr4u1cw5NVc3AhOEEyxs6gDczOZSkUZH3HcMjfiaZ9BNxNuml-wZzmNM7nYTiHLDZ4&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g2FrAbOH7lPfk1ybzmRmDQ&_nc_tpa=Q5bMBQKDAZr2JlTVBfLirrEpbiR2LenVD-AouQGdtaGdlS0NfOJ9Cnf7h4OcWSt5E3i4_QLWBbm9Kk9tCw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFR2NqtktLWwsZBS1zEoLrsRAhb6LgWVI_zUsri_fQvkA&oe=6A922BD0",
-   "title": "Cobertura completa para sua família",
-   "spend": 2.46,
-   "clicks": 13,
-   "link_clicks": 13,
-   "impressions": 4309,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[IMG] Criativo 003",
-   "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/740012437_1538392124679556_5556100224040349667_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeE1VzPY6xBRPyQMZFlMjvS4hzeVst9siaKHN5Wy32yJoqLaE8X-fLltpu1Dnw_tgC7_Qh5u5cW62SwnmYyJDuV6&_nc_ohc=NabiUhjqM7cQ7kNvwGTnxc2&_nc_oc=AdpH4Kf1SXN1fg84zf7ApjEXnt8Y5e2szqLa3gUcgFq9Tw689sGKLp2RNr-vLu8lRjY&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=sDsduh3nC2rKkUyGsfGU2Q&_nc_tpa=Q5bMBQIBSt7zuRJEVYt77w1DtxOm6fJyG9rcxlA9_DKo9iB189zdlV1wr2s-6QphafmYH1FgSS9JaRRCAQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFkLRYGbjRbjmkqGGHUr-HnsY5AKG-xi3gTM8MJNA_D9g&oe=6A8BF403",
-   "title": "Cobertura completa para sua família",
-   "spend": 0.37,
-   "clicks": 0,
-   "link_clicks": 0,
-   "impressions": 14,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "always_on",
-   "ad_name": "[IMG] Criativo 002",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/742770774_1538391578012944_3489714126689365106_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeE4O2WhaQfnORaDX2-FYJs-0CTie5zOyfHQJOJ7nM7J8VOvmxDdJ74IDS8S10zG117WWnKKdCbOnRjQLe29wwxp&_nc_ohc=5-cp2m7jlRQQ7kNvwFNGzFD&_nc_oc=AdoH5fwVij8soheYzX3d2eA3xDMbU4yao8PqYJnQnbshHfTZHd5pI1oL8zc8KwcmfJA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g5K4zykAw_UBsRG_PZ5M-w&_nc_tpa=Q5bMBQJHH2MoNmAfZ2pmcRaNZ4H12BnbndBPX1l9WmD7NlvUbGgYUp47RFzdVJvcuJ8M8MsURFwlTqFLBA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFx8h3gJDHHSm10x2xbtQX-Tou8-Y_BXAW6P1OkUhC0Bw&oe=6A8BFCF3",
-   "title": "Cobertura completa para sua família",
-   "spend": 0.36,
-   "clicks": 0,
-   "link_clicks": 0,
-   "impressions": 18,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD003",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/774726801_904194516099187_794310932089276217_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFHs4bhAdcG1ok17BXTXH1-ywU_XXH6e1PLBT9dcfp7UzyDwYniM4s3ARgojJcR8_gi8xmn1VEbUWejkR5pMT6c&_nc_ohc=yQ7c0Qcxf-UQ7kNvwHdFwRM&_nc_oc=Ado4oT1W6kjl7wDZyPLN07UciYylIJqQFQ0I8d1eVZXiuy8_viE1lj7V1uyFrPQVygY&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQItGPM5PuxL8d2bHiKScLJrl1BDZpUDM7AOWoAFngvhBq1V-JEXHzvD2VXJ2S6XjGCI-GiflreedQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQE_jzjaiVKhbk152y2GOBlBW5rGRbuoXQhmy4S1_4qhGQ&oe=6A8C05DD",
-   "title": null,
-   "spend": 539.92,
-   "clicks": 262,
-   "link_clicks": 152,
-   "impressions": 12657,
-   "leads": 72,
-   "leads_forms": 52,
-   "conversas_iniciadas": 20,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD004 - 3 pessoas de até 74 anos",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/776351622_38020920877522847_4868856503812904709_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeGXQfskoddCMlV2sJ4q_ks6dRBYUd53wP51EFhR3nfA_kxoTdYaYzRCXbUK0QxwKWQN6-ocpxtIQKITx9ELgerM&_nc_ohc=f5vJxLzujrIQ7kNvwE9bO0T&_nc_oc=AdpPMXQXz4X_mXfz1RxjSpukxnMWI83REIwxaUIjsDZfHiDWK_y-EUDM3gwA_veoHwo&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=tTGHP1y4LB1g81dtxYSnyQ&_nc_tpa=Q5bMBQIWuO0LYAlZZ1wHui9BqV1qkobrLGxu6zPkPfVqFTPaHXV4sM2nDBli6-04QHi298dWtJ1dz4f2xQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQGNUMY1g3EhO-oBFN-C1PdFpYBWAIpGbOAlEcFjn1MB_g&oe=6A91FDE3",
-   "title": "Cobertura completa para sua família a partir de R$69/mês.",
-   "spend": 299.63,
-   "clicks": 102,
-   "link_clicks": 64,
-   "impressions": 6393,
-   "leads": 24,
-   "leads_forms": 21,
-   "conversas_iniciadas": 3,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "[IMG]Plano Funerário com Cremação Adicional — Cópia",
-   "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=_Nl7649xhHUwWTF6Ywid2w&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAS-KR8TinQkeE9lQq1xTuzYQTUBXg7JXhuFCcTJNHG4i&oe=6A87FBCF",
-   "title": "Cobertura completa para sua família",
-   "spend": 92.1,
-   "clicks": 36,
-   "link_clicks": 24,
-   "impressions": 2250,
-   "leads": 3,
-   "leads_forms": 2,
-   "conversas_iniciadas": 1,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD002",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/766861569_1399965578717109_654488035804056456_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeEATX-hdNpDuqc-rZUTZMds4VZN2LQ4PVbhVk3YtDg9VkczNR275jwM9hny8WtgFo5cTU1TtiKBI3Ph8xqnKHqq&_nc_ohc=vXw4S9FS3fcQ7kNvwEv84zA&_nc_oc=Adqb5J05MTSBgbUpNTWwz_cMzfD2d6HcYGPd4RYZQbsjeYGHENnonKN87Uvb-naFB8U&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=auupQ5FdwCdEdswZvGymmA&_nc_tpa=Q5bMBQITHBjpDSfqfEvAAYhg-_mQ9JkK76e3WLwmTdM5d5BFm4Z-LAM7hG6ZfWTUvXDWOBCRjHKcUmICFw&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFr1Qw9nt1ZoftIjniZtkExviY996I9-m_JJZ1G_D3zaA&oe=6A8C16C0",
-   "title": "Cobertura funeral a partir de R$2,30 por dia",
-   "spend": 38.04,
-   "clicks": 7,
-   "link_clicks": 3,
-   "impressions": 660,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD004",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/774726776_27522262860807197_7798554737771560803_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGfi1dNPi1EvlcvjVWiDQ5AnYco5Z13sVadhyjlnXexVqzbmPRnu9B8YbHHh01_aYPQramLaQJVv_-JNMEFUw-E&_nc_ohc=TZOciVxbzK8Q7kNvwHgsidR&_nc_oc=AdrqURg2grG6BmqlfmBXlddOmqzhIOvyjnKe7wDoHIeakmMw7rfVPtxiDh0FUFGaKek&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQJmibj4oHuWAQB0WgwMkR9H9CSyPmlve-eCSWsndOKTeYsvecIeCkdfB5qtGwdm2Os22zaiRJbdTQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQH7JPktE_Ckdmpp7H2pK_QiF6pCUHkLRdJPcf91louDyw&oe=6A8BF7C8",
-   "title": null,
-   "spend": 15.78,
-   "clicks": 8,
-   "link_clicks": 6,
-   "impressions": 181,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD003 - Inverno",
-   "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782209564_38020784220869846_2471792532887706358_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeHK16W8niHtNudSHaqhp3XTUKY_NlorNVRQpj82Wis1VIGduAwWiTLXjwhHs4PnOcd-53f5eMAmPb0CZE3_5Ivb&_nc_ohc=-85o_RVq7SEQ7kNvwGDCeuo&_nc_oc=AdoQ4sc3W_c5wBKQLXUVIRbtVJ6BBvpBFzrEY0mAvjRnVDPdvWavieGrkZ2e61UJrac&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=qdRfY3Fi_BIQev_xcZywTg&_nc_tpa=Q5bMBQKJpTBfqjLdVwjgw-uB54BkB9Z3OqYZwKM7IQ2MFkvmnuMSuEtYgkEsA5x8WOiMzkrQIxXesONeuA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQEONaFNLSZ8SLwxT_wvApWiBfU3VdjhIpX5YIKEFuIWUQ&oe=6A921B89",
-   "title": "Cobertura completa para sua família",
-   "spend": 8.12,
-   "clicks": 0,
-   "link_clicks": 0,
-   "impressions": 101,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD001",
-   "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/767272648_37691441290470809_5169410418737106690_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFOVln5pU_fnvrDhnMlqWrKZbGfrn0pueBlsZ-ufSm54GnQvgpPQcA6nxQZJEm__ODi-xAX1B4XJR7bv_JYHMVo&_nc_ohc=mH7-qQtTMwIQ7kNvwHnQFyN&_nc_oc=AdqACaUz1KeZLNL9ur7PSJr5Dilt9OtJ6l6NCdVfhhQbfEO3EJ-lnSlMXNMXaruoNDc&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=_-YU7zUVenEg5g1O4FIlgQ&_nc_tpa=Q5bMBQIthoKQVrtnqCEkAP_LgtWCoerAW3yi-t0UGxMYs7uCr1vtZv38OP165lshg_lzfugk8ISXhEbLAw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQH5JPS4dkHVidh4TWVSu8cHmZjTRrGkx6Hoi24PKakyyw&oe=6A8BF4A7",
-   "title": "Cobertura funeral a partir de R$2,30 por dia",
-   "spend": 6.5,
-   "clicks": 2,
-   "link_clicks": 1,
-   "impressions": 105,
-   "leads": 1,
-   "leads_forms": 1,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD001 - Custo médio de funeral",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775727786_38020784250869843_1068736244639323214_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeFsRkWKIhiGq6okVAGdhiG4QK3I9L-OrPdArcj0v46s91JQwJq72YtyzRnJTHUaYqvdyAhiVH4PVIsI2GCMPwGf&_nc_ohc=75LJ5m8kpVgQ7kNvwFNTqjK&_nc_oc=AdrLjpiRGHArYe12rgxWgrqoRfShMVcz0T-cH-3hfv194SSLho1JfAlGgWn1iztw7aA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=hr1tapTaCxXn2vO8ETM-Ug&_nc_tpa=Q5bMBQJBcTyElZn_CdS3V0NIk-e6X82rRp9kE9RHueE4zfLPsfH7o-IZXiTu7YsqYl7pix1rx4OkV-g8-g&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFMbnmzCJtIpvLCrvrXa4ZHb7QPkVtnDbmfG0CSbGt2Vg&oe=6A920E37",
-   "title": "Cobertura completa para sua família",
-   "spend": 6.29,
-   "clicks": 0,
-   "link_clicks": 0,
-   "impressions": 102,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  },
-  {
-   "campaign": "forms",
-   "ad_name": "#AD002 - Família",
-   "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775245377_38020784977536437_1997679721071890054_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFvk8WZM-EZtktk755-ZdijhhZ3PqEhUR2GFnc-oSFRHRPVCWV_M3vKQydIynYS_GM1DijLb5vI-5p-lZwNYyQT&_nc_ohc=xaU4YfnUlsYQ7kNvwG2v39v&_nc_oc=Adr4u1cw5NVc3AhOEEyxs6gDczOZSkUZH3HcMjfiaZ9BNxNuml-wZzmNM7nYTiHLDZ4&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g2FrAbOH7lPfk1ybzmRmDQ&_nc_tpa=Q5bMBQKDAZr2JlTVBfLirrEpbiR2LenVD-AouQGdtaGdlS0NfOJ9Cnf7h4OcWSt5E3i4_QLWBbm9Kk9tCw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFR2NqtktLWwsZBS1zEoLrsRAhb6LgWVI_zUsri_fQvkA&oe=6A922BD0",
-   "title": "Cobertura completa para sua família",
-   "spend": 3.17,
-   "clicks": 0,
-   "link_clicks": 0,
-   "impressions": 46,
-   "leads": 0,
-   "leads_forms": 0,
-   "conversas_iniciadas": 0,
-   "conversoes_pixel": 0
-  }
- ],
- "partial_date": "2026-08-25",
- "daily_by_adset": [
-  {
-   "date": "2026-08-01",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 51.19,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-01",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 3.71,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-02",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 45.68,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-02",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 20.19,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-03",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 36.1,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-03",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 16.63,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 3,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-04",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 40.75,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-04",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 18.73,
-   "leads": 5,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 3,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-05",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 35.05,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-05",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 19.2,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 21.29,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 14.02,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 5.34,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 11.19,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-06",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 14.53,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 23.49,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 9.74,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 8.78,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-07",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 10.57,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 33.7,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 6.42,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 5.53,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-08",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 4.95,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 23.71,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 23.38,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 12.95,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-09",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 12.76,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 29.4,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 23.39,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 16.1,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-10",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 20.48,
-   "leads": 6,
-   "mql": 2,
-   "aceite": 1,
-   "perdido": 3,
-   "meta_conversions": 7
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 31.88,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 21.09,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 13.58,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 24.53,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-11",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 20.58,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 38.61,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 36.83,
-   "leads": 2,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 24.29,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 25.61,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-12",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 17.63,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 45.09,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 49.47,
-   "leads": 8,
-   "mql": 4,
-   "aceite": 0,
-   "perdido": 3,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 37.08,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 9
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 19.77,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-13",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 24.86,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 39.47,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 40.98,
-   "leads": 4,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 54.26,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 15.88,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-14",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 33.61,
-   "leads": 4,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 33.52,
-   "leads": 3,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 36.85,
-   "leads": 10,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 5,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 34.96,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 11.6,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-15",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 24.76,
-   "leads": 4,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 67.84,
-   "leads": 8,
-   "mql": 1,
-   "aceite": 1,
-   "perdido": 1,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 68.87,
-   "leads": 8,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 58.66,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 7
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 21.44,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-16",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 26.97,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 55.8,
-   "leads": 6,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 63.86,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 23.17,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 26.35,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-17",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 27.17,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 41.12,
-   "leads": 8,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 9
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 47.96,
-   "leads": 6,
-   "mql": 4,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 39.12,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 18.53,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-18",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 50.43,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 8
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 73.8,
-   "leads": 7,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 10
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 73.46,
-   "leads": 4,
-   "mql": 1,
-   "aceite": 1,
-   "perdido": 1,
-   "meta_conversions": 9
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 73.2,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 25.99,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-19",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 46.17,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 34.86,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 5
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 40.46,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 3
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 18.78,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 51.3,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 8.89,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-20",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 34.11,
-   "leads": 6,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 10
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 61.7,
-   "leads": 6,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 16
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 78.61,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 10
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 13.39,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 56.08,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 25.88,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-21",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 21.51,
-   "leads": 2,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 37.71,
-   "leads": 3,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 38.63,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 8.26,
-   "leads": 1,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 47.34,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 12.38,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-22",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 19.78,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 80.07,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 19
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 86.42,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 18
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 21.72,
-   "leads": 5,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 64.33,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 25.84,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 1
-  },
-  {
-   "date": "2026-08-23",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 29.2,
-   "leads": 5,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 2,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 65.91,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 14
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 94.45,
-   "leads": 2,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 24
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 11.57,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "always_on",
-   "adset": "RJ-novo",
-   "spend": 15.09,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 7
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 51.6,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 8
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 18.11,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-24",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 41.91,
-   "leads": 3,
-   "mql": 3,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 4
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "adset": "FB07-lpmodelo01",
-   "spend": 44.79,
-   "leads": 0,
-   "mql": 0,
-   "aceite": 0,
-   "perdido": 0,
-   "meta_conversions": 24
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 117.53,
-   "leads": 3,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 37
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "adset": "FBSP-lpmodelo01",
-   "spend": 19.15,
-   "leads": 4,
-   "mql": 2,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 11
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "always_on",
-   "adset": "RJ-novo",
-   "spend": 16.33,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 24.51,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 2
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 20.08,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 6
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "rmkt",
-   "adset": "rmkt_geral",
-   "spend": 33.32,
-   "leads": 1,
-   "mql": 1,
-   "aceite": 0,
-   "perdido": 1,
-   "meta_conversions": 4
-  }
- ],
- "adset_labels": {
-  "FB07-lpmodelo01": "Antigo FB7",
-  "FB08-lpmodelo01": "Antigo FB8",
-  "FBSP-lpmodelo01": "São Paulo - Advantage+",
-  "RJ-novo": "Rio de Janeiro - Advantage+ (novo, sem tabulação ainda)",
-  "pre0608": "Always on (pré-06/08, sem split disponível)",
-  "forms_mg_manual": "Público manual - Minas Gerais",
-  "forms_adv_mgrj": "Advantage+ - Minas Gerais e RJ",
-  "rmkt_geral": "Remarketing Geral (conjunto único)"
- },
- "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponivel via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso nao havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulacao generica 'Facebook Lead Ad' no Kommo, nao e possivel separar o funil). Rmkt tem um unico conjunto (rmkt_geral) — funil e gasto identicos aos totais da campanha, incluido aqui so para consistencia de detalhamento por conjunto em todas as campanhas. Conversoes (Meta) por conjunto (campo meta_conversions) cobrem o periodo 01/08-25/08 e usam uma metrica especifica por tipo de campanha, nao uma formula unica: Always on usa actions_offsite_conversion_fb_pixel_custom (conversao de pixel customizada = contato no site); Forms usa actions_lead + conversa iniciada (Messenger/IG) + actions_offsite_conversion_fb_pixel_lead; Remarketing usa actions_onsite_conversion_messaging_conversation_started_7d (conversas iniciadas via WhatsApp). Corrigido em 26/08/2026 apos Leticia observar que a formula generica (leads ampliados de Forms) estava zerando Always on e Remarketing, que nao otimizam para esse tipo de evento."
+  "updated_at": "2026-08-26T10:08:23-03:00",
+  "meta_status": "ok",
+  "kommo_status": "ok",
+  "kommo_stale_since": null,
+  "budget_month": {
+    "month": "2026-08",
+    "verba": 9000,
+    "label": "Agosto/2026"
+  },
+  "campaigns": {
+    "always_on": {
+      "label": "[LL][SITE] Always on",
+      "short": "Always on"
+    },
+    "forms": {
+      "label": "[LL][FORMS DO META][LEADS]",
+      "short": "Forms"
+    },
+    "rmkt": {
+      "label": "[RMKT] Remarketing Geral Direto",
+      "short": "Remarketing"
+    }
+  },
+  "daily": [
+    {
+      "date": "2026-08-01",
+      "campaign": "always_on",
+      "spend": 51.19,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-01",
+      "campaign": "forms",
+      "spend": 0,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-01",
+      "campaign": "rmkt",
+      "spend": 3.71,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-02",
+      "campaign": "always_on",
+      "spend": 45.68,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-02",
+      "campaign": "forms",
+      "spend": 0,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-02",
+      "campaign": "rmkt",
+      "spend": 20.19,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-03",
+      "campaign": "always_on",
+      "spend": 36.1,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-03",
+      "campaign": "forms",
+      "spend": 0,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-03",
+      "campaign": "rmkt",
+      "spend": 16.63,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 3
+    },
+    {
+      "date": "2026-08-04",
+      "campaign": "always_on",
+      "spend": 40.75,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-04",
+      "campaign": "forms",
+      "spend": 0,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-04",
+      "campaign": "rmkt",
+      "spend": 18.73,
+      "leads": 5,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 3
+    },
+    {
+      "date": "2026-08-05",
+      "campaign": "always_on",
+      "spend": 35.05,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-05",
+      "campaign": "forms",
+      "spend": 0,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-05",
+      "campaign": "rmkt",
+      "spend": 19.2,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "always_on",
+      "spend": 40.65,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "forms",
+      "spend": 11.19,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "rmkt",
+      "spend": 14.53,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "always_on",
+      "spend": 33.23,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "forms",
+      "spend": 8.78,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "rmkt",
+      "spend": 10.57,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "always_on",
+      "spend": 40.12,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "forms",
+      "spend": 5.53,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "rmkt",
+      "spend": 4.95,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "always_on",
+      "spend": 47.09,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "forms",
+      "spend": 12.95,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "rmkt",
+      "spend": 12.76,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "always_on",
+      "spend": 52.79,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "forms",
+      "spend": 16.1,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "rmkt",
+      "spend": 20.48,
+      "leads": 6,
+      "mql": 2,
+      "aceite": 1,
+      "vendido": 0,
+      "perdido": 3
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "always_on",
+      "spend": 52.97,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "forms",
+      "spend": 38.11,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "rmkt",
+      "spend": 20.58,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "always_on",
+      "spend": 75.44,
+      "leads": 5,
+      "mql": 5,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "forms",
+      "spend": 49.9,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "rmkt",
+      "spend": 17.63,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "always_on",
+      "spend": 94.56,
+      "leads": 9,
+      "mql": 4,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 3
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "forms",
+      "spend": 56.85,
+      "leads": 5,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "rmkt",
+      "spend": 24.86,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 1,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "always_on",
+      "spend": 80.45,
+      "leads": 6,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "forms",
+      "spend": 70.14,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "rmkt",
+      "spend": 33.61,
+      "leads": 4,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "always_on",
+      "spend": 70.37,
+      "leads": 13,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 6
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "forms",
+      "spend": 46.56,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "rmkt",
+      "spend": 24.76,
+      "leads": 4,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "always_on",
+      "spend": 136.71,
+      "leads": 16,
+      "mql": 2,
+      "aceite": 1,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "forms",
+      "spend": 80.1,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "rmkt",
+      "spend": 26.97,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "always_on",
+      "spend": 119.66,
+      "leads": 10,
+      "mql": 4,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "forms",
+      "spend": 49.52,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "rmkt",
+      "spend": 27.17,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "always_on",
+      "spend": 89.08,
+      "leads": 14,
+      "mql": 7,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "forms",
+      "spend": 57.65,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "rmkt",
+      "spend": 50.43,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "always_on",
+      "spend": 147.26,
+      "leads": 11,
+      "mql": 3,
+      "aceite": 1,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "forms",
+      "spend": 99.19,
+      "leads": 5,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "rmkt",
+      "spend": 46.17,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "always_on",
+      "spend": 94.1,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "forms",
+      "spend": 60.19,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "rmkt",
+      "spend": 34.11,
+      "leads": 6,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "always_on",
+      "spend": 153.7,
+      "leads": 10,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 1,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "forms",
+      "spend": 81.96,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "rmkt",
+      "spend": 21.51,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "always_on",
+      "spend": 84.6,
+      "leads": 4,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "forms",
+      "spend": 59.72,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "rmkt",
+      "spend": 19.78,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "always_on",
+      "spend": 188.21,
+      "leads": 9,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "forms",
+      "spend": 90.17,
+      "leads": 2,
+      "mql": 2,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "rmkt",
+      "spend": 29.2,
+      "leads": 5,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "spend": 187.02,
+      "leads": 5,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "forms",
+      "spend": 69.71,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "rmkt",
+      "spend": 41.91,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "always_on",
+      "spend": 268.69,
+      "leads": 7,
+      "mql": 3,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 2
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "forms",
+      "spend": 76.08,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "rmkt",
+      "spend": 42.71,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 1
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "always_on",
+      "spend": 33.19,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "forms",
+      "spend": 16.83,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 0,
+      "perdido": 0
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "rmkt",
+      "spend": 8.09,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "vendido": 1,
+      "perdido": 0
+    }
+  ],
+  "account_daily_total": [
+    {
+      "date": "2026-08-01",
+      "spend": 297.07
+    },
+    {
+      "date": "2026-08-02",
+      "spend": 297.5
+    },
+    {
+      "date": "2026-08-03",
+      "spend": 195.67
+    },
+    {
+      "date": "2026-08-04",
+      "spend": 169.12
+    },
+    {
+      "date": "2026-08-05",
+      "spend": 187.87
+    },
+    {
+      "date": "2026-08-06",
+      "spend": 98.7
+    },
+    {
+      "date": "2026-08-07",
+      "spend": 52.58
+    },
+    {
+      "date": "2026-08-08",
+      "spend": 50.6
+    },
+    {
+      "date": "2026-08-09",
+      "spend": 72.8
+    },
+    {
+      "date": "2026-08-10",
+      "spend": 89.37
+    },
+    {
+      "date": "2026-08-11",
+      "spend": 111.66
+    },
+    {
+      "date": "2026-08-12",
+      "spend": 142.97
+    },
+    {
+      "date": "2026-08-13",
+      "spend": 176.27
+    },
+    {
+      "date": "2026-08-14",
+      "spend": 184.2
+    },
+    {
+      "date": "2026-08-15",
+      "spend": 141.69
+    },
+    {
+      "date": "2026-08-16",
+      "spend": 243.78
+    },
+    {
+      "date": "2026-08-17",
+      "spend": 196.35
+    },
+    {
+      "date": "2026-08-18",
+      "spend": 197.16
+    },
+    {
+      "date": "2026-08-19",
+      "spend": 292.62
+    },
+    {
+      "date": "2026-08-20",
+      "spend": 188.4
+    },
+    {
+      "date": "2026-08-21",
+      "spend": 257.17
+    },
+    {
+      "date": "2026-08-22",
+      "spend": 164.1
+    },
+    {
+      "date": "2026-08-23",
+      "spend": 307.58
+    },
+    {
+      "date": "2026-08-24",
+      "spend": 298.64
+    },
+    {
+      "date": "2026-08-25",
+      "spend": 387.48
+    },
+    {
+      "date": "2026-08-26",
+      "spend": 58.11
+    }
+  ],
+  "creatives_period": {
+    "from": "2026-08-01",
+    "to": "2026-08-25"
+  },
+  "aceites_period": {
+    "from": "2026-08-01",
+    "to": "2026-08-25"
+  },
+  "aceites": [
+    {
+      "name": "Edileuza Lima Nascimento",
+      "date": "2026-08-16",
+      "campaign": "always_on",
+      "etapa": "Aceite",
+      "value": 128,
+      "created_date": "2026-08-16",
+      "payment_date": "2026-08-27",
+      "payment_status": "aguardando",
+      "payment_status_label": "Aguardando (previsão 27/08)",
+      "adset": "FB07-lpmodelo01"
+    },
+    {
+      "name": "Ednir Novais dos Santos",
+      "date": "2026-08-10",
+      "campaign": "rmkt",
+      "etapa": "Aceite",
+      "value": 69,
+      "created_date": "2026-08-10",
+      "payment_date": "2026-08-15",
+      "payment_status": "atrasado",
+      "payment_status_label": "Atrasado (previsto p/ 15/08)"
+    },
+    {
+      "name": "Lilian Pereira Santana",
+      "date": "2026-08-13",
+      "campaign": "rmkt",
+      "etapa": "Vendido",
+      "value": 69,
+      "created_date": "2026-08-11",
+      "payment_date": "2026-08-13",
+      "payment_status": "pago",
+      "payment_status_label": "Pago em 13/08"
+    },
+    {
+      "name": "Sérgio Oliveira da Silva",
+      "date": "2026-08-19",
+      "campaign": "always_on",
+      "etapa": "Aceite",
+      "value": 69,
+      "created_date": "2026-08-19",
+      "payment_date": "2026-09-07",
+      "payment_status": "aguardando",
+      "payment_status_label": "Aguardando (previsão 07/09)",
+      "adset": "FB08-lpmodelo01"
+    },
+    {
+      "name": "Maria das Graças Ricoy Marques",
+      "date": "2026-08-21",
+      "campaign": "always_on",
+      "etapa": "Vendido",
+      "value": 100,
+      "created_date": "2026-08-18",
+      "payment_date": "2026-08-21",
+      "payment_status": "pago",
+      "payment_status_label": "Pago em 21/08",
+      "adset": "FB07-lpmodelo01"
+    },
+    {
+      "name": "Silvio dos Santos Amorim",
+      "date": "2026-08-26",
+      "campaign": "rmkt",
+      "etapa": "Vendido",
+      "value": 90,
+      "created_date": "2026-08-25",
+      "payment_date": "2026-08-26",
+      "payment_status": "pago",
+      "payment_status_label": "Pago em 26/08"
+    }
+  ],
+  "creatives": [
+    {
+      "campaign": "always_on",
+      "ad_name": "[Vídeo] Pedrinho Cartão",
+      "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t15.13418-10/497077504_1403533257207855_4389234088794354711_n.jpg?_nc_cat=103&ccb=1-7&_nc_eui2=AeFUcaYtKL7nyDQmbcbod5X66m8rTgaY7h7qbytOBpjuHv_Mv4Um72Nl_VRM_fuHODzaknRTiYgeABxc6kdyctf4&_nc_ohc=OM6X-rf6UusQ7kNvwG0sKt6&_nc_oc=AdpUhHPeBRh3cb6EQiYTMk6rBh7_ZKx1Zz443UbdAfmTUrLIk6MvWb8VB7fibyEAYB0&_nc_zt=23&_nc_ht=scontent-fra3-1.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIm06ZAaj8z-NXI5sZOErDrcgK3X9JimxWM5BXiRS67cJXsQcwkcaQh1i4oTLFr_UXZyPuwZGwg4w&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=aaa768&_nc_sid=58080a&oh=00_AQFZpwGJhzsbCPM6T5W_UCEXqZUROuZqyJoM3soXhksPlA&oe=6A8C026D",
+      "title": "Cobertura completa para sua família",
+      "spend": 1004.88,
+      "clicks": 940,
+      "link_clicks": 690,
+      "impressions": 18777,
+      "leads": 1,
+      "leads_forms": 0,
+      "conversas_iniciadas": 1,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "#AD004 - 3 pessoas de até 74 anos",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/776351622_38020920877522847_4868856503812904709_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeGXQfskoddCMlV2sJ4q_ks6dRBYUd53wP51EFhR3nfA_kxoTdYaYzRCXbUK0QxwKWQN6-ocpxtIQKITx9ELgerM&_nc_ohc=f5vJxLzujrIQ7kNvwE9bO0T&_nc_oc=AdpPMXQXz4X_mXfz1RxjSpukxnMWI83REIwxaUIjsDZfHiDWK_y-EUDM3gwA_veoHwo&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=tTGHP1y4LB1g81dtxYSnyQ&_nc_tpa=Q5bMBQIWuO0LYAlZZ1wHui9BqV1qkobrLGxu6zPkPfVqFTPaHXV4sM2nDBli6-04QHi298dWtJ1dz4f2xQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQGNUMY1g3EhO-oBFN-C1PdFpYBWAIpGbOAlEcFjn1MB_g&oe=6A91FDE3",
+      "title": "Cobertura completa para sua família a partir de R$69/mês.",
+      "spend": 644.97,
+      "clicks": 1207,
+      "link_clicks": 965,
+      "impressions": 34316,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[IMG]Plano Funerário com Cremação Adicional",
+      "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=BW_rDAL_ji6iV8kfD6zkPg&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAT_gsbDO2zGcL-CZ9YBhzA6_jHQWVKCokElWbPoCSS6G&oe=6A87FBCF",
+      "title": "Cobertura completa para sua família",
+      "spend": 372.8,
+      "clicks": 517,
+      "link_clicks": 354,
+      "impressions": 25720,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[Video] Reajuste Ari",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/682054726_1487446006355803_8431535182658244711_n.jpg?_nc_cat=109&ccb=1-7&_nc_eui2=AeEtTQ81tTwpjmC64bIPJ78HUATba3uLtHpQBNtre4u0epc7lWptpV73thczZcAxULJMAUn0CxELi3Z2FUgKRyIP&_nc_ohc=RCRYARTVoo8Q7kNvwFNeRdV&_nc_oc=AdoNz_36yo1AcUPh3BvaIooCAlgGkjtu-E7K0hghqEsq1X9W4FrHudCJTtCkmd-IWDk&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=3vMXil2DBQ_8yjNXMoMbFw&_nc_tpa=Q5bMBQIcU1Xunxr2gjESMhyg6qnhyT3H8rRCeTKb_d0MgkORFrSl9A3VawBrygMSMLSTIBY7Q1nizPXazg&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEHcRdh3PDYZCyAyGMRyx7W3d5a4hNk-8AwpH6LebCoaw&oe=6A8BE8EC",
+      "title": "Cobertura completa para sua família",
+      "spend": 76.14,
+      "clicks": 102,
+      "link_clicks": 61,
+      "impressions": 1541,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[Vídeo] Influencer",
+      "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/601235763_1598557714608383_1447372548858428740_n.jpg?_nc_cat=104&ccb=1-7&_nc_eui2=AeFqDrw0BQqcL3bS6OY74a9Mm4bxMlGPbR6bhvEyUY9tHiAbBgn3OQ2PlpRBDVSP2sF7SLsA03mZSzYcOY8KThIb&_nc_ohc=Eyl1KqsNJQ8Q7kNvwHsgF_T&_nc_oc=AdpEd0c2YOCkTO0J0CUM_ATiXTfWsiEDPspG1hTvYKUb3UdNOxDUYtJ6nYc2aQAFXT4&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=K2F3QbJ61xfAZ1cJOirr6w&_nc_tpa=Q5bMBQLNBaiGSQoX--0QGLz0s3LJAxN3iJOusVqmok1zSOwaJzZYG8zRCXgJFLZ7Ni8AObsoq4HcNtd0SQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQEpBncW6BOdLhpn15H56gA9V2iJIYJbBxyXYjHLISw6Yw&oe=6A8C186E",
+      "title": "Cobertura completa para sua família",
+      "spend": 55.43,
+      "clicks": 144,
+      "link_clicks": 131,
+      "impressions": 1759,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[Video] Ju Roberts 2",
+      "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t15.5256-10/609327143_33034806762831259_4125087381725158398_n.jpg?_nc_cat=111&ccb=1-7&_nc_eui2=AeEUSh65eR82qtilG4-YIc5Vy_ioEIToSRrL-KgQhOhJGnDuBH3gSA3erIb1P-REaqVFFHcfh-Wrbat_72ylWSz_&_nc_ohc=ICxJLQx07t0Q7kNvwEwDOEV&_nc_oc=Adrn2GSfZHYG_aNvfTCEGfynwSW1rqOcFvDi1tIWNTbLLVVTfwcAthEhcczz18-T7Y0&_nc_zt=23&_nc_ht=scontent-fra3-2.xx&edm=AEuWsiQEAAAA&_nc_gid=YniD3nkOYp8HentI0fKg1w&_nc_tpa=Q5bMBQJz3QKYkXK4Fh4-cPt_wMwD1bXBkVzwEfEzulJxbPNgOHDNJT9EOqwuE4FnE3fIsKB6r9NL8ATQSQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQG9UJhU1P4ptakOKWi02-nQhdMgF2hwa7RqzcwXK7jGIQ&oe=6A8C14A4",
+      "title": "Proteja quem você ama sem comprometer o orçamento da sua família.",
+      "spend": 15.74,
+      "clicks": 27,
+      "link_clicks": 22,
+      "impressions": 360,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "#AD003 - Inverno",
+      "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782209564_38020784220869846_2471792532887706358_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeHK16W8niHtNudSHaqhp3XTUKY_NlorNVRQpj82Wis1VIGduAwWiTLXjwhHs4PnOcd-53f5eMAmPb0CZE3_5Ivb&_nc_ohc=-85o_RVq7SEQ7kNvwGDCeuo&_nc_oc=AdoQ4sc3W_c5wBKQLXUVIRbtVJ6BBvpBFzrEY0mAvjRnVDPdvWavieGrkZ2e61UJrac&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=qdRfY3Fi_BIQev_xcZywTg&_nc_tpa=Q5bMBQKJpTBfqjLdVwjgw-uB54BkB9Z3OqYZwKM7IQ2MFkvmnuMSuEtYgkEsA5x8WOiMzkrQIxXesONeuA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQEONaFNLSZ8SLwxT_wvApWiBfU3VdjhIpX5YIKEFuIWUQ&oe=6A921B89",
+      "title": "Cobertura completa para sua família",
+      "spend": 14.74,
+      "clicks": 16,
+      "link_clicks": 13,
+      "impressions": 300,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "#AD001 - Custo médio de funeral",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775727786_38020784250869843_1068736244639323214_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeFsRkWKIhiGq6okVAGdhiG4QK3I9L-OrPdArcj0v46s91JQwJq72YtyzRnJTHUaYqvdyAhiVH4PVIsI2GCMPwGf&_nc_ohc=75LJ5m8kpVgQ7kNvwFNTqjK&_nc_oc=AdrLjpiRGHArYe12rgxWgrqoRfShMVcz0T-cH-3hfv194SSLho1JfAlGgWn1iztw7aA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=hr1tapTaCxXn2vO8ETM-Ug&_nc_tpa=Q5bMBQJBcTyElZn_CdS3V0NIk-e6X82rRp9kE9RHueE4zfLPsfH7o-IZXiTu7YsqYl7pix1rx4OkV-g8-g&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFMbnmzCJtIpvLCrvrXa4ZHb7QPkVtnDbmfG0CSbGt2Vg&oe=6A920E37",
+      "title": "Cobertura completa para sua família",
+      "spend": 6.88,
+      "clicks": 37,
+      "link_clicks": 26,
+      "impressions": 734,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "#AD002 - Família",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775245377_38020784977536437_1997679721071890054_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFvk8WZM-EZtktk755-ZdijhhZ3PqEhUR2GFnc-oSFRHRPVCWV_M3vKQydIynYS_GM1DijLb5vI-5p-lZwNYyQT&_nc_ohc=xaU4YfnUlsYQ7kNvwG2v39v&_nc_oc=Adr4u1cw5NVc3AhOEEyxs6gDczOZSkUZH3HcMjfiaZ9BNxNuml-wZzmNM7nYTiHLDZ4&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g2FrAbOH7lPfk1ybzmRmDQ&_nc_tpa=Q5bMBQKDAZr2JlTVBfLirrEpbiR2LenVD-AouQGdtaGdlS0NfOJ9Cnf7h4OcWSt5E3i4_QLWBbm9Kk9tCw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFR2NqtktLWwsZBS1zEoLrsRAhb6LgWVI_zUsri_fQvkA&oe=6A922BD0",
+      "title": "Cobertura completa para sua família",
+      "spend": 2.46,
+      "clicks": 13,
+      "link_clicks": 13,
+      "impressions": 4309,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[IMG] Criativo 003",
+      "thumbnail_url": "https://scontent-fra3-2.xx.fbcdn.net/v/t45.1600-4/740012437_1538392124679556_5556100224040349667_n.png?_nc_cat=104&ccb=1-7&_nc_eui2=AeE1VzPY6xBRPyQMZFlMjvS4hzeVst9siaKHN5Wy32yJoqLaE8X-fLltpu1Dnw_tgC7_Qh5u5cW62SwnmYyJDuV6&_nc_ohc=NabiUhjqM7cQ7kNvwGTnxc2&_nc_oc=AdpH4Kf1SXN1fg84zf7ApjEXnt8Y5e2szqLa3gUcgFq9Tw689sGKLp2RNr-vLu8lRjY&_nc_zt=1&_nc_ht=scontent-fra3-2.xx&edm=AJfPMC4EAAAA&_nc_gid=sDsduh3nC2rKkUyGsfGU2Q&_nc_tpa=Q5bMBQIBSt7zuRJEVYt77w1DtxOm6fJyG9rcxlA9_DKo9iB189zdlV1wr2s-6QphafmYH1FgSS9JaRRCAQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFkLRYGbjRbjmkqGGHUr-HnsY5AKG-xi3gTM8MJNA_D9g&oe=6A8BF403",
+      "title": "Cobertura completa para sua família",
+      "spend": 0.37,
+      "clicks": 0,
+      "link_clicks": 0,
+      "impressions": 14,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "always_on",
+      "ad_name": "[IMG] Criativo 002",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/742770774_1538391578012944_3489714126689365106_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeE4O2WhaQfnORaDX2-FYJs-0CTie5zOyfHQJOJ7nM7J8VOvmxDdJ74IDS8S10zG117WWnKKdCbOnRjQLe29wwxp&_nc_ohc=5-cp2m7jlRQQ7kNvwFNGzFD&_nc_oc=AdoH5fwVij8soheYzX3d2eA3xDMbU4yao8PqYJnQnbshHfTZHd5pI1oL8zc8KwcmfJA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g5K4zykAw_UBsRG_PZ5M-w&_nc_tpa=Q5bMBQJHH2MoNmAfZ2pmcRaNZ4H12BnbndBPX1l9WmD7NlvUbGgYUp47RFzdVJvcuJ8M8MsURFwlTqFLBA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFx8h3gJDHHSm10x2xbtQX-Tou8-Y_BXAW6P1OkUhC0Bw&oe=6A8BFCF3",
+      "title": "Cobertura completa para sua família",
+      "spend": 0.36,
+      "clicks": 0,
+      "link_clicks": 0,
+      "impressions": 18,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD003",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/774726801_904194516099187_794310932089276217_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFHs4bhAdcG1ok17BXTXH1-ywU_XXH6e1PLBT9dcfp7UzyDwYniM4s3ARgojJcR8_gi8xmn1VEbUWejkR5pMT6c&_nc_ohc=yQ7c0Qcxf-UQ7kNvwHdFwRM&_nc_oc=Ado4oT1W6kjl7wDZyPLN07UciYylIJqQFQ0I8d1eVZXiuy8_viE1lj7V1uyFrPQVygY&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQItGPM5PuxL8d2bHiKScLJrl1BDZpUDM7AOWoAFngvhBq1V-JEXHzvD2VXJ2S6XjGCI-GiflreedQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQE_jzjaiVKhbk152y2GOBlBW5rGRbuoXQhmy4S1_4qhGQ&oe=6A8C05DD",
+      "title": null,
+      "spend": 539.92,
+      "clicks": 262,
+      "link_clicks": 152,
+      "impressions": 12657,
+      "leads": 72,
+      "leads_forms": 52,
+      "conversas_iniciadas": 20,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD004 - 3 pessoas de até 74 anos",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/776351622_38020920877522847_4868856503812904709_n.png?_nc_cat=109&ccb=1-7&_nc_eui2=AeGXQfskoddCMlV2sJ4q_ks6dRBYUd53wP51EFhR3nfA_kxoTdYaYzRCXbUK0QxwKWQN6-ocpxtIQKITx9ELgerM&_nc_ohc=f5vJxLzujrIQ7kNvwE9bO0T&_nc_oc=AdpPMXQXz4X_mXfz1RxjSpukxnMWI83REIwxaUIjsDZfHiDWK_y-EUDM3gwA_veoHwo&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=tTGHP1y4LB1g81dtxYSnyQ&_nc_tpa=Q5bMBQIWuO0LYAlZZ1wHui9BqV1qkobrLGxu6zPkPfVqFTPaHXV4sM2nDBli6-04QHi298dWtJ1dz4f2xQ&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQGNUMY1g3EhO-oBFN-C1PdFpYBWAIpGbOAlEcFjn1MB_g&oe=6A91FDE3",
+      "title": "Cobertura completa para sua família a partir de R$69/mês.",
+      "spend": 299.63,
+      "clicks": 102,
+      "link_clicks": 64,
+      "impressions": 6393,
+      "leads": 24,
+      "leads_forms": 21,
+      "conversas_iniciadas": 3,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "[IMG]Plano Funerário com Cremação Adicional — Cópia",
+      "thumbnail_url": "https://external-fra5-2.xx.fbcdn.net/emg1/v/t13/4792709969351029128?url=https%3A%2F%2Fplanopax.com.br%2Fimages%2Ffamily.webp&fb_obo=1&utld=planopax.com.br&edm=AJfPMC4EAAAA&_nc_gid=_Nl7649xhHUwWTF6Ywid2w&_nc_eui2=AeF6JxCVLMcIJLM4X6xNZkt_PluNgarbpYA-W42BqtulgJ5RAmCsvQr58hdMWD-JtSGldEv5g0Ud-y83lYnV7Q7j&_nc_oc=AdqZcbUz90KrAHGiXla2ZbVOPqZQ6-wQRky4PKVEKfoqJAzWK0j8r8o9SmOwMxv4zgI&ccb=13-1&stp=dst-emg0_fr_q75_tt6&ur=50234c&_nc_sid=64c8fc&oh=06_Q3_CAS-KR8TinQkeE9lQq1xTuzYQTUBXg7JXhuFCcTJNHG4i&oe=6A87FBCF",
+      "title": "Cobertura completa para sua família",
+      "spend": 92.1,
+      "clicks": 36,
+      "link_clicks": 24,
+      "impressions": 2250,
+      "leads": 3,
+      "leads_forms": 2,
+      "conversas_iniciadas": 1,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD002",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t15.5256-10/766861569_1399965578717109_654488035804056456_n.jpg?_nc_cat=106&ccb=1-7&_nc_eui2=AeEATX-hdNpDuqc-rZUTZMds4VZN2LQ4PVbhVk3YtDg9VkczNR275jwM9hny8WtgFo5cTU1TtiKBI3Ph8xqnKHqq&_nc_ohc=vXw4S9FS3fcQ7kNvwEv84zA&_nc_oc=Adqb5J05MTSBgbUpNTWwz_cMzfD2d6HcYGPd4RYZQbsjeYGHENnonKN87Uvb-naFB8U&_nc_zt=23&_nc_ht=scontent-fra5-2.xx&edm=AEuWsiQEAAAA&_nc_gid=auupQ5FdwCdEdswZvGymmA&_nc_tpa=Q5bMBQITHBjpDSfqfEvAAYhg-_mQ9JkK76e3WLwmTdM5d5BFm4Z-LAM7hG6ZfWTUvXDWOBCRjHKcUmICFw&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=5fad0e&_nc_sid=58080a&oh=00_AQFr1Qw9nt1ZoftIjniZtkExviY996I9-m_JJZ1G_D3zaA&oe=6A8C16C0",
+      "title": "Cobertura funeral a partir de R$2,30 por dia",
+      "spend": 38.04,
+      "clicks": 7,
+      "link_clicks": 3,
+      "impressions": 660,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD004",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t15.5256-10/774726776_27522262860807197_7798554737771560803_n.jpg?_nc_cat=110&ccb=1-7&_nc_eui2=AeGfi1dNPi1EvlcvjVWiDQ5AnYco5Z13sVadhyjlnXexVqzbmPRnu9B8YbHHh01_aYPQramLaQJVv_-JNMEFUw-E&_nc_ohc=TZOciVxbzK8Q7kNvwHgsidR&_nc_oc=AdrqURg2grG6BmqlfmBXlddOmqzhIOvyjnKe7wDoHIeakmMw7rfVPtxiDh0FUFGaKek&_nc_zt=23&_nc_ht=scontent-fra5-1.xx&edm=AEuWsiQEAAAA&_nc_gid=p7Gj4UtwoR6UMiT1BUU68w&_nc_tpa=Q5bMBQJmibj4oHuWAQB0WgwMkR9H9CSyPmlve-eCSWsndOKTeYsvecIeCkdfB5qtGwdm2Os22zaiRJbdTQ&stp=c0.5000x0.5000f_dst-emg0_p1024x1024_q75_tt6&ur=a7ce7f&_nc_sid=58080a&oh=00_AQH7JPktE_Ckdmpp7H2pK_QiF6pCUHkLRdJPcf91louDyw&oe=6A8BF7C8",
+      "title": null,
+      "spend": 15.78,
+      "clicks": 8,
+      "link_clicks": 6,
+      "impressions": 181,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD003 - Inverno",
+      "thumbnail_url": "https://scontent-fra3-1.xx.fbcdn.net/v/t45.1600-4/782209564_38020784220869846_2471792532887706358_n.png?_nc_cat=103&ccb=1-7&_nc_eui2=AeHK16W8niHtNudSHaqhp3XTUKY_NlorNVRQpj82Wis1VIGduAwWiTLXjwhHs4PnOcd-53f5eMAmPb0CZE3_5Ivb&_nc_ohc=-85o_RVq7SEQ7kNvwGDCeuo&_nc_oc=AdoQ4sc3W_c5wBKQLXUVIRbtVJ6BBvpBFzrEY0mAvjRnVDPdvWavieGrkZ2e61UJrac&_nc_zt=1&_nc_ht=scontent-fra3-1.xx&edm=AJfPMC4EAAAA&_nc_gid=qdRfY3Fi_BIQev_xcZywTg&_nc_tpa=Q5bMBQKJpTBfqjLdVwjgw-uB54BkB9Z3OqYZwKM7IQ2MFkvmnuMSuEtYgkEsA5x8WOiMzkrQIxXesONeuA&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQEONaFNLSZ8SLwxT_wvApWiBfU3VdjhIpX5YIKEFuIWUQ&oe=6A921B89",
+      "title": "Cobertura completa para sua família",
+      "spend": 8.12,
+      "clicks": 0,
+      "link_clicks": 0,
+      "impressions": 101,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD001",
+      "thumbnail_url": "https://scontent-fra5-2.xx.fbcdn.net/v/t45.1600-4/767272648_37691441290470809_5169410418737106690_n.jpg?_nc_cat=107&ccb=1-7&_nc_eui2=AeFOVln5pU_fnvrDhnMlqWrKZbGfrn0pueBlsZ-ufSm54GnQvgpPQcA6nxQZJEm__ODi-xAX1B4XJR7bv_JYHMVo&_nc_ohc=mH7-qQtTMwIQ7kNvwHnQFyN&_nc_oc=AdqACaUz1KeZLNL9ur7PSJr5Dilt9OtJ6l6NCdVfhhQbfEO3EJ-lnSlMXNMXaruoNDc&_nc_zt=1&_nc_ht=scontent-fra5-2.xx&edm=AJfPMC4EAAAA&_nc_gid=_-YU7zUVenEg5g1O4FIlgQ&_nc_tpa=Q5bMBQIthoKQVrtnqCEkAP_LgtWCoerAW3yi-t0UGxMYs7uCr1vtZv38OP165lshg_lzfugk8ISXhEbLAw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQH5JPS4dkHVidh4TWVSu8cHmZjTRrGkx6Hoi24PKakyyw&oe=6A8BF4A7",
+      "title": "Cobertura funeral a partir de R$2,30 por dia",
+      "spend": 6.5,
+      "clicks": 2,
+      "link_clicks": 1,
+      "impressions": 105,
+      "leads": 1,
+      "leads_forms": 1,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD001 - Custo médio de funeral",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775727786_38020784250869843_1068736244639323214_n.png?_nc_cat=100&ccb=1-7&_nc_eui2=AeFsRkWKIhiGq6okVAGdhiG4QK3I9L-OrPdArcj0v46s91JQwJq72YtyzRnJTHUaYqvdyAhiVH4PVIsI2GCMPwGf&_nc_ohc=75LJ5m8kpVgQ7kNvwFNTqjK&_nc_oc=AdrLjpiRGHArYe12rgxWgrqoRfShMVcz0T-cH-3hfv194SSLho1JfAlGgWn1iztw7aA&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=hr1tapTaCxXn2vO8ETM-Ug&_nc_tpa=Q5bMBQJBcTyElZn_CdS3V0NIk-e6X82rRp9kE9RHueE4zfLPsfH7o-IZXiTu7YsqYl7pix1rx4OkV-g8-g&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFMbnmzCJtIpvLCrvrXa4ZHb7QPkVtnDbmfG0CSbGt2Vg&oe=6A920E37",
+      "title": "Cobertura completa para sua família",
+      "spend": 6.29,
+      "clicks": 0,
+      "link_clicks": 0,
+      "impressions": 102,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    },
+    {
+      "campaign": "forms",
+      "ad_name": "#AD002 - Família",
+      "thumbnail_url": "https://scontent-fra5-1.xx.fbcdn.net/v/t45.1600-4/775245377_38020784977536437_1997679721071890054_n.png?_nc_cat=110&ccb=1-7&_nc_eui2=AeFvk8WZM-EZtktk755-ZdijhhZ3PqEhUR2GFnc-oSFRHRPVCWV_M3vKQydIynYS_GM1DijLb5vI-5p-lZwNYyQT&_nc_ohc=xaU4YfnUlsYQ7kNvwG2v39v&_nc_oc=Adr4u1cw5NVc3AhOEEyxs6gDczOZSkUZH3HcMjfiaZ9BNxNuml-wZzmNM7nYTiHLDZ4&_nc_zt=1&_nc_ht=scontent-fra5-1.xx&edm=AJfPMC4EAAAA&_nc_gid=g2FrAbOH7lPfk1ybzmRmDQ&_nc_tpa=Q5bMBQKDAZr2JlTVBfLirrEpbiR2LenVD-AouQGdtaGdlS0NfOJ9Cnf7h4OcWSt5E3i4_QLWBbm9Kk9tCw&stp=dst-emg0_fr_q75_tt6&ur=f0a831&_nc_sid=64c8fc&oh=00_AQFR2NqtktLWwsZBS1zEoLrsRAhb6LgWVI_zUsri_fQvkA&oe=6A922BD0",
+      "title": "Cobertura completa para sua família",
+      "spend": 3.17,
+      "clicks": 0,
+      "link_clicks": 0,
+      "impressions": 46,
+      "leads": 0,
+      "leads_forms": 0,
+      "conversas_iniciadas": 0,
+      "conversoes_pixel": 0
+    }
+  ],
+  "partial_date": "2026-08-26",
+  "daily_by_adset": [
+    {
+      "date": "2026-08-01",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 51.19,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-01",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 3.71,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-02",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 45.68,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-02",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 20.19,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-03",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 36.1,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-03",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 16.63,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 3,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-04",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 40.75,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-04",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 18.73,
+      "leads": 5,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 3,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-05",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 35.05,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-05",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 19.2,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 21.29,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 14.02,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "always_on",
+      "adset": "pre0608",
+      "spend": 5.34,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 11.19,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-06",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 14.53,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 23.49,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 9.74,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 8.78,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-07",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 10.57,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 33.7,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 6.42,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 5.53,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-08",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 4.95,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 23.71,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 23.38,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 12.95,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-09",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 12.76,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 29.4,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 23.39,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 16.1,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-10",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 20.48,
+      "leads": 6,
+      "mql": 2,
+      "aceite": 1,
+      "perdido": 3,
+      "meta_conversions": 7
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 31.88,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 21.09,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 13.58,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 24.53,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-11",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 20.58,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 38.61,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 36.83,
+      "leads": 2,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 24.29,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 25.61,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-12",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 17.63,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 45.09,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 49.47,
+      "leads": 8,
+      "mql": 4,
+      "aceite": 0,
+      "perdido": 3,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 37.08,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 9
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 19.77,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-13",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 24.86,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 39.47,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 40.98,
+      "leads": 4,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 54.26,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 15.88,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-14",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 33.61,
+      "leads": 4,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 33.52,
+      "leads": 3,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 36.85,
+      "leads": 10,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 5,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 34.96,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 11.6,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-15",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 24.76,
+      "leads": 4,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 67.84,
+      "leads": 8,
+      "mql": 1,
+      "aceite": 1,
+      "perdido": 1,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 68.87,
+      "leads": 8,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 58.66,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 7
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 21.44,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-16",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 26.97,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 55.8,
+      "leads": 6,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 63.86,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 23.17,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 26.35,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-17",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 27.17,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 41.12,
+      "leads": 8,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 9
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 47.96,
+      "leads": 6,
+      "mql": 4,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 39.12,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 18.53,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-18",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 50.43,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 8
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 73.8,
+      "leads": 7,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 10
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 73.46,
+      "leads": 4,
+      "mql": 1,
+      "aceite": 1,
+      "perdido": 1,
+      "meta_conversions": 9
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 73.2,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 25.99,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-19",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 46.17,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 34.86,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 5
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 40.46,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 3
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 18.78,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 51.3,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 8.89,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-20",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 34.11,
+      "leads": 6,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 10
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 61.7,
+      "leads": 6,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 16
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 78.61,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 10
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 13.39,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 56.08,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 25.88,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-21",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 21.51,
+      "leads": 2,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 37.71,
+      "leads": 3,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 38.63,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 8.26,
+      "leads": 1,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 47.34,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 12.38,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-22",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 19.78,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 80.07,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 19
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 86.42,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 18
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 21.72,
+      "leads": 5,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 64.33,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 25.84,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-23",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 29.2,
+      "leads": 5,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 2,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 65.91,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 14
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 94.45,
+      "leads": 2,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 24
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 11.57,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "always_on",
+      "adset": "RJ-novo",
+      "spend": 15.09,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 7
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 51.6,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 8
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 18.11,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-24",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 41.91,
+      "leads": 3,
+      "mql": 3,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 62.92,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 24
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 159.94,
+      "leads": 3,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 37
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 26.47,
+      "leads": 4,
+      "mql": 2,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 11
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "always_on",
+      "adset": "RJ-novo",
+      "spend": 19.36,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 50.34,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 2
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 25.74,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-25",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 42.71,
+      "leads": 1,
+      "mql": 1,
+      "aceite": 0,
+      "perdido": 1,
+      "meta_conversions": 4
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "always_on",
+      "adset": "FB07-lpmodelo01",
+      "spend": 12.33,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 6
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "always_on",
+      "adset": "FB08-lpmodelo01",
+      "spend": 14.83,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 8
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "always_on",
+      "adset": "FBSP-lpmodelo01",
+      "spend": 2.62,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "always_on",
+      "adset": "RJ-novo",
+      "spend": 3.41,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 0
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "forms",
+      "adset": "forms_mg_manual",
+      "spend": 6.74,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "forms",
+      "adset": "forms_adv_mgrj",
+      "spend": 10.09,
+      "leads": null,
+      "mql": null,
+      "aceite": null,
+      "perdido": null,
+      "meta_conversions": 1
+    },
+    {
+      "date": "2026-08-26",
+      "campaign": "rmkt",
+      "adset": "rmkt_geral",
+      "spend": 8.09,
+      "leads": 0,
+      "mql": 0,
+      "aceite": 0,
+      "perdido": 0,
+      "meta_conversions": 0
+    }
+  ],
+  "adset_labels": {
+    "FB07-lpmodelo01": "Antigo FB7",
+    "FB08-lpmodelo01": "Antigo FB8",
+    "FBSP-lpmodelo01": "São Paulo - Advantage+",
+    "RJ-novo": "Rio de Janeiro - Advantage+ (novo, sem tabulação ainda)",
+    "pre0608": "Always on (pré-06/08, sem split disponível)",
+    "forms_mg_manual": "Público manual - Minas Gerais",
+    "forms_adv_mgrj": "Advantage+ - Minas Gerais e RJ",
+    "rmkt_geral": "Remarketing Geral (conjunto único)"
+  },
+  "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponivel via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso nao havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulacao generica 'Facebook Lead Ad' no Kommo, nao e possivel separar o funil). Rmkt tem um unico conjunto (rmkt_geral) — funil e gasto identicos aos totais da campanha, incluido aqui so para consistencia de detalhamento por conjunto em todas as campanhas. Conversoes (Meta) por conjunto (campo meta_conversions) cobrem o periodo 01/08-25/08 e usam uma metrica especifica por tipo de campanha, nao uma formula unica: Always on usa actions_offsite_conversion_fb_pixel_custom (conversao de pixel customizada = contato no site); Forms usa actions_lead + conversa iniciada (Messenger/IG) + actions_offsite_conversion_fb_pixel_lead; Remarketing usa actions_onsite_conversion_messaging_conversation_started_7d (conversas iniciadas via WhatsApp). Corrigido em 26/08/2026 apos Leticia observar que a formula generica (leads ampliados de Forms) estava zerando Always on e Remarketing, que nao otimizam para esse tipo de evento."
 }
