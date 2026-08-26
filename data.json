@@ -1237,7 +1237,18 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 1
+  },
+  {
+   "date": "2026-08-01",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 3.71,
+   "leads": 3,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-02",
@@ -1251,6 +1262,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-02",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 20.19,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 3
+  },
+  {
    "date": "2026-08-03",
    "campaign": "always_on",
    "adset": "pre0608",
@@ -1259,7 +1281,18 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 1
+  },
+  {
+   "date": "2026-08-03",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 16.63,
+   "leads": 3,
+   "mql": 3,
+   "aceite": 0,
+   "perdido": 3,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-04",
@@ -1270,7 +1303,18 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 2
+  },
+  {
+   "date": "2026-08-04",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 18.73,
+   "leads": 5,
+   "mql": 2,
+   "aceite": 0,
+   "perdido": 3,
+   "meta_conversions": 5
   },
   {
    "date": "2026-08-05",
@@ -1284,10 +1328,32 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-05",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 19.2,
+   "leads": 1,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 1
+  },
+  {
    "date": "2026-08-06",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
    "spend": 21.29,
+   "leads": null,
+   "mql": null,
+   "aceite": null,
+   "perdido": null,
+   "meta_conversions": 1
+  },
+  {
+   "date": "2026-08-06",
+   "campaign": "always_on",
+   "adset": "FB08-lpmodelo01",
+   "spend": 14.02,
    "leads": null,
    "mql": null,
    "aceite": null,
@@ -1297,8 +1363,8 @@
   {
    "date": "2026-08-06",
    "campaign": "always_on",
-   "adset": "FB08-lpmodelo01",
-   "spend": 14.02,
+   "adset": "pre0608",
+   "spend": 5.34,
    "leads": null,
    "mql": null,
    "aceite": null,
@@ -1318,14 +1384,14 @@
   },
   {
    "date": "2026-08-06",
-   "campaign": "always_on",
-   "adset": "pre0608",
-   "spend": 5.34,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 14.53,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-07",
@@ -1361,6 +1427,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-07",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 10.57,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 4
+  },
+  {
    "date": "2026-08-08",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1394,6 +1471,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-08",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 4.95,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 0
+  },
+  {
    "date": "2026-08-09",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1402,7 +1490,7 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-09",
@@ -1425,6 +1513,17 @@
    "aceite": null,
    "perdido": null,
    "meta_conversions": 0
+  },
+  {
+   "date": "2026-08-09",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 12.76,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-10",
@@ -1460,6 +1559,17 @@
    "meta_conversions": 2
   },
   {
+   "date": "2026-08-10",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 20.48,
+   "leads": 6,
+   "mql": 2,
+   "aceite": 1,
+   "perdido": 3,
+   "meta_conversions": 7
+  },
+  {
    "date": "2026-08-11",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1468,7 +1578,7 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-11",
@@ -1502,6 +1612,17 @@
    "aceite": null,
    "perdido": null,
    "meta_conversions": 1
+  },
+  {
+   "date": "2026-08-11",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 20.58,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 5
   },
   {
    "date": "2026-08-12",
@@ -1548,6 +1669,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-12",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 17.63,
+   "leads": 3,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 4
+  },
+  {
    "date": "2026-08-13",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1590,6 +1722,17 @@
    "aceite": null,
    "perdido": null,
    "meta_conversions": 2
+  },
+  {
+   "date": "2026-08-13",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 24.86,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-14",
@@ -1636,6 +1779,17 @@
    "meta_conversions": 1
   },
   {
+   "date": "2026-08-14",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 33.61,
+   "leads": 4,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 6
+  },
+  {
    "date": "2026-08-15",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1680,6 +1834,17 @@
    "meta_conversions": 3
   },
   {
+   "date": "2026-08-15",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 24.76,
+   "leads": 4,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 5
+  },
+  {
    "date": "2026-08-16",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1688,7 +1853,7 @@
    "mql": 1,
    "aceite": 1,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 1
   },
   {
    "date": "2026-08-16",
@@ -1699,7 +1864,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 1
+   "meta_conversions": 0
   },
   {
    "date": "2026-08-16",
@@ -1724,6 +1889,17 @@
    "meta_conversions": 3
   },
   {
+   "date": "2026-08-16",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 26.97,
+   "leads": 0,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 0
+  },
+  {
    "date": "2026-08-17",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1732,7 +1908,7 @@
    "mql": 2,
    "aceite": 0,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 5
   },
   {
    "date": "2026-08-17",
@@ -1768,6 +1944,17 @@
    "meta_conversions": 3
   },
   {
+   "date": "2026-08-17",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 27.17,
+   "leads": 2,
+   "mql": 0,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 2
+  },
+  {
    "date": "2026-08-18",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1776,7 +1963,7 @@
    "mql": 3,
    "aceite": 0,
    "perdido": 2,
-   "meta_conversions": 0
+   "meta_conversions": 9
   },
   {
    "date": "2026-08-18",
@@ -1812,6 +1999,17 @@
    "meta_conversions": 3
   },
   {
+   "date": "2026-08-18",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 50.43,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 8
+  },
+  {
    "date": "2026-08-19",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1820,7 +2018,7 @@
    "mql": 2,
    "aceite": 0,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 10
   },
   {
    "date": "2026-08-19",
@@ -1831,7 +2029,7 @@
    "mql": 1,
    "aceite": 1,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 9
   },
   {
    "date": "2026-08-19",
@@ -1856,6 +2054,17 @@
    "meta_conversions": 6
   },
   {
+   "date": "2026-08-19",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 46.17,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 5
+  },
+  {
    "date": "2026-08-20",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1864,7 +2073,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 5
   },
   {
    "date": "2026-08-20",
@@ -1875,7 +2084,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 3
   },
   {
    "date": "2026-08-20",
@@ -1886,7 +2095,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-20",
@@ -1911,6 +2120,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-20",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 34.11,
+   "leads": 6,
+   "mql": 3,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 10
+  },
+  {
    "date": "2026-08-21",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1919,7 +2139,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 2,
-   "meta_conversions": 0
+   "meta_conversions": 16
   },
   {
    "date": "2026-08-21",
@@ -1930,7 +2150,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 10
   },
   {
    "date": "2026-08-21",
@@ -1941,7 +2161,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-21",
@@ -1966,6 +2186,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-21",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 21.51,
+   "leads": 2,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 4
+  },
+  {
    "date": "2026-08-22",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -1974,7 +2205,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 6
   },
   {
    "date": "2026-08-22",
@@ -1985,7 +2216,7 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-22",
@@ -1996,7 +2227,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-22",
@@ -2021,6 +2252,17 @@
    "meta_conversions": 0
   },
   {
+   "date": "2026-08-22",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 19.78,
+   "leads": 4,
+   "mql": 2,
+   "aceite": 0,
+   "perdido": 0,
+   "meta_conversions": 4
+  },
+  {
    "date": "2026-08-23",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -2029,7 +2271,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 19
   },
   {
    "date": "2026-08-23",
@@ -2040,7 +2282,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 18
   },
   {
    "date": "2026-08-23",
@@ -2051,7 +2293,7 @@
    "mql": 2,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-23",
@@ -2076,6 +2318,17 @@
    "meta_conversions": 1
   },
   {
+   "date": "2026-08-23",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 29.2,
+   "leads": 5,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 2,
+   "meta_conversions": 6
+  },
+  {
    "date": "2026-08-24",
    "campaign": "always_on",
    "adset": "FB07-lpmodelo01",
@@ -2084,7 +2337,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 14
   },
   {
    "date": "2026-08-24",
@@ -2095,7 +2348,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 24
   },
   {
    "date": "2026-08-24",
@@ -2106,7 +2359,7 @@
    "mql": 3,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 2
   },
   {
    "date": "2026-08-24",
@@ -2117,7 +2370,18 @@
    "mql": null,
    "aceite": null,
    "perdido": null,
-   "meta_conversions": 0
+   "meta_conversions": 7
+  },
+  {
+   "date": "2026-08-24",
+   "campaign": "forms",
+   "adset": "forms_adv_mgrj",
+   "spend": 51.6,
+   "leads": null,
+   "mql": null,
+   "aceite": null,
+   "perdido": null,
+   "meta_conversions": 8
   },
   {
    "date": "2026-08-24",
@@ -2132,14 +2396,14 @@
   },
   {
    "date": "2026-08-24",
-   "campaign": "forms",
-   "adset": "forms_adv_mgrj",
-   "spend": 51.6,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 8
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 41.91,
+   "leads": 3,
+   "mql": 3,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 4
   },
   {
    "date": "2026-08-25",
@@ -2150,7 +2414,7 @@
    "mql": 0,
    "aceite": 0,
    "perdido": 0,
-   "meta_conversions": 0
+   "meta_conversions": 24
   },
   {
    "date": "2026-08-25",
@@ -2161,7 +2425,7 @@
    "mql": 1,
    "aceite": 0,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 37
   },
   {
    "date": "2026-08-25",
@@ -2172,24 +2436,13 @@
    "mql": 2,
    "aceite": 0,
    "perdido": 1,
-   "meta_conversions": 0
+   "meta_conversions": 11
   },
   {
    "date": "2026-08-25",
    "campaign": "always_on",
    "adset": "RJ-novo",
    "spend": 16.33,
-   "leads": null,
-   "mql": null,
-   "aceite": null,
-   "perdido": null,
-   "meta_conversions": 0
-  },
-  {
-   "date": "2026-08-25",
-   "campaign": "forms",
-   "adset": "forms_mg_manual",
-   "spend": 20.08,
    "leads": null,
    "mql": null,
    "aceite": null,
@@ -2206,6 +2459,28 @@
    "aceite": null,
    "perdido": null,
    "meta_conversions": 2
+  },
+  {
+   "date": "2026-08-25",
+   "campaign": "forms",
+   "adset": "forms_mg_manual",
+   "spend": 20.08,
+   "leads": null,
+   "mql": null,
+   "aceite": null,
+   "perdido": null,
+   "meta_conversions": 6
+  },
+  {
+   "date": "2026-08-25",
+   "campaign": "rmkt",
+   "adset": "rmkt_geral",
+   "spend": 33.32,
+   "leads": 1,
+   "mql": 1,
+   "aceite": 0,
+   "perdido": 1,
+   "meta_conversions": 4
   }
  ],
  "adset_labels": {
@@ -2215,7 +2490,8 @@
   "RJ-novo": "Rio de Janeiro - Advantage+ (novo, sem tabulação ainda)",
   "pre0608": "Always on (pré-06/08, sem split disponível)",
   "forms_mg_manual": "Público manual - Minas Gerais",
-  "forms_adv_mgrj": "Advantage+ - Minas Gerais e RJ"
+  "forms_adv_mgrj": "Advantage+ - Minas Gerais e RJ",
+  "rmkt_geral": "Remarketing Geral (conjunto único)"
  },
- "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponível via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso não havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulação genérica 'Facebook Lead Ad' no Kommo, não é possível separar o funil). Rmkt tem um único conjunto, sem necessidade de split. Conversões (Meta) por conjunto (campo meta_conversions) cobrem o mês inteiro (01/08-25/08), pois vêm direto do Meta Ads (não dependem da tabulação do Kommo) — soma de actions_lead + conversa iniciada (Messenger/IG) + conversão de pixel de site, por (data, conjunto)."
+ "daily_by_adset_note": "Funil (leads/mql/aceite/perdido) por conjunto disponivel via tag do Kommo apenas para always_on (FB07/FB08/FBSP) a partir de 12/08/2026 (antes disso nao havia leads tabulados por conjunto especifico). Forms tem apenas split de gasto (ambos os conjuntos usam a mesma tabulacao generica 'Facebook Lead Ad' no Kommo, nao e possivel separar o funil). Rmkt tem um unico conjunto (rmkt_geral) — funil e gasto identicos aos totais da campanha, incluido aqui so para consistencia de detalhamento por conjunto em todas as campanhas. Conversoes (Meta) por conjunto (campo meta_conversions) cobrem o periodo 01/08-25/08 e usam uma metrica especifica por tipo de campanha, nao uma formula unica: Always on usa actions_offsite_conversion_fb_pixel_custom (conversao de pixel customizada = contato no site); Forms usa actions_lead + conversa iniciada (Messenger/IG) + actions_offsite_conversion_fb_pixel_lead; Remarketing usa actions_onsite_conversion_messaging_conversation_started_7d (conversas iniciadas via WhatsApp). Corrigido em 26/08/2026 apos Leticia observar que a formula generica (leads ampliados de Forms) estava zerando Always on e Remarketing, que nao otimizam para esse tipo de evento."
 }
