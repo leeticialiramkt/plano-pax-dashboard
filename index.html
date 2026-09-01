@@ -19,6 +19,7 @@ color-scheme: light;
 --series-1: #2a78d6; /* Always on */
 --series-2: #eb6834; /* Forms */
 --series-3: #1baf7a; /* Remarketing */
+--series-4: #7d5ba6; /* WhatsApp Always on */
 --status-good: #0ca30c;
 --status-warning: #fab219;
 --status-serious: #ec835a;
@@ -39,6 +40,7 @@ color-scheme: dark;
 --series-1: #3987e5;
 --series-2: #d95926;
 --series-3: #199e70;
+--series-4: #9678d8;
 }
 }
 * { box-sizing: border-box; }
@@ -230,7 +232,7 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 
 <div class="card">
 <h2>Funil por campanha — período selecionado</h2>
-<div class="card-sub">Leads (Kommo), Conversões (Meta), MQL, Aceite, Aguardando pagamento e Vendido, cruzados com o Kommo. Todas as campanhas abrem em conjuntos (linhas indentadas) — Always on e Forms têm conjuntos reais; Remarketing tem um único conjunto, mostrado do mesmo jeito para consistência. O funil por conjunto (leads/MQL/Aceite do Kommo) só existe a partir de 21/08/2026 para Always on (Kommo não tabulava por conjunto antes disso); o gasto e as Conversões reportadas pelo Meta por conjunto cobrem o mês inteiro. "Conversões (Meta)" usa uma métrica diferente por tipo de campanha (a que cada uma otimiza no Meta Ads): Always on = conversão de pixel customizada (contato no site); Forms = formulário + conversa iniciada + pixel de lead; Remarketing = conversa iniciada via WhatsApp. A coluna "Divergência" mostra Conversões (Meta) − Leads (Kommo): números positivos indicam conversões que o Meta contou e não viraram lead rastreável no Kommo.</div>
+<div class="card-sub">Leads (Kommo), Conversões (Meta), MQL, Aceite, Aguardando pagamento e Vendido, cruzados com o Kommo. Todas as campanhas abrem em conjuntos (linhas indentadas) — Always on, Forms e Remarketing têm conjuntos reais; WhatsApp Always on (nova, desde 31/08/2026) tem um único conjunto. O funil por conjunto (leads/MQL/Aceite do Kommo) só existe a partir de 21/08/2026 para Always on e depende de tag própria no Kommo para cada campanha/conjunto — Forms não separa por conjunto (mesma tabulação genérica para os dois) e WhatsApp Always on ainda não tem tag própria configurada, então seu funil aparece zerado até Leticia configurar uma; o gasto e as Conversões reportadas pelo Meta por conjunto cobrem o mês inteiro. "Conversões (Meta)" usa uma métrica diferente por tipo de campanha (a que cada uma otimiza no Meta Ads): Always on = conversão de pixel customizada (contato no site); Forms = formulário + conversa iniciada + pixel de lead; Remarketing e WhatsApp Always on = conversa iniciada via WhatsApp. A coluna "Divergência" mostra Conversões (Meta) − Leads (Kommo): números positivos indicam conversões que o Meta contou e não viraram lead rastreável no Kommo.</div>
 <div id="campaign-table"></div>
 </div>
 
@@ -262,9 +264,9 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 "use strict";
 
 var DATA_URL = "data.json";
-var CAMP_COLOR = { always_on: "var(--series-1)", forms: "var(--series-2)", rmkt: "var(--series-3)" };
-var CAMP_COLOR_RAW_LIGHT = { always_on: "#2a78d6", forms: "#eb6834", rmkt: "#1baf7a" };
-var CAMP_ORDER = ["always_on", "forms", "rmkt"];
+var CAMP_COLOR = { always_on: "var(--series-1)", forms: "var(--series-2)", rmkt: "var(--series-3)", whatsapp_ao: "var(--series-4)" };
+var CAMP_COLOR_RAW_LIGHT = { always_on: "#2a78d6", forms: "#eb6834", rmkt: "#1baf7a", whatsapp_ao: "#7d5ba6" };
+var CAMP_ORDER = ["always_on", "forms", "rmkt", "whatsapp_ao"];
 
 var state = { data: null, range: "14", from: null, to: null, hidden: {} };
 
@@ -698,8 +700,9 @@ el.innerHTML = ""; el.appendChild(table);
 
 var ADSET_OF_CAMPAIGN = {
 always_on: ["FB07-lpmodelo01", "FB08-lpmodelo01", "FBSP-lpmodelo01", "RJ-novo", "pre0608"],
-forms: ["forms_mg_manual", "forms_adv_mgrj"],
-rmkt: ["rmkt_geral"]
+forms: ["forms_mg_manual", "forms_adv_mgrj", "forms_adv2"],
+rmkt: ["rmkt_geral", "rmkt_reativacao"],
+whatsapp_ao: ["wpp_rj_manual"]
 };
 
 function aggregateAdsets(data, from, to) {
