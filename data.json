@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-03T06:38:35-03:00",
+  "updated_at": "2026-09-03T06:52:00-03:00",
   "meta_status": "ok",
   "kommo_status": "ok",
   "kommo_stale_since": null,
@@ -1348,17 +1348,6 @@
       "payment_date": "2026-08-29",
       "payment_status": "atrasado",
       "payment_status_label": "Atrasado (previsto p/ 29/08)"
-    },
-    {
-      "name": "Ivonete Agda Pereira",
-      "date": "2026-09-02",
-      "campaign": "rmkt",
-      "etapa": "Aceite",
-      "value": 76,
-      "created_date": "2026-09-02",
-      "payment_date": "2026-09-07",
-      "payment_status": "aguardando",
-      "payment_status_label": "Aguardando (previsão 07/09)"
     },
     {
       "name": "Ivonete Agda Pereira",
