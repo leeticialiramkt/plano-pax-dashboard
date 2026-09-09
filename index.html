@@ -133,6 +133,10 @@ table.data-table td.num.diverg-neg { color: var(--status-critical); }
 table.data-table td.creative-name { display: flex; align-items: center; gap: 10px; text-align: left; }
 table.data-table .creative-thumb { width: 40px; height: 40px; border-radius: 6px; object-fit: cover; background: var(--gridline); flex: none; }
 .empty-note { font-size: 13px; color: var(--text-secondary); padding: 10px 0; }
+.table-scroll { max-height: 460px; overflow-y: auto; border-radius: 8px; }
+.table-scroll table.data-table thead th { position: sticky; top: 0; background: var(--surface-1); z-index: 1; }
+.mql-note { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+.mql-note strong { color: var(--text-primary); }
 table.data-table .creative-title { display: flex; flex-direction: column; gap: 2px; }
 table.data-table .creative-title .ad-name { color: var(--text-primary); font-weight: 500; }
 table.data-table .creative-title .ad-campaign { color: var(--text-muted); font-size: 11.5px; }
@@ -170,6 +174,8 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 
 <div class="filters">
 <div class="presets" id="presets" role="group" aria-label="Período">
+<button class="preset" data-range="today">Hoje</button>
+<button class="preset" data-range="yesterday">Ontem</button>
 <button class="preset" data-range="7">7 dias</button>
 <button class="preset" data-range="14">14 dias</button>
 <button class="preset" data-range="month">Mês</button>
@@ -182,6 +188,10 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 <input type="date" id="date-to">
 <button class="apply-custom" id="apply-custom">Aplicar</button>
 </div>
+</div>
+
+<div class="card" style="padding:14px 20px;">
+<div class="mql-note"><strong>O que contamos como MQL:</strong> lead que avançou no funil do Kommo até pelo menos a etapa "Orçamento" — ou seja, chegou a receber (ou está prestes a receber) uma proposta comercial. Conta como MQL a partir das etapas: Orçamento, Orçamento com Resposta, Aguardando Dados, Aceite, Pagamento ou Finalizado - Vendido.</div>
 </div>
 
 <div class="stat-grid" id="stat-grid"></div>
@@ -231,6 +241,19 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 </div>
 
 <div class="card">
+<div class="card-head">
+<div>
+<h2>Custo por MQL — dia a dia</h2>
+<div class="card-sub">MQLs gerados por dia (barras) e custo por MQL (linha) no período selecionado — meta de setembro/2026: R$20,00 por MQL, com até R$9.000 investidos no mês</div>
+</div>
+<button class="table-toggle" data-target="mqlcost-table">Ver como tabela</button>
+</div>
+<div class="legend" id="mqlcost-legend"></div>
+<div id="mqlcost-chart-wrap" style="position:relative;"></div>
+<div id="mqlcost-table" class="visually-hidden" style="display:none; margin-top:10px;"></div>
+</div>
+
+<div class="card">
 <h2>Funil por campanha — período selecionado</h2>
 <div class="card-sub">Leads (Kommo), Conversões (Meta), MQL, Aceite, Aguardando pagamento e Vendido, cruzados com o Kommo. Todas as campanhas abrem em conjuntos (linhas indentadas) — Always on, Forms e Remarketing têm conjuntos reais; WhatsApp Always on (nova, desde 31/08/2026) tem um único conjunto. O funil por conjunto (leads/MQL/Aceite do Kommo) só existe a partir de 21/08/2026 para Always on e depende de tag própria no Kommo para cada campanha/conjunto — Forms não separa por conjunto (mesma tabulação genérica para os dois) e WhatsApp Always on ainda não tem tag própria configurada, então seu funil aparece zerado até Leticia configurar uma; o gasto e as Conversões reportadas pelo Meta por conjunto cobrem o mês inteiro. "Conversões (Meta)" usa uma métrica diferente por tipo de campanha (a que cada uma otimiza no Meta Ads): Always on = conversão de pixel customizada (contato no site); Forms = formulário + conversa iniciada + pixel de lead; Remarketing e WhatsApp Always on = conversa iniciada via WhatsApp. A coluna "Divergência" mostra Conversões (Meta) − Leads (Kommo): números positivos indicam conversões que o Meta contou e não viraram lead rastreável no Kommo.</div>
 <div id="campaign-table"></div>
@@ -246,6 +269,12 @@ footer.foot { text-align: center; color: var(--text-muted); font-size: 12px; mar
 <h2>Aceites e Vendas — detalhamento</h2>
 <div class="card-sub" id="aceites-sub">Leads que chegaram a Aceite (ou etapa mais avançada) no Kommo — nome, data, conjunto e valor, para conferência</div>
 <div id="aceites-table"></div>
+</div>
+
+<div class="card">
+<h2>Leads — detalhamento</h2>
+<div class="card-sub" id="leads-detail-sub">Todos os leads recebidos no Kommo no período selecionado — nome, data de criação, campanha, MQL e tabulação</div>
+<div class="table-scroll"><div id="leads-detail-table"></div></div>
 </div>
 
 <div class="card">
@@ -297,6 +326,11 @@ var allDates = Array.from(new Set(data.daily.map(function (r) { return r.date; }
 var maxDate = allDates[allDates.length - 1];
 var minDate = allDates[0];
 if (state.range === "all") return { from: minDate, to: maxDate };
+if (state.range === "today") return { from: maxDate, to: maxDate };
+if (state.range === "yesterday") {
+var y = addDays(maxDate, -1);
+return { from: y < minDate ? minDate : y, to: y < minDate ? minDate : y };
+}
 if (state.range === "month") {
 var ym = maxDate.slice(0, 7);
 var monthStart = ym + "-01";
@@ -702,7 +736,7 @@ var ADSET_OF_CAMPAIGN = {
 always_on: ["FB07-lpmodelo01", "FB08-lpmodelo01", "FBSP-lpmodelo01", "RJ-novo", "pre0608"],
 forms: ["forms_mg_manual", "forms_adv_mgrj", "forms_adv2"],
 rmkt: ["rmkt_geral", "rmkt_reativacao"],
-whatsapp_ao: ["wpp_rj_manual"]
+whatsapp_ao: ["wpp_rj_manual", "wpp_advantage", "wpp_lookalike"]
 };
 
 function aggregateAdsets(data, from, to) {
@@ -914,7 +948,7 @@ var table = document.createElement("table");
 table.className = "data-table";
 var thead = document.createElement("thead");
 var trh = document.createElement("tr");
-["Nome", "Data de criação", "Data de pagamento", "Status pagamento", "Campanha", "Conjunto", "Etapa", "Valor"].forEach(function (h) {
+["Nome", "Data de criação", "Data de pagamento", "Status pagamento", "Campanha", "Conjunto", "Etapa", "Plano", "Valor"].forEach(function (h) {
 var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
 });
 thead.appendChild(trh); table.appendChild(thead);
@@ -937,6 +971,7 @@ var tdAdset = document.createElement("td");
 tdAdset.textContent = a.adset ? ((data.adset_labels && data.adset_labels[a.adset]) || a.adset) : "—";
 tr.appendChild(tdAdset);
 var tdEtapa = document.createElement("td"); tdEtapa.textContent = a.etapa || "—"; tr.appendChild(tdEtapa);
+var tdPlano = document.createElement("td"); tdPlano.textContent = a.plano || "—"; tr.appendChild(tdPlano);
 var tdValue = document.createElement("td"); tdValue.className = "num"; tdValue.textContent = fmtBRL(a.value || 0); tr.appendChild(tdValue);
 tbody.appendChild(tr);
 total += a.value || 0;
@@ -945,11 +980,257 @@ table.appendChild(tbody);
 
 var tfoot = document.createElement("tfoot");
 var trf = document.createElement("tr");
-trf.innerHTML = "<td>Total</td><td></td><td></td><td></td><td></td><td></td><td class='num'>" + fmtInt(rows.length) + " leads</td><td class='num'>" + fmtBRL(total) + "</td>";
+trf.innerHTML = "<td>Total</td><td></td><td></td><td></td><td></td><td></td><td></td><td class='num'>" + fmtInt(rows.length) + " leads</td><td class='num'>" + fmtBRL(total) + "</td>";
 tfoot.appendChild(trf);
 table.appendChild(tfoot);
 
 el.innerHTML = ""; el.appendChild(table);
+}
+
+function renderLeadsDetailTable(data, from, to) {
+var subEl = document.getElementById("leads-detail-sub");
+var allLeads = data.leads || [];
+var leads = allLeads.filter(function (l) {
+return l.created_date >= from && l.created_date <= to;
+});
+if (subEl) {
+subEl.textContent = "Leads recebidos no Kommo entre " + fmtDateLabel(from) + " e " + fmtDateLabel(to) + " (" + fmtInt(leads.length) + (leads.length === 1 ? " lead" : " leads") + ") — nome, data de criação, campanha, MQL e tabulação. Captura lead a lead disponível a partir de 04/09/2026.";
+}
+var el = document.getElementById("leads-detail-table");
+if (!el) return;
+if (!allLeads.length) {
+el.innerHTML = "<div class='empty-note'>Captura lead a lead ainda não disponível para este período. Use os gráficos de Leads e MQL diário por campanha acima.</div>";
+return;
+}
+if (!leads.length) {
+el.innerHTML = "<div class='empty-note'>Nenhum lead capturado individualmente no período selecionado (captura lead a lead disponível a partir de 04/09/2026).</div>";
+return;
+}
+var rows = leads.slice().sort(function (a, b) {
+if (a.created_date !== b.created_date) return a.created_date < b.created_date ? 1 : -1;
+return (a.created_time || "") < (b.created_time || "") ? 1 : -1;
+});
+var table = document.createElement("table");
+table.className = "data-table";
+var thead = document.createElement("thead");
+var trh = document.createElement("tr");
+["Nome", "Data de criação", "Campanha", "Conjunto", "MQL", "Tabulação"].forEach(function (h) {
+var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
+});
+thead.appendChild(trh); table.appendChild(thead);
+var tbody = document.createElement("tbody");
+rows.forEach(function (l) {
+var tr = document.createElement("tr");
+var tdName = document.createElement("td"); tdName.textContent = l.name || "—"; tr.appendChild(tdName);
+var tdDate = document.createElement("td"); tdDate.textContent = fmtDateLabel(l.created_date) + (l.created_time ? " " + l.created_time : ""); tr.appendChild(tdDate);
+var tdCamp = document.createElement("td"); tdCamp.textContent = (data.campaigns[l.campaign] && data.campaigns[l.campaign].short) || l.campaign || "—"; tr.appendChild(tdCamp);
+var tdAdset = document.createElement("td"); tdAdset.textContent = l.adset ? ((data.adset_labels && data.adset_labels[l.adset]) || l.adset) : "—"; tr.appendChild(tdAdset);
+var tdMql = document.createElement("td");
+tdMql.innerHTML = l.mql ? "<span class='badge ok'><span class='dot'></span>Sim</span>" : "<span class='badge'><span class='dot'></span>Não</span>";
+tr.appendChild(tdMql);
+var tdTab = document.createElement("td"); tdTab.textContent = l.tabulacao || "—"; tr.appendChild(tdTab);
+tbody.appendChild(tr);
+});
+table.appendChild(tbody);
+el.innerHTML = ""; el.appendChild(table);
+}
+
+function renderMqlCostLegend() {
+var el = document.getElementById("mqlcost-legend");
+el.innerHTML = "";
+var items = [
+{ label: "MQL gerados (barras)", color: "var(--series-1)" },
+{ label: "Custo por MQL (linha)", color: "var(--series-2)" },
+{ label: "Meta: R$20/MQL (tracejado)", color: "var(--status-critical)" }
+];
+items.forEach(function (it) {
+var item = document.createElement("div");
+item.className = "item";
+var sw = document.createElement("span"); sw.className = "swatch"; sw.style.background = it.color;
+var lab = document.createElement("span"); lab.textContent = it.label;
+item.appendChild(sw); item.appendChild(lab);
+el.appendChild(item);
+});
+}
+
+function renderMqlCostTable(dates, mqlCounts, costs, data) {
+var el = document.getElementById("mqlcost-table");
+var table = document.createElement("table");
+table.className = "data-table";
+var thead = document.createElement("thead");
+var trh = document.createElement("tr");
+["Data", "MQL", "Custo/MQL"].forEach(function (h) {
+var th = document.createElement("th"); th.textContent = h; trh.appendChild(th);
+});
+thead.appendChild(trh); table.appendChild(thead);
+var tbody = document.createElement("tbody");
+dates.forEach(function (d, i) {
+var tr = document.createElement("tr");
+var td0 = document.createElement("td"); td0.textContent = d + (data.partial_date === d ? " (parcial)" : ""); tr.appendChild(td0);
+var td1 = document.createElement("td"); td1.className = "num"; td1.textContent = fmtInt(mqlCounts[i]); tr.appendChild(td1);
+var td2 = document.createElement("td"); td2.className = "num"; td2.textContent = costs[i] != null ? fmtBRL(costs[i]) : "—"; tr.appendChild(td2);
+tbody.appendChild(tr);
+});
+table.appendChild(tbody);
+el.innerHTML = ""; el.appendChild(table);
+}
+
+function drawMqlCostChart(wrapId, dates, mqlCounts, costs, data, goal) {
+var wrap = document.getElementById(wrapId);
+wrap.innerHTML = "";
+var W = wrap.clientWidth || 1100, H = 280;
+var padL = 46, padR = 58, padT = 12, padB = 26;
+var plotW = W - padL - padR, plotH = H - padT - padB;
+
+var maxMql = niceMax(Math.max.apply(null, mqlCounts.concat([1])) * 1.25);
+var validCosts = costs.filter(function (c) { return c != null; });
+var maxCost = niceMax(Math.max.apply(null, validCosts.concat([goal || 0, 1])) * 1.2);
+
+var svgNS = "http://www.w3.org/2000/svg";
+var svg = document.createElementNS(svgNS, "svg");
+svg.setAttribute("class", "chart");
+svg.setAttribute("viewBox", "0 0 " + W + " " + H);
+svg.setAttribute("preserveAspectRatio", "none");
+
+function x(i) { return padL + (dates.length <= 1 ? plotW / 2 : (i / (dates.length - 1)) * plotW); }
+function yMql(v) { return padT + plotH - (v / maxMql) * plotH; }
+function yCost(v) { return padT + plotH - (v / maxCost) * plotH; }
+
+var steps = 4;
+for (var s = 0; s <= steps; s++) {
+var gy = padT + (plotH / steps) * s;
+var gv = maxMql - (maxMql / steps) * s;
+var line = document.createElementNS(svgNS, "line");
+line.setAttribute("x1", padL); line.setAttribute("x2", W - padR);
+line.setAttribute("y1", gy); line.setAttribute("y2", gy);
+line.setAttribute("class", s === steps ? "baseline" : "gridline");
+svg.appendChild(line);
+var txt = document.createElementNS(svgNS, "text");
+txt.setAttribute("x", padL - 8); txt.setAttribute("y", gy + 4);
+txt.setAttribute("text-anchor", "end"); txt.setAttribute("class", "axis-label");
+txt.textContent = fmtInt(gv);
+svg.appendChild(txt);
+
+var cv = maxCost - (maxCost / steps) * s;
+var txt2 = document.createElementNS(svgNS, "text");
+txt2.setAttribute("x", W - padR + 8); txt2.setAttribute("y", gy + 4);
+txt2.setAttribute("text-anchor", "start"); txt2.setAttribute("class", "axis-label");
+txt2.textContent = fmtBRLCompact(cv);
+svg.appendChild(txt2);
+}
+
+var labelEvery = Math.max(1, Math.ceil(dates.length / 8));
+dates.forEach(function (d, i) {
+if (i % labelEvery !== 0 && i !== dates.length - 1) return;
+var txt = document.createElementNS(svgNS, "text");
+txt.setAttribute("x", x(i)); txt.setAttribute("y", H - 6);
+txt.setAttribute("text-anchor", "middle"); txt.setAttribute("class", "axis-label");
+txt.textContent = fmtDateLabel(d);
+svg.appendChild(txt);
+});
+
+if (goal != null && goal <= maxCost) {
+var gy2 = yCost(goal);
+var goalLine = document.createElementNS(svgNS, "line");
+goalLine.setAttribute("x1", padL); goalLine.setAttribute("x2", W - padR);
+goalLine.setAttribute("y1", gy2); goalLine.setAttribute("y2", gy2);
+goalLine.setAttribute("stroke", "var(--status-critical)");
+goalLine.setAttribute("stroke-width", "1.5");
+goalLine.setAttribute("stroke-dasharray", "5 4");
+svg.appendChild(goalLine);
+var goalLabel = document.createElementNS(svgNS, "text");
+goalLabel.setAttribute("x", W - padR); goalLabel.setAttribute("y", gy2 - 5);
+goalLabel.setAttribute("text-anchor", "end"); goalLabel.setAttribute("class", "axis-label");
+goalLabel.setAttribute("fill", "var(--status-critical)");
+goalLabel.textContent = "Meta: " + fmtBRL(goal);
+svg.appendChild(goalLabel);
+}
+
+var barW = Math.max(3, (plotW / dates.length) * 0.5);
+var partialIdx = data.partial_date ? dates.indexOf(data.partial_date) : -1;
+mqlCounts.forEach(function (v, i) {
+if (!v) return;
+var bx = x(i) - barW / 2;
+var by = yMql(v);
+var rect = document.createElementNS(svgNS, "rect");
+rect.setAttribute("x", bx); rect.setAttribute("y", by);
+rect.setAttribute("width", barW); rect.setAttribute("height", (padT + plotH) - by);
+rect.setAttribute("fill", "var(--series-1)");
+rect.setAttribute("opacity", i === partialIdx ? "0.45" : "0.75");
+rect.setAttribute("rx", "2");
+svg.appendChild(rect);
+});
+
+var segs = [];
+var cur = [];
+costs.forEach(function (c, i) {
+if (c == null) { if (cur.length) { segs.push(cur); cur = []; } return; }
+cur.push([i, c]);
+});
+if (cur.length) segs.push(cur);
+segs.forEach(function (seg) {
+var pts = seg.map(function (p) { return x(p[0]) + "," + yCost(p[1]); }).join(" ");
+var poly = document.createElementNS(svgNS, "polyline");
+poly.setAttribute("points", pts);
+poly.setAttribute("fill", "none");
+poly.setAttribute("stroke", "var(--series-2)");
+poly.setAttribute("stroke-width", "2.5");
+poly.setAttribute("stroke-linejoin", "round");
+poly.setAttribute("stroke-linecap", "round");
+svg.appendChild(poly);
+});
+costs.forEach(function (c, i) {
+if (c == null) return;
+var dot = document.createElementNS(svgNS, "circle");
+dot.setAttribute("cx", x(i)); dot.setAttribute("cy", yCost(c));
+dot.setAttribute("r", i === partialIdx ? "3.5" : "3");
+dot.setAttribute("fill", i === partialIdx ? "var(--surface-1)" : "var(--series-2)");
+dot.setAttribute("stroke", "var(--series-2)");
+dot.setAttribute("stroke-width", "2");
+svg.appendChild(dot);
+});
+
+var crosshair = document.createElementNS(svgNS, "line");
+crosshair.setAttribute("class", "crosshair");
+crosshair.setAttribute("y1", padT); crosshair.setAttribute("y2", padT + plotH);
+svg.appendChild(crosshair);
+
+var hitRect = document.createElementNS(svgNS, "rect");
+hitRect.setAttribute("x", padL); hitRect.setAttribute("y", padT);
+hitRect.setAttribute("width", plotW); hitRect.setAttribute("height", plotH);
+hitRect.setAttribute("fill", "transparent");
+svg.appendChild(hitRect);
+
+var tooltip = document.getElementById("tooltip");
+function showAt(i) {
+var xi = x(i);
+crosshair.setAttribute("x1", xi); crosshair.setAttribute("x2", xi);
+crosshair.style.opacity = 1;
+tooltip.innerHTML = "";
+var dateDiv = document.createElement("div"); dateDiv.className = "t-date";
+dateDiv.textContent = dates[i] + (data.partial_date === dates[i] ? " (parcial)" : "");
+tooltip.appendChild(dateDiv);
+var r1 = document.createElement("div"); r1.className = "t-row";
+r1.innerHTML = "<span class='k'><span class='key-line' style='background:var(--series-1)'></span>MQL</span><span class='v'>" + fmtInt(mqlCounts[i]) + "</span>";
+tooltip.appendChild(r1);
+var r2 = document.createElement("div"); r2.className = "t-row";
+r2.innerHTML = "<span class='k'><span class='key-line' style='background:var(--series-2)'></span>Custo/MQL</span><span class='v'>" + (costs[i] != null ? fmtBRL(costs[i]) : "—") + "</span>";
+tooltip.appendChild(r2);
+tooltip.style.opacity = 1;
+}
+function hideAll() { crosshair.style.opacity = 0; tooltip.style.opacity = 0; }
+hitRect.addEventListener("pointermove", function (evt) {
+var rectBox = svg.getBoundingClientRect();
+var relX = (evt.clientX - rectBox.left) * (W / rectBox.width);
+var i = Math.round(((relX - padL) / plotW) * (dates.length - 1));
+i = Math.max(0, Math.min(dates.length - 1, i));
+showAt(i);
+tooltip.style.left = (evt.pageX + 14) + "px";
+tooltip.style.top = (evt.pageY + 14) + "px";
+});
+hitRect.addEventListener("pointerleave", hideAll);
+
+wrap.appendChild(svg);
 }
 
 function renderStatusBadges(data) {
@@ -1015,9 +1296,21 @@ renderLegend("mql-legend", data);
 drawLineChart("mql-chart-wrap", mqlSeries.dates, mqlSeries.series, data, fmtInt);
 renderTable("mql-table", mqlSeries.dates, mqlSeries.series, data, fmtInt);
 
+var mqlTotals = mqlSeries.dates.map(function (d, i) {
+return CAMP_ORDER.reduce(function (s, c) { return s + mqlSeries.series[c][i]; }, 0);
+});
+var spendTotals = mqlSeries.dates.map(function (d, i) {
+return CAMP_ORDER.reduce(function (s, c) { return s + spendSeries.series[c][i]; }, 0);
+});
+var costPerMql = mqlTotals.map(function (m, i) { return m > 0 ? spendTotals[i] / m : null; });
+renderMqlCostLegend();
+drawMqlCostChart("mqlcost-chart-wrap", mqlSeries.dates, mqlTotals, costPerMql, data, 20);
+renderMqlCostTable(mqlSeries.dates, mqlTotals, costPerMql, data);
+
 renderFunnelTable(rows, data, rangeDates.from, rangeDates.to);
 renderCostTable(rows, data, rangeDates.from, rangeDates.to);
 renderAceitesTable(data, rangeDates.from, rangeDates.to);
+renderLeadsDetailTable(data, rangeDates.from, rangeDates.to);
 renderCreativesTable(data);
 
 document.querySelectorAll(".preset").forEach(function (btn) {
