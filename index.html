@@ -388,7 +388,7 @@ return { text: sign + pct.toFixed(0) + "% vs. período anterior", cls: good ? "u
 
 function countAguardando(data, from, to) {
 var list = (data.aceites || []).filter(function (a) {
-var d = a.created_date || a.date;
+var d = a.date;
 return d >= from && d <= to && (a.payment_status === "aguardando" || a.payment_status === "atrasado");
 });
 return list.length;
@@ -758,7 +758,7 @@ var adsetAgg = aggregateAdsets(data, from, to);
 var aguardandoByCamp = {};
 CAMP_ORDER.forEach(function (c) { aguardandoByCamp[c] = 0; });
 (data.aceites || []).forEach(function (a) {
-var d = a.created_date || a.date;
+var d = a.date;
 if (d < from || d > to) return;
 if ((a.payment_status === "aguardando" || a.payment_status === "atrasado") && aguardandoByCamp[a.campaign] != null) {
 aguardandoByCamp[a.campaign]++;
@@ -932,12 +932,12 @@ el.innerHTML = ""; el.appendChild(table);
 function renderAceitesTable(data, from, to) {
 var subEl = document.getElementById("aceites-sub");
 if (subEl) {
-subEl.textContent = "Leads com Data de entrada no RD entre " + fmtDateLabel(from) + " e " + fmtDateLabel(to) + " (período selecionado acima) — nome, data de criação (entrada no RD), conjunto, data/status de pagamento e valor, para conferência";
+subEl.textContent = "Aceites entre " + fmtDateLabel(from) + " e " + fmtDateLabel(to) + " (período selecionado acima) — Vendas filtradas pela data de pagamento, Aceites ainda pendentes filtrados pela data de entrada no RD; nome, conjunto e valor para conferência";
 }
 var el = document.getElementById("aceites-table");
 if (!el) return;
 var aceites = (data.aceites || []).filter(function (a) {
-var d = a.created_date || a.date;
+var d = a.date;
 return d >= from && d <= to;
 });
 if (!aceites.length) { el.innerHTML = "<div class='empty-note'>Nenhum Aceite no período selecionado.</div>"; return; }
